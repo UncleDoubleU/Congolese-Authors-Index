@@ -42,15 +42,12 @@
           left: 100%
           transform: translateX(-100%)
 
-          a
+          a, li
                color: App.$caiDarkBrown
                &:hover, &:focus
-
-                    background: App.$caiGrey
-
-          li
-               &:hover, &:focus
-                    background: App.$caiGrey
+                    padding: 0.75rem 1rem
+                    border-radius: 5rem
+                    opacity: 0.5
 
      .mobileBtn
           background: none
@@ -61,16 +58,16 @@
           padding: 0.75rem 1rem
           border-radius: 5rem
           &:hover, &:focus
-               background: App.$caiGrey
+               opacity: 0.5
 
-@media (min-width: App.$breakpoint-small)
-     .navLogo
+     // 500px 
+     .navLogoSmallScreen
           width: 20%
 
-     .mobileBtn
+     .mobileBtnSmallScreen
           display: none
 
-     .navList
+     .navListSmallScreen
           display: flex
           direction: row
           position: static

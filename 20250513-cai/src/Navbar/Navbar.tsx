@@ -3,11 +3,15 @@ import styles from "./Navbar.module.sass";
 
 function Navbar() {
   const [menuText, setMenuText] = useState("menu");
+  const [menuBtnClass, setMenuBtnClass] = useState(`${styles.mobileBtn}`);
   const [navListClass, setNavListClass] = useState(`${styles.navList}`);
   const [isActive, setIsActive] = useState(false);
+  // const [isVisible, setIsVisible] = useState(true);
+  const width = window.innerWidth;
+  const isSmlScrn = width < 500;
 
   function handleClick() {
-    const activeClass = `${styles.navList + " " + styles.activeNavList}`;
+    const activeClass = `${styles.activeNavList}`;
     const inactiveClass = `${styles.navList}`;
 
     setIsActive((isActive) => !isActive);
@@ -20,6 +24,14 @@ function Navbar() {
       setNavListClass(activeClass);
     }
   }
+  // function mediaSmallScren() {
+  //   setIsVisible((isVisible) => !isVisible);
+
+  //   if (isSmlScrn) {
+  //     setNavListClass(`${styles.NavListSmallScreen}`);
+  //     setMenuBtnClass(styles.mobileBtnSmallScreen);
+  //   }
+  // }
 
   function handleListClick() {
     const inactiveClass = `${styles.navList}`;
@@ -32,7 +44,7 @@ function Navbar() {
         Congolese Authors Index
       </a>
 
-      <button id="menu-btn" onClick={handleClick} className={styles.mobileBtn}>
+      <button id="menu-btn" onClick={handleClick} className={menuBtnClass}>
         {menuText}
       </button>
 
