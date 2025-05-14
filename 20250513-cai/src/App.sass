@@ -3,18 +3,22 @@
      padding: 0
      box-sizing: border-box
 
+$breakpoint-small: 500px
+
 $caiDarkBrown: #110404
 $caiLightBrown: #915E2B
 $caiPink: #D33FA4
 $caiBeige: #E8C48F
+$caiGrey: #DBCEC3
 
 $navItemsText: 400 1.125rem "helvetica", sans-serif
 $logoText: 400 1.125rem/1.25rem "helvetica", sans-serif
-
 $mobileH1: italic 300 21vw/3rem "Garamond", serif
+$mobileP: normal 300 0.875rem/1.3125rem "helvetica", sans-serif
 
 html
      min-height: 100vh
+
      li
           list-style: none
           text-decoration: none
@@ -24,6 +28,8 @@ html
 body
      background-color: $caiDarkBrown
      color: $caiLightBrown
+     height: 100vh
+     font: $mobileP
 
 header
      width: 100vw
@@ -37,9 +43,17 @@ header
 
 main
      width: 100vw
-     padding: 1rem
+     min-height: 100vh
+     padding: 1.875rem
 
 h1
      font: $mobileH1
      text-align: right
      margin-top: 6.5rem
+
+footer
+
+     height: min-content
+     background-color: $caiBeige
+     color: $caiLightBrown
+     padding: 1rem 1.25rem

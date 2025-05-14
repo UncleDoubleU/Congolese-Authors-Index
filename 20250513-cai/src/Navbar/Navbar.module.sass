@@ -6,11 +6,11 @@
      border: 2px solid App.$caiDarkBrown
      border-radius: 3.125rem
      display: flex
-     width: min(90vw, 17.5rem)
+     width: min(90vw, 17rem)
      min-width: 15rem
 
      height: 4rem
-     padding: 0.5rem 1.25rem
+     padding: 0.5rem 0.5rem 0.5rem 1.5rem
      justify-content: space-between
      align-items: center
      flex-shrink: 0
@@ -18,11 +18,11 @@
 
      .navLogo
           font: App.$logoText
-          width: 65%
+          width: 60%
           color: App.$caiDarkBrown
 
      ul
-          display: flex
+
           font: App.$navItemsText
           color: App.$caiDarkBrown
           display: none
@@ -40,6 +40,12 @@
 
           a
                color: App.$caiDarkBrown
+               &:hover, &:focus
+                    background: App.$caiGrey
+
+          li
+               &:hover, &:focus
+                    background: App.$caiGrey
 
      .mobileBtn
           background: none
@@ -47,3 +53,20 @@
           font: App.$navItemsText
           color: App.$caiDarkBrown
           cursor: pointer
+          padding: 0.75rem 1rem
+          border-radius: 5rem
+          &:hover, &:focus
+               background: App.$caiGrey
+
+@media screen and (min-width: App.$breakpoint-small)
+     .mobileBtn
+          display: none
+
+     ul
+          display: block
+          position: static
+          top: 4.25rem
+          color: white
+          transform: none
+
+     
