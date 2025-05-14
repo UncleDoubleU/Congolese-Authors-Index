@@ -1,1 +1,56 @@
 @use '../App'
+
+.socialMediaCont
+     width: min(100%, 17rem)
+
+     .socialMedia
+          display: flex
+          padding: 0.9375rem
+          align-items: center
+          border-radius: 0.625rem
+          border: 2px solid App.$caiLightBrown
+
+          // background: rgba(145, 94, 43, 0.05)
+          // backdrop-filter: blur(20px)
+     ul
+          display: flex
+          flex-wrap: wrap
+          gap: 1rem
+          width: 100%
+          justify-content: space-between
+
+          a
+               color: App.$caiLightBrown
+
+.info
+     display: flex
+     flex-direction: column
+     gap: 1.5rem
+
+.logo
+     width: min(100%, 17rem)
+     font-size: max(2.5rem,6.25vw)
+     line-height: max(2.5rem,6.75vw)
+     color: App.$caiLightBrown
+
+.description
+     padding: 1.25rem
+     border-radius: 0.625rem
+     border: 2px solid App.$caiLightBrown
+     max-width: 50rem
+
+.additionals
+     width: 100%
+     ul
+          align-items: end
+          display: flex
+          flex-direction: column
+          gap: 0.5rem
+
+          li
+               text-align: end
+               color: App.$caiLightBrown
+
+          button
+               color: App.$caiLightBrown
+               font: App.$mobileP

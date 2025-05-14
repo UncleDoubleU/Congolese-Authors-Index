@@ -14,7 +14,7 @@ $caiGrey: #DBCEC3
 $navItemsText: 400 1.125rem "helvetica", sans-serif
 $logoText: 400 1.125rem/1.25rem "helvetica", sans-serif
 $mobileH1: italic 300 21vw/3rem "Garamond", serif
-$mobileP: normal 300 0.875rem/1.3125rem "helvetica", sans-serif
+$mobileP: normal 300 0.9375rem/1.3125rem "helvetica", sans-serif
 
 html
      min-height: 100vh
@@ -24,6 +24,10 @@ html
           text-decoration: none
      a
           text-decoration: none
+
+     button
+          border: none
+          background: none
 
 body
      background-color: $caiDarkBrown
@@ -42,7 +46,7 @@ header
      top: 0
 
 main
-     width: 100vw
+     width: 100%
      min-height: 100vh
      padding: 1.875rem
 
@@ -52,8 +56,14 @@ h1
      margin-top: 6.5rem
 
 footer
-
+     width: 100%
+     min-width: min-content
+     min-height: 40rem
+     display: grid
+     grid-template-rows: repeat(3,auto)
+     gap: 2.5rem
      height: min-content
-     background-color: $caiBeige
+     background-color: $caiGrey
      color: $caiLightBrown
-     padding: 1rem 1.25rem
+     padding: 6.75rem 1.25rem 1rem
+     margin-bottom: 0
