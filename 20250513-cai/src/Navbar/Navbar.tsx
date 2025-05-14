@@ -1,15 +1,29 @@
+import { useState } from "react";
 import styles from "./Navbar.module.sass";
 
 function Navbar() {
+  const [menuText, setMenuText] = useState("menu");
+  const [navListClass, setNavListClass] = useState(`${styles.navList}`);
+  const [isActive, setIsActive] = useState(false);
+
   function handleClick() {
-    const liEl = document.getElementById("nav-list");
-    const menuBtn = document.getElementById("menu-btn");
-    if (liEl && menuBtn) {
-      liEl.style.display === "inline-flex"
-        ? (liEl.style.display = "none") && (menuBtn.textContent = "menu")
-        : (liEl.style.display = "inline-flex") &&
-          (menuBtn.textContent = "close");
+    const activeClass = `${styles.navList + " " + styles.activeNavList}`;
+    const inactiveClass = `${styles.navList}`;
+
+    setIsActive((isActive) => !isActive);
+
+    if (isActive) {
+      setMenuText("menu");
+      setNavListClass(inactiveClass);
+    } else {
+      setMenuText("close");
+      setNavListClass(activeClass);
     }
+  }
+
+  function handleListClick() {
+    const inactiveClass = `${styles.navList}`;
+    setNavListClass(inactiveClass);
   }
 
   return (
@@ -17,14 +31,16 @@ function Navbar() {
       <a className={styles.navLogo} href="/">
         Congolese Authors Index
       </a>
+
       <button id="menu-btn" onClick={handleClick} className={styles.mobileBtn}>
-        menu
+        {menuText}
       </button>
-      <ul id="nav-list" className={styles.navList}>
-        <li className={styles.navItem}>
+
+      <ul id="nav-list" className={navListClass}>
+        <li onClick={handleListClick} className={styles.navItem}>
           <a href="/">index</a>
         </li>
-        <li className={styles.navItem}>
+        <li onClick={handleListClick} className={styles.navItem}>
           <a href="/">about</a>
         </li>
       </ul>
