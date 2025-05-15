@@ -6,20 +6,21 @@
      width: min(80%,50rem)
      // max-width: 100%
      min-width: 100px
-     height: 3.5rem
-     padding: 1.5rem
+     height: 3rem
+     padding: 1rem 0.5rem 1rem 2.125rem
      justify-content: space-between
      align-items: center
      border-radius: 3.125rem
      border: App.$stroke
      background: App.$caiPink
 
-     @media (500px < width < 1024px)
+     @media (500px <= width <= 1024px)
+          padding: 0.5rem 0.5rem 0.5rem 2.125rem
           width: 80%
           min-width: 500px
-          padding: 0.6875rem 0.5rem 0.6875rem 1.5rem
 
      @media (max-width: 500px)
+          height: 3.5rem
           width: 100%
           padding: 0.6875rem 0.5rem 0.6875rem 1.5rem
 
@@ -32,6 +33,7 @@
 .navBtn
      display: none
      color: App.$caiDarkBrown
+
      @media (max-width: 768px)
           padding: 0.625rem 1.25rem
           display: block
@@ -42,24 +44,36 @@
 
 .navList
      display: flex
-     gap: 3rem
+     gap: 2.5rem
      justify-content: end
      align-items: center
-     width: 40%
+
+     a
+          padding: 0.875rem 1.75rem
+          border-radius: 1.5625rem
+          color: App.$caiDarkBrown
+          &:active
+               background-color: App.$caiGrey
+          &:hover,&:focus-visible
+               background-color: App.$caiDarkBrown
+               color: App.$caiLightBrown
+
+     @media (500px <= width <= 1024px)
+          gap: 0.75rem
 
      @media (max-width: 768px)
           display: none
 
 .active
      position: absolute
-     top: 4rem
+     top: 3.5rem
      left: 100%
      transform: translateX(-100%)
      display: inline-flex
      padding: 0.875rem 0.5rem
      flex-direction: column
      align-items: flex-end
-     gap: 1.5rem
+     gap: 2.5rem
      border-radius: 1.5625rem
      border: 2px solid App.$caiDarkBrown
      background: App.$caiPink
