@@ -34,13 +34,13 @@ function Navbar() {
     setIsClicked(false);
   }
 
-  const showMenu = width < 768 ? !isClicked : true;
+  const showMenu = width <= 768 ? !isClicked : true;
   const ulClass = showMenu ? `${styles.navList}` : `${styles.active}`;
 
   return (
     <nav className={styles.nav}>
-      <a className={styles.topNavLogo} href="#">
-        Congolese Authors Index
+      <a className={styles.navLogo} href="#">
+        Congolese Authors&nbsp;Index
       </a>
       <button onClick={navBtnClick} className={styles.navBtn}>
         {btnText}
