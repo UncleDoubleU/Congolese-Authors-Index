@@ -3,7 +3,7 @@
      padding: 0
      box-sizing: border-box
 
-$breakpoint-small: 500px
+$small: 500px
 
 $caiDarkBrown: #110404
 $caiLightBrown: #915E2B
@@ -11,10 +11,12 @@ $caiPink: #D33FA4
 $caiBeige: #E8C48F
 $caiGrey: #DBCEC3
 
+$stroke: 2px solid $caiDarkBrown
+
 $navItemsText: 400 1.125rem "helvetica", sans-serif
 $logoText: 400 1.125rem/1.25rem "helvetica", sans-serif
 $mobileH1: italic 300 21vw/3rem "Garamond", serif
-$mobileP: normal 300 0.9375rem/1.3125rem "helvetica", sans-serif
+$mobileP: normal 400 0.9375rem/1.3125rem "helvetica", sans-serif
 
 html
      min-height: 100vh
@@ -28,6 +30,8 @@ html
      button
           border: none
           background: none
+          cursor: pointer
+          font: $mobileP
 
 body
      background-color: $caiDarkBrown
@@ -36,13 +40,14 @@ body
      font: $mobileP
 
 header
-     width: 100vw
+     width: 100%
      position: fixed
      z-index: 10
      display: flex
      align-items: center
      justify-content: center
      padding: 1rem 0.75rem
+
      top: 0
 
 main

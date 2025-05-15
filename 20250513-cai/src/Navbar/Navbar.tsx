@@ -1,59 +1,45 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Navbar.module.sass";
 
 function Navbar() {
-  const [menuText, setMenuText] = useState("menu");
-  const [menuBtnClass, setMenuBtnClass] = useState(`${styles.mobileBtn}`);
-  const [navListClass, setNavListClass] = useState(`${styles.navList}`);
-  const [isActive, setIsActive] = useState(false);
-  // const [isVisible, setIsVisible] = useState(true);
-  const width = window.innerWidth;
-  const isSmlScrn = width < 500;
+  const [navClass, setNavClass] = useState(`${styles.nav}`);
+  const [listClass, setListClass] = useState(`${styles.hidden}`);
+  const [btnText, setBtnText] = useState("menu");
+  const [isClicked, setIsClicked] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
 
   function handleClick() {
-    const activeClass = `${styles.activeNavList}`;
-    const inactiveClass = `${styles.navList}`;
+    setIsClicked((isClicked) => !isClicked);
+  }
 
-    setIsActive((isActive) => !isActive);
-
-    if (isActive) {
-      setMenuText("menu");
-      setNavListClass(inactiveClass);
+  useEffect(() => {
+    if (!isClicked) {
+      setBtnText("menu");
+      setListClass(`${styles.hidden}`);
     } else {
-      setMenuText("close");
-      setNavListClass(activeClass);
+      setBtnText("close");
+      setListClass(`${styles.ul}`);
     }
-  }
-  // function mediaSmallScren() {
-  //   setIsVisible((isVisible) => !isVisible);
-
-  //   if (isSmlScrn) {
-  //     setNavListClass(`${styles.NavListSmallScreen}`);
-  //     setMenuBtnClass(styles.mobileBtnSmallScreen);
-  //   }
-  // }
-
-  function handleListClick() {
-    const inactiveClass = `${styles.navList}`;
-    setNavListClass(inactiveClass);
-  }
+  }, [isClicked]);
 
   return (
     <nav className={styles.nav}>
-      <a className={styles.navLogo} href="/">
+      <a className={styles.topNavLogo} href="#">
         Congolese Authors Index
       </a>
-
-      <button id="menu-btn" onClick={handleClick} className={menuBtnClass}>
-        {menuText}
+      <button onClick={handleClick} className={styles.navBtn}>
+        {btnText}
       </button>
-
-      <ul id="nav-list" className={navListClass}>
-        <li onClick={handleListClick} className={styles.navItem}>
-          <a href="/">index</a>
+      <ul className={listClass}>
+        <li>
+          <a className={styles.navLink} href="#">
+            Index
+          </a>
         </li>
-        <li onClick={handleListClick} className={styles.navItem}>
-          <a href="/">about</a>
+        <li>
+          <a className={styles.navLink} href="#">
+            About
+          </a>
         </li>
       </ul>
     </nav>
