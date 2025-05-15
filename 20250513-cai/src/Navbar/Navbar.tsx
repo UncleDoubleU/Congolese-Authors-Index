@@ -3,34 +3,39 @@ import styles from "./Navbar.module.sass";
 
 function Navbar() {
   const [navClass, setNavClass] = useState(`${styles.nav}`);
-  const [listClass, setListClass] = useState(`${styles.hidden}`);
   const [btnText, setBtnText] = useState("menu");
   const [isClicked, setIsClicked] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
-  function handleClick() {
-    setIsClicked((isClicked) => !isClicked);
-  }
+  useEffect(() => {
+    setBtnText(isClicked ? "close" : "menu");
+  }, [isClicked]);
 
   useEffect(() => {
-    if (!isClicked) {
-      setBtnText("menu");
-      setListClass(`${styles.hidden}`);
-    } else {
-      setBtnText("close");
-      setListClass(`${styles.ul}`);
-    }
-  }, [isClicked]);
+    window.addEventListener("resize", handleResize);
+  }, []);
+
+  function handleResize() {
+    setWidth(window.innerWidth);
+  }
+
+  function navBtnClick() {
+    setIsClicked((c) => !c);
+  }
+
+  const showMenu = width < 768 ? !isClicked : true;
+  const ulClass = showMenu ? `${styles.navList}` : `${styles.active}`;
 
   return (
     <nav className={styles.nav}>
       <a className={styles.topNavLogo} href="#">
         Congolese Authors Index
       </a>
-      <button onClick={handleClick} className={styles.navBtn}>
+      <button onClick={navBtnClick} className={styles.navBtn}>
         {btnText}
       </button>
-      <ul className={listClass}>
+
+      <ul className={ulClass}>
         <li>
           <a className={styles.navLink} href="#">
             Index

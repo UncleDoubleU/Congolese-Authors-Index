@@ -1,50 +1,48 @@
 @use '../App'
 
-// XS screens
 .nav
      position: relative
      display: flex
-     align-items: center
-     justify-content: space-between
-     width: min(100%,25rem)
+     width: min(80%,50rem)
      max-width: 100%
-     height: 3.5rem
+     min-width: 100px
      padding: 0.6875rem 1.5rem
+     justify-content: space-between
+     align-items: center
      border-radius: 3.125rem
      border: App.$stroke
      background: App.$caiPink
-     @media screen and ( min-width: 500px )
-          width: 25rem
-     @media screen and ( min-width: 1024px )
-          width: 50rem
+     @media (max-width: 1024px)
+          width: 80%
 
-.topNavLogo
-     font: App.$logoText
-     color: App.$caiDarkBrown
-     width: 60%
+     @media (max-width: 500px)
+          width: 100%
 
-.ul
-     position: absolute
+.navBtn
+     display: none
+     @media (max-width: 768px)
+          display: block
+
+.navList
      display: flex
-     flex-direction: column
-     top: 3.75rem
+     gap: 3rem
+     justify-content: end
+     align-items: center
+     width: 40%
+
+     @media (max-width: 768px)
+          display: none
+
+.active
+     position: absolute
+     top: 5rem
      left: 100%
      transform: translateX(-100%)
-     border-radius: 1.25rem
-     border: App.$stroke
-     background: #D33FA4
-     padding: 1.25rem 1.75rem
+     display: inline-flex
+     padding: 1.25rem 1.875rem
+     flex-direction: column
      align-items: flex-end
-     gap: 1rem
-
-.navLink
-
-     color: App.$caiDarkBrown
-     &:hover, &:focus
-
-          opacity: 0.5
-
-.hidden
-     display: none
-
-// S screen
+     gap: 2.5rem
+     border-radius: 1.5625rem
+     border: 2px solid #110404
+     background: #D33FA4
