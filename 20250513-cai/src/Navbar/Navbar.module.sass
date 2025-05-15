@@ -12,6 +12,7 @@
      border-radius: 3.125rem
      border: App.$stroke
      background: App.$caiPink
+
      @media (max-width: 1024px)
           width: 80%
 
@@ -20,6 +21,7 @@
 
 .navBtn
      display: none
+     color: App.$caiDarkBrown
      @media (max-width: 768px)
           display: block
 
@@ -35,14 +37,23 @@
 
 .active
      position: absolute
-     top: 5rem
+     top: 4rem
      left: 100%
      transform: translateX(-100%)
      display: inline-flex
-     padding: 1.25rem 1.875rem
+     padding: 0.875rem 0.5rem
      flex-direction: column
      align-items: flex-end
-     gap: 2.5rem
+     gap: 1.5rem
      border-radius: 1.5625rem
      border: 2px solid #110404
      background: #D33FA4
+     a
+          color: App.$caiDarkBrown
+
+     @media (max-width: 768px)
+          a
+               border-radius: 1.875rem
+               padding: 0.625rem 1.25rem
+               &:hover, &:focus-visible
+                    background-color: App.$caiGrey

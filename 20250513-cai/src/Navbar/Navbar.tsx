@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import styles from "./Navbar.module.sass";
 
 function Navbar() {
-  const [navClass, setNavClass] = useState(`${styles.nav}`);
+  // const [navClass, setNavClass] = useState(`${styles.nav}`);
+
   const [btnText, setBtnText] = useState("menu");
   const [isClicked, setIsClicked] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
@@ -13,14 +14,24 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   function handleResize() {
     setWidth(window.innerWidth);
+    setIsClicked(false);
   }
 
   function navBtnClick() {
     setIsClicked((c) => !c);
+  }
+
+  function linkClick() {
+    setIsClicked((c) => !c);
+  }
+
+  function handleScroll() {
+    setIsClicked(false);
   }
 
   const showMenu = width < 768 ? !isClicked : true;
@@ -37,12 +48,12 @@ function Navbar() {
 
       <ul className={ulClass}>
         <li>
-          <a className={styles.navLink} href="#">
+          <a onClick={linkClick} className={styles.navLink} href="#">
             Index
           </a>
         </li>
         <li>
-          <a className={styles.navLink} href="#">
+          <a onClick={linkClick} className={styles.navLink} href="#">
             About
           </a>
         </li>
