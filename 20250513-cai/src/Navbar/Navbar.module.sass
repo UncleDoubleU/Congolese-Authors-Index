@@ -4,8 +4,8 @@
      position: relative
      display: flex
      width: min(80%,50rem)
-     // max-width: 100%
-     min-width: 100px
+
+     min-width: 200px
      height: 3rem
      padding: 1rem 0.5rem 1rem 2.125rem
      justify-content: space-between
@@ -15,11 +15,11 @@
      background: App.$caiPink
 
      @media (500px <= width <= 1024px)
-          padding: 0.5rem 0.5rem 0.5rem 2.125rem
+          // padding: 0.5rem 0.5rem 0.5rem 2.125rem
           width: 80%
           min-width: 500px
 
-     @media (max-width: 500px)
+     @media (width < 500px)
           height: 3.5rem
           width: 100%
           padding: 0.6875rem 0.5rem 0.6875rem 1.5rem
@@ -58,7 +58,7 @@
                background-color: App.$caiDarkBrown
                color: App.$caiLightBrown
 
-     @media (500px <= width <= 1024px)
+     @media (768px <= width <= 1024px)
           gap: 0.75rem
 
      @media (max-width: 768px)
