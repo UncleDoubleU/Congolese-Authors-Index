@@ -38,7 +38,7 @@ function Navbar() {
   const ulClass = showMenu ? `${styles.navList}` : `${styles.active}`;
 
   return (
-    <nav className={styles.nav}>
+    <nav role="main navigation" className={styles.nav}>
       <a className={styles.navLogo} href="#">
         Congolese Authors&nbsp;Index
       </a>

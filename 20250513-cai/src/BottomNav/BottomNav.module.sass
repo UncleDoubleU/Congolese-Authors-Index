@@ -1,0 +1,31 @@
+@use "../App"
+
+.container
+     width: 100%
+     display: flex
+     flex-wrap: wrap
+     justify-content: space-between
+     padding: 1.875rem
+
+     ul
+          background: App.$caiPink
+          padding: 0.4rem 1.25rem
+          justify-content: center
+          align-items: center
+          gap: 0.325rem
+          border-radius: 3.125rem
+          border: App.$stroke
+
+     input
+          width: 100%
+          border-radius: 1.875rem
+          border: App.$stroke
+          background: App.$caiPink
+          display: flex
+          padding: 0.4rem 1.25rem
+          justify-content: flex-end
+          align-items: center
+          gap: 0.625rem
+          
+          &::placeholder, &:-moz-placeholder
+               color: App.$caiDarkBrown

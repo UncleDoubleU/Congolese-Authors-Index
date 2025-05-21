@@ -2,7 +2,7 @@ import styles from "./Footer.module.sass";
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer role="footer" className={styles.footer}>
       <section className={styles.socialMediaCont}>
         <article className={styles.socialMedia}>
           <ul>

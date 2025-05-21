@@ -1,16 +1,42 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./DragBox.module.sass";
 
 function DragBox() {
-  const [boxPosition, setBoxPosition] = useState("");
+  const [boxX, setBoxX] = useState(0);
+  const [boxY, setBoxY] = useState(0);
+  const [isDragged, setIsDragged] = useState(false);
+  const boxRef = useRef<HTMLDivElement>(null);
+  const contRef = useRef<HTMLDivElement>(null);
 
-  // function dragMousDown(e) {
-  //   e
-  // }
+  const [boxPos, setBoxPos] = useState({
+    startX: 0,
+    startY: 0,
+    lastX: 0,
+    lastY: 0,
+  });
+
+  useEffect(() => {
+    if (!contRef.current || !boxRef.current) return;
+
+    const cont = contRef.current;
+    const box = boxRef.current;
+
+    box.addEventListener("mousedown")
+  });
+
+  function handleMouseDown(e) {
+    setIsDragged(true);
+    console.log(isDragged);
+  }
+
   return (
     <main className={styles.main}>
-      <div className={styles.container}>
-        <div className={styles.box}></div>
+      <div
+        onMouseDown={handleMouseDown}
+        ref={contRef}
+        className={styles.container}
+      >
+        <div ref={boxRef} className={styles.box}></div>
       </div>
     </main>
   );
