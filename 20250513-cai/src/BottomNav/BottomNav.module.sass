@@ -5,6 +5,10 @@
      font: App.$mobileP
      opacity: 1
 
+@mixin h3-base
+     display: flex
+     gap: 0.65rem
+
 .container
      width: 100%
      display: flex
@@ -24,7 +28,7 @@
      button
           display: flex
           height: max-content
-          width: 8.5rem
+          width: max-content
           padding: 0.3125rem 1.25rem
           justify-content: center
           align-items: center
@@ -33,30 +37,6 @@
           border: App.$stroke
           background: App.$caiPink
           font: App.$mobileP
-
-     .searchToolCont
-          display: flex
-          height: max-content
-          background: App.$caiPink
-          border-radius: 3.125rem
-          border: App.$stroke
-          justify-content: center
-          align-items: center
-          padding: 0.4rem 1.25rem
-          width: max-content
-
-          h3
-               color: App.$caiDarkBrown
-               font: App.$mobileP
-
-          li
-
-               margin: 0.65rem 0
-               &:first-child
-                    margin-top: 5rem
-
-               a
-                    color: App.$caiDarkBrown
 
      input
           width: 100%
@@ -80,3 +60,48 @@
 
           &::-webkit-input-placeholder
                @include search-placeholder
+.hidden
+     display: none
+
+.searchToolCont
+     display: flex
+     flex-direction: columns
+     height: max-content
+     background: App.$caiPink
+     border-radius: 3.125rem
+     border: App.$stroke
+     justify-content: left
+     align-items: center
+     padding: 0.4rem 1.25rem
+     width: max-content
+     cursor: pointer
+
+.listH3
+     @include h3-base
+
+.listH3Active
+     @include h3-base
+     margin: 0.75rem
+
+.listTitle
+     color: App.$caiDarkBrown
+     font: App.$mobileP
+
+.listTitleActive
+     color: App.$caiDarkBrown
+     font: App.$mobileH3
+
+.list
+     display: flex
+     flex-direction: columns
+     height: min-content
+     width: max-content
+
+.listItem
+     margin: 0.75rem 0
+
+     &:first-child
+          margin-top: 1.5rem
+
+     a
+          color: App.$caiDarkBrown
