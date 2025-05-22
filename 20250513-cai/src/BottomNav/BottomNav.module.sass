@@ -1,20 +1,59 @@
 @use "../App"
 
+@mixin search-placeholder
+     color: App.$caiDarkBrown
+     font: App.$mobileP
+     opacity: 1
+
 .container
      width: 100%
      display: flex
+     flex-direction: column
      flex-wrap: wrap
+     gap: 0.625rem
      justify-content: space-between
-     padding: 1.875rem
+     padding: 0 1.875rem
+     position: fixed
+     bottom: 0
+     margin-bottom: 1rem
+     z-index: 9
 
-     ul
-          background: App.$caiPink
-          padding: 0.4rem 1.25rem
+     button
+          display: flex
+          height: max-content
+          width: 8.5rem
+          padding: 0.3125rem 1.25rem
           justify-content: center
           align-items: center
-          gap: 0.325rem
+          gap: 0.625rem
+          border-radius: 1.875rem
+          border: App.$stroke
+          background: App.$caiPink
+          font: App.$mobileP
+
+     .searchToolCont
+          display: flex
+          height: max-content
+          background: App.$caiPink
           border-radius: 3.125rem
           border: App.$stroke
+          justify-content: center
+          align-items: center
+          padding: 0.4rem 1.25rem
+          width: max-content
+
+          h3
+               color: App.$caiDarkBrown
+               font: App.$mobileP
+
+          li
+
+               margin: 0.65rem 0
+               &:first-child
+                    margin-top: 5rem
+
+               a
+                    color: App.$caiDarkBrown
 
      input
           width: 100%
@@ -26,6 +65,15 @@
           justify-content: flex-end
           align-items: center
           gap: 0.625rem
-          
-          &::placeholder, &:-moz-placeholder
-               color: App.$caiDarkBrown
+
+          &::placeholder
+               @include search-placeholder
+
+          &::-moz-placeholder
+               @include search-placeholder
+
+          &:-ms-input-placeholder
+               @include search-placeholder
+
+          &::-webkit-input-placeholder
+               @include search-placeholder
