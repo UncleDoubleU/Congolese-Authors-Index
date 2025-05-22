@@ -12,11 +12,14 @@
      flex-wrap: wrap
      gap: 0.625rem
      justify-content: space-between
-     padding: 0 1.875rem
+     padding: 1rem 0.75rem
      position: fixed
+     left: 50%
+     transform: translateX(-50%)
      bottom: 0
-     margin-bottom: 1rem
      z-index: 9
+     @media (App.$small <= width <= App.$medium)
+          width: 80%
 
      button
           display: flex
