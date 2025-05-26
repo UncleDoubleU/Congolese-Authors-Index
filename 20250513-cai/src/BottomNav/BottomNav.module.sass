@@ -25,7 +25,11 @@
 
      max-width: 100%
      max-height: 92vh
-     @media (App.$small <= width <= App.$medium)
+     @media (App.$smallMedium <= width)
+          display: grid
+          grid-template-columns: 1fr 5fr
+          grid-template-rows: repeat(3, auto)
+          gap: 0.5rem
           width: 80%
 
      button
@@ -40,6 +44,10 @@
           border: App.$stroke
           background: App.$caiPink
           font: App.$mobileP
+          @media (App.$smallMedium <= width)
+               grid-column: 1/2
+               grid-row: 3/4
+               width: 100%
 
      input
           width: 100%
@@ -54,44 +62,16 @@
 
           &::placeholder
                @include search-placeholder
-
           &::-moz-placeholder
                @include search-placeholder
-
           &:-ms-input-placeholder
                @include search-placeholder
-
           &::-webkit-input-placeholder
                @include search-placeholder
+
+          @media (App.$smallMedium <= width)
+               grid-column: 2/3
+               grid-row: 3/4
+               width: 100%
 .hidden
      display: none
-
-.listH3
-     @include h3-base
-
-.listH3Active
-     @include h3-base
-     margin: 0.75rem
-
-.listTitle
-     color: App.$caiDarkBrown
-     font: App.$mobileP
-
-.listTitleActive
-     color: App.$caiDarkBrown
-     font: App.$mobileH3
-
-.list
-     display: flex
-     flex-direction: columns
-     height: min-content
-     width: max-content
-
-.listItem
-     margin: 0.75rem 0
-
-     &:first-child
-          margin-top: 1.5rem
-
-     a
-          color: App.$caiDarkBrown
