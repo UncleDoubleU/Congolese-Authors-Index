@@ -22,6 +22,8 @@
      transform: translateX(-50%)
      bottom: 0
      z-index: 9
+     max-height: 95vh
+     max-width: 100%
      @media (App.$small <= width <= App.$medium)
           width: 80%
 
@@ -62,19 +64,6 @@
                @include search-placeholder
 .hidden
      display: none
-
-.searchToolCont
-     display: flex
-     flex-direction: columns
-     height: max-content
-     background: App.$caiPink
-     border-radius: 3.125rem
-     border: App.$stroke
-     justify-content: left
-     align-items: center
-     padding: 0.4rem 1.25rem
-     width: max-content
-     cursor: pointer
 
 .listH3
      @include h3-base

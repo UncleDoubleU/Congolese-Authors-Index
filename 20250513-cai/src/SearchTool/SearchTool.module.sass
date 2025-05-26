@@ -1,0 +1,48 @@
+@use "../App"
+
+@mixin h3-base
+     display: flex
+     gap: 0.5rem
+     align-items: center
+     color: App.$caiDarkBrown
+
+.searchToolCont
+     display: flex
+     height: max-content
+     background: App.$caiPink
+     border-radius: 3.125rem
+     border: App.$stroke
+     justify-content: left
+     align-items: center
+     padding: 0.65rem 1.25rem
+     width: max-content
+     cursor: pointer
+
+     &.active
+          border-radius: 1.5625rem
+
+.listH3
+     @include h3-base
+     font: App.$mobileP
+
+.listH3Active
+     @include h3-base
+     font: App.$mobileH3
+
+.list
+     display: flex
+     flex-direction: column
+     height: min-content
+     width: max-content
+
+.listItem
+     margin: 0.5rem 0
+     color: App.$caiDarkBrown
+     cursor: pointer
+
+     &:first-child
+          margin-top: 1.5rem
+
+.hidden
+
+     display: none
