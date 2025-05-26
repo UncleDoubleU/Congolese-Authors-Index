@@ -16,10 +16,13 @@
      align-items: center
      padding: 0.65rem 1.25rem
      width: max-content
+
      cursor: pointer
 
      &.active
           border-radius: 1.5625rem
+          max-height: 50vh
+          overflow: auto
 
 .listH3
      @include h3-base
@@ -36,12 +39,12 @@
      width: max-content
 
 .listItem
-     margin: 0.5rem 0
+     margin: 0.275rem 0
      color: App.$caiDarkBrown
      cursor: pointer
 
      &:first-child
-          margin-top: 1.5rem
+          margin-top: 1.25rem
 
 .hidden
 

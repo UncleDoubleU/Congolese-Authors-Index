@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import styles from "./BottomNav.module.sass";
 import SearchTool from "../SearchTool/SearchTool";
 
@@ -7,6 +7,10 @@ function BottomNav() {
 
   const [isClicked, setIsClicked] = useState(false)
   const [btnText, setBtnText] = useState("search tools");
+
+  useEffect(() => {
+    setBtnText(!isClicked ? "search tools" : "close")
+  }, [isClicked])
 
   const filters = [
     { id: 0, title: "by genre" },
@@ -24,18 +28,8 @@ function BottomNav() {
     { id: 4, title: "oldest first" },
   ];
 
-  useEffect(() => {
-    setBtnText(!isClicked ? "search tools" : "close")
-
-
-
-  }, [isClicked])
-
-
   function handleClick() {
     setIsClicked((c) => !c)
-
-
   }
 
 
@@ -43,15 +37,15 @@ function BottomNav() {
     <nav role="search bar" className={styles.container}>
       {isClicked ?
         <>
-          <SearchTool name="filters" filters={filters} />
-          <SearchTool name="sort by" filters={sorting} />
+          <SearchTool name="filters" items={filters} />
+          <SearchTool name="sort by" items={sorting} />
         </> : null}
 
 
       <button onClick={handleClick}>{btnText}</button>
       <input name="search bar" type="search" placeholder="search" />
     </nav>
-  ); 3
+  );
 }
 
 export default BottomNav;

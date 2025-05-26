@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./SearchTool.module.sass";
 
-function SearchTool({ name, filters }) {
+function SearchTool({ name, items }) {
   const [isClicked, setIsClicked] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
   const [listStyle, setListStyles] = useState(`${styles.hidden}`)
   const [listH3Syle, setListH3Style] = useState(`${styles.listH3}`)
   const [contStyle, setContStyle] = useState(`${styles.searchToolCont}`)
+  const contRef = useRef(null)
 
   useEffect(() => {
     setListStyles(isClicked ? `${styles.list}` : `${styles.hidden}`)
@@ -14,17 +16,38 @@ function SearchTool({ name, filters }) {
 
   }, [isClicked])
 
-  const listItems = filters.map((filter) => (
-    <li key={filter.id} className={styles.listItem}>{filter.title}</li>
+  useEffect(() => {
+
+    document.addEventListener("click", handleOutsideClick)
+
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick)
+    }
+  });
+
+
+
+  const listItems = items.map((item) => (
+    <li key={item.id} className={styles.listItem}>{item.title}</li>
   ));
 
 
+
+
   function handleClick() {
-    setIsClicked((c) => !c)
+    setIsClicked((c) => !c);
+
   }
 
+  function handleOutsideClick(e) {
+    if (!contRef.current.contains(e.target)) { setIsClicked(false) };
+    console.log(e.target);
+  }
+
+
   return (
-    <section onClick={handleClick} role="button" className={contStyle}>
+    <section key={name} ref={contRef} onClick={handleClick} role="button" className={contStyle}>
       <article>
         <h3 className={listH3Syle}>
           <span>{name}</span>
@@ -43,6 +66,7 @@ function SearchTool({ name, filters }) {
             </svg>
           </span>
         </h3>
+
         <ul className={listStyle}>{listItems}</ul>
       </article>
     </section>
