@@ -42,7 +42,6 @@ function SearchTool({ name, items }) {
 
   function handleOutsideClick(e) {
     if (!contRef.current.contains(e.target)) { setIsClicked(false) };
-    console.log(e.target);
   }
 
 
