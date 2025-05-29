@@ -3,6 +3,24 @@
      padding: 0
      box-sizing: border-box
 
+@font-face
+     font-family: "Diolce"
+     src: url("./assets/fonts/Diolce-Regular.woff") format("woff")
+     src: url("./assets/fonts/Diolce-Regular.otf") format("opentype")
+     src: url("./assets/fonts/Diolce-Regular.eot") format("embedded-opentype")
+     src: url("./assets/fonts/Diolce-Regular.ttf") format("truetype")
+     font-style: italic
+     font-weight: normal
+@font-face
+     font-family: "BagossCondensed"
+     src: url("./assets/fonts/BagossCondensedTRIAL-Regular.woff") format("woff")
+     src: url("./assets/fonts/BagossCondensedTRIAL-Regular.woff2") format("woff2")
+     src: url("./assets/fonts/BagossCondensedTRIAL-Regular.otf") format("opentype")
+     src: url("./assets/fonts/BagossCondensedTRIAL-Regular.eot") format("embedded-opentype")
+     src: url("./assets/fonts/BagossCondensedTRIAL-Regular.ttf") format("truetype")
+     font-style: normal
+     font-weight: normal
+
 // media queries
 $extraSmall: 320px
 $small: 500px
@@ -22,11 +40,11 @@ $stroke: 2px solid $caiDarkBrown
 $ChildMinWidth: max( 100%, 200px)
 
 // Type 
-$navItemsText: 400 1.125rem "helvetica", sans-serif
-$logoText: 400 1.25rem/1.25rem "helvetica", sans-serif
-$mobileH1: italic 300 21vw/3rem "Garamond", serif
-$mobileH3: normal 300 1.5rem "helvetica", sans-serif
-$mobileP: normal 400 1rem/1.3125rem "helvetica", sans-serif
+$navItemsText: 1.125rem "BagossCondensed", sans-serif
+$logoText: 1.25rem/1.25rem "BagossCondensed", sans-serif
+$mobileH1: italic 21vw/3rem "Diolce", serif
+$mobileH3: normal 1.5rem "BagossCondensed", sans-serif
+$mobileP: normal 1rem/1.3125rem "BagossCondensed", sans-serif
 
 html
      min-height: 100vh

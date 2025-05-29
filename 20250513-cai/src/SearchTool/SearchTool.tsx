@@ -7,6 +7,7 @@ function SearchTool({ name, items }) {
   const [listStyle, setListStyles] = useState(`${styles.hidden}`)
   const [listH3Syle, setListH3Style] = useState(`${styles.listH3}`)
   const [contStyle, setContStyle] = useState(`${styles.searchToolCont}`)
+  const [width, setWidth] = useState(window.innerWidth)
   const contRef = useRef(null)
 
   useEffect(() => {
@@ -17,14 +18,21 @@ function SearchTool({ name, items }) {
   }, [isClicked])
 
   useEffect(() => {
-
     document.addEventListener("click", handleOutsideClick)
-
 
     return () => {
       document.removeEventListener("click", handleOutsideClick)
     }
-  });
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
 
 
 
@@ -44,9 +52,16 @@ function SearchTool({ name, items }) {
     if (!contRef.current.contains(e.target)) { setIsClicked(false) };
   }
 
+  function handleResize() {
+    setWidth(window.innerWidth)
+  }
+
+  
+
 
   return (
     <section key={name} ref={contRef} onClick={handleClick} role="button" className={contStyle}>
+
       <article>
         <h3 className={listH3Syle}>
           <span>{name}</span>
