@@ -8,7 +8,7 @@ function BottomNav() {
   const [btnText, setBtnText] = useState("tools");
 
   useEffect(() => {
-    setBtnText(!isClicked ? "search tools" : "close")
+    setBtnText(!isClicked ? "tools" : "close")
   }, [isClicked])
 
   const filters = [
