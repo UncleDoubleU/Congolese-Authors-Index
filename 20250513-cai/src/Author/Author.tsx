@@ -1,12 +1,17 @@
 import styles from "./Author.module.sass"
 import { useState, useEffect } from "react"
 
-function Author({ fullName, newItem }) {
+interface AuthorProps {
+     fullName: string;
+     newItem: boolean;
+}
+
+function Author({ fullName, newItem }: AuthorProps) {
      const [btnText, setBtnText] = useState("+")
      const [width, setWidth] = useState(window.innerWidth)
 
      useEffect(() => {
-          setBtnText(width < 500 ? "+" : "more info")
+          setBtnText(width < 768 ? "+" : "more info")
      })
 
      useEffect(() => {
