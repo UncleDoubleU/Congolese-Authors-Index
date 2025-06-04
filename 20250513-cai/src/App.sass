@@ -20,13 +20,21 @@ $caiGrey: #DBCEC3
 // elements
 $stroke: 2px solid $caiDarkBrown
 $ChildMinWidth: max( 100%, 200px)
+$radiusBoxes: 0.625rem
+$strokeBoxes: 1.5px solid #915E2B
 
 // Type 
-$navItemsText: 400 1.125rem "helvetica", sans-serif
-$logoText: 400 1.25rem/1.25rem "helvetica", sans-serif
-$mobileH1: italic 300 21vw/3rem "Garamond", serif
-$mobileH3: normal 300 1.5rem "helvetica", sans-serif
-$mobileP: normal 400 1rem/1.3125rem "helvetica", sans-serif
+$navItemsText: 1.125rem "BagossCondensed", sans-serif
+$logoText: 1.25rem/1.25rem "BagossCondensed", sans-serif
+$mobileH1: italic 21vw "Diolce", serif
+$mobileH2: normal 1.25rem "BagossCondensed", sans-serif
+$mobileH3: normal 1.5rem "BagossCondensed", sans-serif
+$mobileH32: normal 3.5rem "BagossCondensed", sans-serif
+$mobileP: normal 1rem/1.3125rem "BagossCondensed", sans-serif
+$mobileP2: normal 0.85rem/1rem "BagossCondensed", sans-serif
+
+$smallH1: italic 25vw/25vw "Diolce", serif
+$smallH2: normal 1.625rem/2rem "BagossCondensed", sans-serif
 
 html
      min-height: 100vh
@@ -74,6 +82,8 @@ h1
      font: $mobileH1
      text-align: right
      margin-top: 6.5rem
+     @media (width >= $small)
+          font: $smallH1
 
 footer
 
