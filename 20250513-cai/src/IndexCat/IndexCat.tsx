@@ -1,4 +1,5 @@
 import styles from "./IndexCat.module.sass";
+import { useState, useEffect } from "react";
 
 // interface CatProp {
 //      letter: string;
@@ -11,15 +12,25 @@ interface IndexCatProps {
 }
 
 function IndexCat({ category }: IndexCatProps) {
-     // if (cat) {
-     //      const catList = cat.map((item) => <h3 key={item.index} className={styles.h3}>{item.letter}</h3>);
-     // }
+     const [width, setWidth] = useState(window.innerWidth);
+
+     useEffect(() => {
+          window.addEventListener("resize", handleWidth)
+
+          return () => {
+               window.removeEventListener("resize", handleWidth)
+          }
+     }, [])
+
+     function handleWidth() {
+          setWidth(window.innerWidth)
+     }
+
      return (
-          <div className={styles.container}>
-               <h3 className={styles.h3}>{category}</h3>
-
-               {/* {cat ? cat.map((item) => (<h3 key={item.index} className={styles.h3}>{item.letter}</h3>)) : null} */}
-
+          <div aria-label="category" className={styles.container}>
+               <div className={styles.h3Cont}>
+                    <h3>{category}</h3>
+               </div>
                <div className={styles.line}></div>
           </div>
      );
