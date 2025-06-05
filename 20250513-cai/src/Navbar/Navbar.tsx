@@ -15,6 +15,11 @@ function Navbar() {
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+      window.removeEventListener("scroll", handleScroll)
+    }
   }, []);
 
   function handleResize() {

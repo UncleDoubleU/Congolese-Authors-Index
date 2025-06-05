@@ -1,6 +1,9 @@
-import styles from "./Body.module.sass";
 
+import Author from "../Author/Author";
+import PageTitle from "../PageTitle/PageTitle";
+import IndexCat from "../IndexCat/IndexCat";
 function Body() {
+
   return (
     <main>
       <PageTitle title="Full Index" />
