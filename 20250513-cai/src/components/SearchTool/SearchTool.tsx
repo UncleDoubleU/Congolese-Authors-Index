@@ -1,14 +1,20 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./SearchTool.module.sass";
 
-function SearchTool({ name, items }) {
+interface SearchToolProps {
+  name: string;
+  items: { id: number; title: string }[];
+}
+
+function SearchTool({ name, items }: SearchToolProps) {
   const [isClicked, setIsClicked] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const [listStyle, setListStyles] = useState(`${styles.hidden}`)
   const [listH3Syle, setListH3Style] = useState(`${styles.listH3}`)
   const [contStyle, setContStyle] = useState(`${styles.searchToolCont}`)
   const [width, setWidth] = useState(window.innerWidth)
-  const contRef = useRef(null)
+
+  const contRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     setListStyles(isClicked ? `${styles.list}` : `${styles.hidden}`)
@@ -48,15 +54,15 @@ function SearchTool({ name, items }) {
 
   }
 
-  function handleOutsideClick(e) {
-    if (!contRef.current.contains(e.target)) { setIsClicked(false) };
+  function handleOutsideClick(e: MouseEvent) {
+    if (contRef?.current && !contRef.current.contains(e.target as Node)) { setIsClicked(false) };
   }
 
   function handleResize() {
     setWidth(window.innerWidth)
   }
 
-  
+
 
 
   return (

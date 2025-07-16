@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.sass";
+import { NavLink } from "react-router";
 
 function Navbar() {
   // const [navClass, setNavClass] = useState(`${styles.nav}`);
@@ -44,24 +45,21 @@ function Navbar() {
 
   return (
     <nav role="main navigation" className={styles.nav}>
-      <a className={styles.navLogo} href="#">
+      <NavLink to="/" className={styles.navLogo}>
         Congolese Authors&nbsp;Index
-      </a>
+      </NavLink>
+
       <button onClick={navBtnClick} className={styles.navBtn}>
         {btnText}
       </button>
 
       <ul className={ulClass}>
-        <li>
-          <a onClick={linkClick} className={styles.navLink} href="#">
-            Index
-          </a>
-        </li>
-        <li>
-          <a onClick={linkClick} className={styles.navLink} href="#">
-            About
-          </a>
-        </li>
+        <NavLink to="/" onClick={linkClick} className={styles.navLink}>
+          Index
+        </NavLink>
+        <NavLink to="/about" onClick={linkClick} className={styles.navLink}>
+          About
+        </NavLink>
       </ul>
     </nav>
   );

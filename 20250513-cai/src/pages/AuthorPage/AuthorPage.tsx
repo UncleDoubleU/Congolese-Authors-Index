@@ -1,4 +1,4 @@
-import Books from "../Books/Books"
+import Books from "../../components/Books/Books"
 
 function AuthorPage() {
      return (
