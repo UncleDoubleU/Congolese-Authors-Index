@@ -6,23 +6,109 @@ function BottomNav() {
 
   const [isClicked, setIsClicked] = useState(false)
   const [btnText, setBtnText] = useState("tools");
+  const cY = new Date().getFullYear();
 
   useEffect(() => {
-    setBtnText(!isClicked ? "tools" : "close")
+    setBtnText(!isClicked ? "search tools" : "close")
   }, [isClicked])
 
   const filters = [
-    { id: 0, title: "by genre" },
-    { id: 1, title: "by date of birth" },
-    { id: 2, title: "by place of birth" },
-    { id: 3, title: "first published in" },
-    { id: 4, title: "by languages" },
-    { id: 5, title: " by publishers" },
+    {
+      id: 0,
+      title: "genre",
+      genres: [
+        "fiction",
+        "non-fiction",
+        "academic research / studies",
+        "essay",
+        "poem",
+        "biography",
+        "tales",
+        "novel",
+        "theatre",
+      ],
+    },
+    {
+      id: 1,
+      title: "date",
+      placeholderFrom: 1900,
+      placeholderTo: cY,
+    },
+    {
+      id: 2,
+      title: "place of birth",
+      pob: [
+        "Lower Uele",
+        "Equateur",
+        "East Kasai",
+        "Ituri",
+        "Kasai",
+        "Kasai-Central",
+        "Kinshasa",
+        "Kongo Central",
+        "Kwango",
+        "Kwilu",
+        "Lomami",
+        "Lualaba",
+        "Mai-Ndombe",
+        "Maniema",
+        "Mongala",
+        "North Kivu",
+        "North Ubangi",
+        "Sankuru",
+        "South Kivu",
+        "South Ubangi",
+        "Tanganyika",
+        "Tshopo",
+        "Tshuapa",
+        "Upper Katanga",
+        "Upper Lomami",
+        "Upper Uele",
+      ],
+    },
+    {
+      id: 3,
+      title: "audience",
+      ageRange: [
+        "Adults",
+        "Teenagers (13 to 17)",
+        "Children (0 to 12)",
+      ],
+    },
+    {
+      id: 4,
+      title: "languages",
+      languages: [
+        "french",
+        "english",
+        "german",
+        "lingala",
+        "tshiluba",
+        "kikongo",
+        "swahili",
+      ],
+    },
+    {
+      id: 5,
+      title: "publishers",
+      publisherList: [
+        "Baobab House Press",
+        "Maple & Clay Publishing",
+        "Éditions L'Éclipse",
+        "Saffron Ink Works",
+        "Obsidian Gate Theatre Co.",
+        "Iron Lantern Press",
+        "Kirin Scroll Editions",
+        "Cobalt Stage & Print",
+        "another fictious publisher's name",
+        "publisher",
+      ],
+    },
   ];
   const sorting = [
-    { id: 0, title: "alphabetical" },
-    { id: 1, title: "ascending" },
-    { id: 2, title: "decending" },
+    { id: 0, title: "A to Z" },
+    { id: 1, title: "Z to A" },
+    { id: 2, title: "relevance" },
     { id: 3, title: "newest first" },
     { id: 4, title: "oldest first" },
   ];
@@ -33,15 +119,15 @@ function BottomNav() {
 
   return (
     <nav role="search bar" className={styles.container}>
-      {isClicked ? (
+      {isClicked && (
         <>
           <SearchTool name="filters" items={filters} />
           <SearchTool name="sort by" items={sorting} />
         </>
-      ) : null}
+      )}
 
       <button onClick={handleClick}>{btnText}</button>
-      <input name="search bar" type="search" placeholder="search" />
+      <input name="search bar" type="search" placeholder="Enter name, place, or subject here..." />
     </nav>
   );
 }

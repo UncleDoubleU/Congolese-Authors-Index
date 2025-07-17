@@ -8,7 +8,6 @@ interface SearchToolProps {
 
 function SearchTool({ name, items }: SearchToolProps) {
   const [isClicked, setIsClicked] = useState(false)
-  const [isVisible, setIsVisible] = useState(false)
   const [listStyle, setListStyles] = useState(`${styles.hidden}`)
   const [listH3Syle, setListH3Style] = useState(`${styles.listH3}`)
   const [contStyle, setContStyle] = useState(`${styles.searchToolCont}`)
