@@ -1,6 +1,6 @@
 # Congolese Author Index
 
-**A free and accessible digital list of writers from the Democratic Republic of Congo (DRC).**
+**A free and accessible digital list of writers from Congo (DRC).**
 
 ## 📚 About the Project
 
@@ -34,9 +34,5 @@ It's also a personal celebration of heritage and an opportunity to explore how d
 
 ## 🚧 Status
 
-This is an ongoing project—contributions, suggestions, and collaboration are welcome.
-
----
-
-Feel free to fork, adapt, or reference. Let’s make Congolese literature more visible, searchable, and celebrated.
+This is an ongoing, suggestions, and collaboration are welcome.
 
