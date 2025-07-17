@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# Congolese Author Index
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A free and accessible digital list of writers from the Democratic Republic of Congo (DRC).**
 
-Currently, two official plugins are available:
+## 📚 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The **Congolese Author Index** is a research and design project dedicated to documenting authors from the **Democratic Republic of Congo** along with their respective bibliographies.
 
-## Expanding the ESLint configuration
+Created out of personal need and cultural passion, this index aims to make it easier to discover, reference, and celebrate **Congolese literature**—without jumping across multiple websites or databases.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Who It's For
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This resource is designed for **anyone with an interest in Congolese culture and literature**, especially:
+- **Researchers & analysts**
+- **Writers, artists, and creatives**
+- **Educators & students**
+- **Curious readers and cultural enthusiasts**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✊ Why This Exists
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is more than a digital tool—it's an act of **design activism**. It was born from a desire to:
+- Reduce barriers to accessing Congolese literary knowledge
+- Celebrate and amplify Congolese voices
+- Explore and apply principles of **informational design** that **empower users** with more control over how data is accessed and used
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+It's also a personal celebration of heritage and an opportunity to explore how design can inform, connect, and liberate.
+
+## 🛠️ Features (In Progress)
+
+- Searchable list of Congolese authors
+- Filter by region, genre, or publication period
+- Author profiles with bibliography references
+- Open data structure to support further research and remixing
+
+## 🚧 Status
+
+This is an ongoing project—contributions, suggestions, and collaboration are welcome.
+
+---
+
+Feel free to fork, adapt, or reference. Let’s make Congolese literature more visible, searchable, and celebrated.
+

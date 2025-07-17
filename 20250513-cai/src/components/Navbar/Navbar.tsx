@@ -54,12 +54,16 @@ function Navbar() {
       </button>
 
       <ul className={ulClass}>
-        <NavLink to="/" onClick={linkClick} className={styles.navLink}>
-          Index
-        </NavLink>
-        <NavLink to="/about" onClick={linkClick} className={styles.navLink}>
-          About
-        </NavLink>
+        <li>
+          <NavLink to="/" onClick={linkClick} className={styles.navLink}>
+            Index
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" onClick={linkClick} className={styles.navLink}>
+            About
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
