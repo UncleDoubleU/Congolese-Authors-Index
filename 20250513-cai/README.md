@@ -34,5 +34,5 @@ It's also a personal celebration of heritage and an opportunity to explore how d
 
 ## 🚧 Status
 
-This is an ongoing, suggestions, and collaboration are welcome.
+This is an ongoing project, suggestions, and collaboration are welcome.
 
