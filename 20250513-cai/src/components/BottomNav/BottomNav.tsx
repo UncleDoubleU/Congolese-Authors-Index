@@ -4,13 +4,8 @@ import SearchTool from "../SearchTool/SearchTool";
 
 function BottomNav() {
 
-  const [isClicked, setIsClicked] = useState(false)
-  const [btnText, setBtnText] = useState("tools");
+  
   const cY = new Date().getFullYear();
-
-  useEffect(() => {
-    setBtnText(!isClicked ? "search tools" : "close")
-  }, [isClicked])
 
   const filters = [
     {
@@ -113,20 +108,13 @@ function BottomNav() {
     { id: 4, title: "oldest first" },
   ];
 
-  function handleClick() {
-    setIsClicked((c) => !c);
-  }
-
   return (
     <nav role="search bar" className={styles.container}>
-      {isClicked && (
-        <>
-          <SearchTool name="filters" items={filters} />
-          <SearchTool name="sort by" items={sorting} />
-        </>
-      )}
 
-      <button onClick={handleClick}>{btnText}</button>
+      <SearchTool name="filters" items={filters} />
+
+
+
       <input name="search bar" type="search" placeholder="Enter name, place, or subject here..." />
     </nav>
   );
