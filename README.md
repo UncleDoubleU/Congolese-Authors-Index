@@ -13,6 +13,7 @@ Created out of personal need and cultural passion, this index aims to make it ea
 ## Who It's For
 
 This resource is designed for **anyone with an interest in Congolese culture and literature**, especially:
+
 - **Writers, artists, and creatives**
 - **Educators & students**
 - **Curious readers and cultural enthusiasts**
@@ -22,6 +23,7 @@ This resource is designed for **anyone with an interest in Congolese culture and
 ## Why This Exists
 
 This project is more than a digital tool it's an act of **design activism**. It was born from a desire to:
+
 - Reduce barriers to accessing Congolese literary work
 - Celebrate and amplify Congolese voices
 - Explore and apply principles of **informational design** that **empower users** with more control over how data is accessed and used
@@ -46,8 +48,3 @@ This project is more than a digital tool it's an act of **design activism**. It 
 ## Status
 
 This is an ongoing project, suggestions, and collaboration are welcome.
-
-
-
-
-
