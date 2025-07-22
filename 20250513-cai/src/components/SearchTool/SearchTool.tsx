@@ -5,10 +5,11 @@ interface SearchToolProps {
   filtersName: string;
   sortingName: string;
   filters: { id: number; title: string; options: string[]; }[];
-  dateRange: { id: number; title: string; placeholderFrom: number; placeholderTo: number; }[];
+  sorting: { id: number; title: string; }[];
+  date: { title: string; placeholderFrom: number; placeholderTo: number; };
 }
 
-function SearchTool({ filtersName, sortingName, filters }: SearchToolProps) {
+function SearchTool({ filtersName, sortingName, filters, sorting, date }: SearchToolProps) {
   const [isClicked, setIsClicked] = useState(false)
   const [btnText, setBtnText] = useState("search tools");
   const [listStyle, setListStyles] = useState(`${styles.hidden}`);
@@ -20,7 +21,7 @@ function SearchTool({ filtersName, sortingName, filters }: SearchToolProps) {
 
   useEffect(() => {
     setListStyles(isClicked ? `${styles.list}` : `${styles.hidden}`)
-    setListH3Style(isClicked ? `${styles.listH3Active}` : `${styles.listH3}`)
+    setListH3Style(isClicked ? `${styles.listH3Active}` : `${styles.hidden}`)
     setContStyle(isClicked ? `${styles.searchToolCont} ${styles.active}` : `${styles.searchToolCont}`)
     setBtnText(isClicked ? "close" : "search tools")
 
@@ -42,24 +43,24 @@ function SearchTool({ filtersName, sortingName, filters }: SearchToolProps) {
     }
   }, [])
 
-
-
   const filtersDropDown = filters.map((item) => (
     <label key={item.id} className={listStyle}>
       {item.title}
-      <select className={styles.dropDown} name={item.title} defaultValue={""}>
-        <option value="">{item.title}</option>
+      <select className={styles.dropDown} name={item.title} multiple>
+        <option key={item.title} value="">{item.title}</option>
         {item.options.map((filter, index) => (
           <option key={index} value={filter}>{filter}</option>
         ))}
       </select>
     </label>
+  ));
 
+  const sortingDropDown = sorting.map((item) => (
+    <option value={item.title} key={item.id}>{item.title}</option>
   ));
 
   function handleClick() {
     setIsClicked((c) => !c);
-
   }
 
   function handleOutsideClick(e: MouseEvent) {
@@ -70,18 +71,44 @@ function SearchTool({ filtersName, sortingName, filters }: SearchToolProps) {
     setWidth(window.innerWidth)
   }
 
-
-
-
   return (
 
-    <section key={filtersName} ref={contRef} role="button" className={contStyle}>
-      <article>
-        <h3 className={listH3Syle}>{filtersName}</h3>
-        {filtersDropDown}
-      </article>
+    <section key={filtersName} ref={contRef} className={contStyle}>
+      <h2>Search Tools</h2>
       <article>
         <h3 className={listH3Syle}>{sortingName}</h3>
+        <label className={listStyle}>{sortingName}
+          <select name={sortingName}>
+            {sortingDropDown}
+          </select>
+        </label>
+      </article>
+
+      <article>
+        <label className={listStyle}>between
+          <input
+            aria-label="Publication date full year"
+            type="number"
+            min="1900"
+            max={date.placeholderTo}
+            step="1"
+            // value={""}
+            placeholder="YYYY" />
+        </label>
+        <label className={listStyle}>and
+          <input
+            aria-label="Publication date full year"
+            type="number"
+            min="1900"
+            max={date.placeholderTo}
+            step="1"
+            // value={""}
+            placeholder="YYYY" />
+        </label>
+      </article>
+
+      <article>
+        <h3 className={listH3Syle}>{filtersName}</h3>
         {filtersDropDown}
       </article>
       <button onClick={handleClick}>{btnText}</button>

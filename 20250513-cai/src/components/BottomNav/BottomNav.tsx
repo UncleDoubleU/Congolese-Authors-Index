@@ -93,11 +93,6 @@ function BottomNav() {
       ],
     },
   ];
-  const dateRange = {
-    title: "date",
-    placeholderFrom: 1900,
-    placeholderTo: cY,
-  }
 
   const sorting = [
     { id: 0, title: "A to Z" },
@@ -107,6 +102,12 @@ function BottomNav() {
     { id: 4, title: "oldest first" },
   ];
 
+  const dateRange = {
+    title: "date",
+    placeholderFrom: 1900,
+    placeholderTo: cY,
+  }
+
   return (
     <nav role="search bar" className={styles.container}>
 
@@ -114,6 +115,7 @@ function BottomNav() {
         filtersName="filter by"
         sortingName="sort by"
         filters={filters}
+        sorting={sorting}
         date={dateRange}
       />
 
