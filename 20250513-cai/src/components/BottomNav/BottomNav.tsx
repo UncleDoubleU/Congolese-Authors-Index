@@ -1,17 +1,16 @@
-import { useEffect, useState } from "react";
 import styles from "./BottomNav.module.sass";
 import SearchTool from "../SearchTool/SearchTool";
 
 function BottomNav() {
 
-  
+
   const cY = new Date().getFullYear();
 
   const filters = [
     {
       id: 0,
       title: "genre",
-      genres: [
+      options: [
         "fiction",
         "non-fiction",
         "academic research / studies",
@@ -24,15 +23,9 @@ function BottomNav() {
       ],
     },
     {
-      id: 1,
-      title: "date",
-      placeholderFrom: 1900,
-      placeholderTo: cY,
-    },
-    {
       id: 2,
       title: "place of birth",
-      pob: [
+      options: [
         "Lower Uele",
         "Equateur",
         "East Kasai",
@@ -64,7 +57,7 @@ function BottomNav() {
     {
       id: 3,
       title: "audience",
-      ageRange: [
+      options: [
         "Adults",
         "Teenagers (13 to 17)",
         "Children (0 to 12)",
@@ -73,7 +66,7 @@ function BottomNav() {
     {
       id: 4,
       title: "languages",
-      languages: [
+      options: [
         "french",
         "english",
         "german",
@@ -86,7 +79,7 @@ function BottomNav() {
     {
       id: 5,
       title: "publishers",
-      publisherList: [
+      options: [
         "Baobab House Press",
         "Maple & Clay Publishing",
         "Éditions L'Éclipse",
@@ -100,6 +93,12 @@ function BottomNav() {
       ],
     },
   ];
+  const dateRange = {
+    title: "date",
+    placeholderFrom: 1900,
+    placeholderTo: cY,
+  }
+
   const sorting = [
     { id: 0, title: "A to Z" },
     { id: 1, title: "Z to A" },
@@ -111,7 +110,12 @@ function BottomNav() {
   return (
     <nav role="search bar" className={styles.container}>
 
-      <SearchTool name="filters" items={filters} />
+      <SearchTool
+        filtersName="filter by"
+        sortingName="sort by"
+        filters={filters}
+        date={dateRange}
+      />
 
 
 

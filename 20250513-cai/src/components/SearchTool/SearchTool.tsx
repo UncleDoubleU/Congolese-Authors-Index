@@ -2,11 +2,13 @@ import { useState, useEffect, useRef } from "react";
 import styles from "./SearchTool.module.sass";
 
 interface SearchToolProps {
-  name: string;
-  items: { id: number; title: string }[];
+  filtersName: string;
+  sortingName: string;
+  filters: { id: number; title: string; options: string[]; }[];
+  dateRange: { id: number; title: string; placeholderFrom: number; placeholderTo: number; }[];
 }
 
-function SearchTool({ name, items }: SearchToolProps) {
+function SearchTool({ filtersName, sortingName, filters }: SearchToolProps) {
   const [isClicked, setIsClicked] = useState(false)
   const [btnText, setBtnText] = useState("search tools");
   const [listStyle, setListStyles] = useState(`${styles.hidden}`);
@@ -20,7 +22,7 @@ function SearchTool({ name, items }: SearchToolProps) {
     setListStyles(isClicked ? `${styles.list}` : `${styles.hidden}`)
     setListH3Style(isClicked ? `${styles.listH3Active}` : `${styles.listH3}`)
     setContStyle(isClicked ? `${styles.searchToolCont} ${styles.active}` : `${styles.searchToolCont}`)
-    { setBtnText(isClicked ? "close" : "search tools") }
+    setBtnText(isClicked ? "close" : "search tools")
 
   }, [isClicked])
 
@@ -42,13 +44,18 @@ function SearchTool({ name, items }: SearchToolProps) {
 
 
 
+  const filtersDropDown = filters.map((item) => (
+    <label key={item.id} className={listStyle}>
+      {item.title}
+      <select className={styles.dropDown} name={item.title} defaultValue={""}>
+        <option value="">{item.title}</option>
+        {item.options.map((filter, index) => (
+          <option key={index} value={filter}>{filter}</option>
+        ))}
+      </select>
+    </label>
 
-  const listItems = items.map((item) => (
-    <option key={item.id} className={styles.listItem}>{item.title}</option>
   ));
-
-
-
 
   function handleClick() {
     setIsClicked((c) => !c);
@@ -67,15 +74,18 @@ function SearchTool({ name, items }: SearchToolProps) {
 
 
   return (
-    <section key={name} ref={contRef} role="button" className={contStyle}>
-      <label htmlFor="search tools" className={listH3Syle}>
-        {name}
-        <select name="search tools">
-          {listItems}
-        </select>
-      </label>
+
+    <section key={filtersName} ref={contRef} role="button" className={contStyle}>
+      <article>
+        <h3 className={listH3Syle}>{filtersName}</h3>
+        {filtersDropDown}
+      </article>
+      <article>
+        <h3 className={listH3Syle}>{sortingName}</h3>
+        {filtersDropDown}
+      </article>
       <button onClick={handleClick}>{btnText}</button>
-    </section>
+    </section >
   );
 }
 
