@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import BottomNav from "./components/BottomNav/BottomNav";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
-import AuthorPage from "./pages/AuthorPage/AuthorPage";
+// import AuthorPage from "./pages/AuthorPage/AuthorPage";
 
 
 function App() {

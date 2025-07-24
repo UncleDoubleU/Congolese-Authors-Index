@@ -1,10 +1,16 @@
 import styles from "./BottomNav.module.sass";
 import SearchTool from "../SearchTool/SearchTool";
+import { useRef } from "react";
 
 function BottomNav() {
 
 
+  const searchBarRef = useRef<HTMLElement>(null)
+
   const cY = new Date().getFullYear();
+
+
+
 
   const filters = [
     {
@@ -65,7 +71,7 @@ function BottomNav() {
     },
     {
       id: 4,
-      title: "languages",
+      title: "language",
       options: [
         "french",
         "english",
@@ -78,7 +84,7 @@ function BottomNav() {
     },
     {
       id: 5,
-      title: "publishers",
+      title: "publisher",
       options: [
         "Baobab House Press",
         "Maple & Clay Publishing",
@@ -108,9 +114,14 @@ function BottomNav() {
     placeholderTo: cY,
   }
 
-  return (
-    <nav role="search bar" className={styles.container}>
 
+
+  return (
+    <nav
+      ref={searchBarRef}
+      role="search bar"
+      className={styles.container}
+    >
       <SearchTool
         filtersName="filter by"
         sortingName="sort by"
@@ -119,9 +130,10 @@ function BottomNav() {
         date={dateRange}
       />
 
-
-
-      <input name="search bar" type="search" placeholder="Enter name, place, or subject here..." />
+      <input
+        name="search bar"
+        type="search"
+        placeholder="Enter name, place, or subject here..." />
     </nav>
   );
 }

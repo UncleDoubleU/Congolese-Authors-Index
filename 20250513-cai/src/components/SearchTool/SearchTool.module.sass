@@ -4,49 +4,162 @@
      display: flex
      gap: 0.5rem
      align-items: center
+
+@mixin select-base
+     height: 40px
+     background-color: App.$caiBeige
      color: App.$caiDarkBrown
-
-.searchToolCont
-     display: flex
-     height: max-content
-     background: App.$caiPink
-     border-radius: 3.125rem
+     font: App.$mobileP
      border: App.$stroke
-     justify-content: left
-     align-items: center
-     padding: 0.65rem 1.25rem
+     border-radius: 0.3125rem
+     padding: 0.3125rem 0.4375rem
+
+@mixin button-base
+     height: max-content
      width: max-content
-     cursor: pointer
-     @media (App.$smallMedium <= width)
-          grid-column: 1/3
-
-     &.active
-          border-radius: 1.5625rem
-          overflow: auto
-          max-width: 100vw
-
-.listH3
-     @include h3-base
+     padding: 0.3125rem 1.25rem
+     justify-content: center
+     align-items: center
+     gap: 0.625rem
+     border-radius: 1.875rem
+     border: App.$stroke
+     background: App.$caiPink
      font: App.$mobileP
 
-.listH3Active
-     @include h3-base
+$mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
+
+.contDefault
+     height: 2.5rem
+     background: none
+
+.contClicked
+     background: red
+     background: App.$caiPink
+     border-radius: 1rem
+     padding: 1rem
+     border: App.$stroke
+     height: 100%
+     min-height: 100%
+     max-width: 100%
+     overflow: scroll
+     display: grid
+     row-gap: 1.875rem
+     grid-template-columns: repeat(3, auto)
+     grid-template-rows: repeat(5, auto)
+     justify-content: space-between
+     overflow-y: scroll
+
+.title
+     font: $mobileH2Font
+     color: App.$caiDarkBrown
+     grid-column: 1 / 3
+     grid-row: 1 / 2
+
+.h3
+     font: App.$mobileH3
+     color: App.$caiDarkBrown
+
+.sortingCont,.filtersCont,.dateCont
+     border: none
+
+.sortingCont
+     display: grid
+     grid-template-columns: auto 1fr
+     grid-template-rows: max-content
+     justify-content: space-between
+     gap: 0.75rem
+     grid-column: 1 / 4
+     grid-row: 2 / 3
+     width: 100%
+     color: App.$caiDarkBrown
+
+     .sortingLabel
+          grid-column: 1 / 2
+          grid-row: 1 / 2
+          width: 100%
+          font: App.$mobileH3
+          color: App.$caiDarkBrown
+
+     .sortingSelect
+          grid-column: 2 / 3
+          grid-row: 1 / 2
+          width: 100%
+          @include select-base
+
+.filtersCont
+     width: 100%
+     grid-column: 1 / 4
+     grid-row: 3 / 4
+     color: App.$caiDarkBrown
      font: App.$mobileH3
 
-.list
-     display: flex
-     flex-direction: column
-     height: min-content
-     width: max-content
+.filtersDetails
+     @include select-base
+     height: max-content
 
-.listItem
-     margin: 0.275rem 0
+.filtersSummary
+
+     display: grid
+     justify-content: space-between
+     align-items: center
+     align-content: center
+     grid-template-columns: repeat(2, max-content)
+     grid-template-rows: 2.5rem
      color: App.$caiDarkBrown
-     cursor: pointer
+     min-width: 100%
 
-     &:first-child
-          margin-top: 1.25rem
+.filterItem
+     font: App.$mobileP
+     display: flex
+     gap: 1.75rem
+     height: 35px
 
-.hidden
+     text-align: left
 
+     input
+          height: 25px
+          width: 25px
+
+// .filtersCont
+//      display: block
+//      grid-column: 1 / 4
+//      grid-row: 3 / 4
+//      color: App.$caiDarkBrown
+//      font: App.$mobileH3
+//      color: App.$caiDarkBrown
+
+// .filtersLabel
+//      font: App.$mobileH3
+//      color: App.$caiDarkBrown
+//      display: flex
+//      flex-direction: column
+//      gap: 0.75rem
+
+// .filterSelect
+
+//      @include select-base
+//      display: block
+//      width: 100%
+
+.dateCont
+     grid-column: 1 / 4
+     grid-row: 4 / 5
+     height: min-content
+     color: App.$caiDarkBrown
+     display: flex
+
+.label
      display: none
+
+.btnStyle
+     @include button-base
+     grid-column: 3 / 4
+     grid-row: 1 /2
+     color: App.$caiDarkBrown
+
+.applyBtn
+     @include button-base
+     grid-column: 1/4
+     grid-row: 5/6
+     height: 40px
+     align-self: end

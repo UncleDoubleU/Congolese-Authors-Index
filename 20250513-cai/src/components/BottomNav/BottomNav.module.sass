@@ -21,10 +21,10 @@
      left: 50%
      transform: translateX(-50%)
      bottom: 0
-     z-index: 9
-
+     z-index: 11
      max-width: 100%
-     max-height: 92vh
+     height: max-content
+     max-height: 100vh
      @media (App.$small <= width < App.$smallMedium)
           width: 80%
 
@@ -38,23 +38,6 @@
           width: 1200px
           padding: 0
           bottom: 1rem
-
-     button
-          display: flex
-          height: max-content
-          width: max-content
-          padding: 0.3125rem 1.25rem
-          justify-content: center
-          align-items: center
-          gap: 0.625rem
-          border-radius: 1.875rem
-          border: App.$stroke
-          background: App.$caiPink
-          font: App.$mobileP
-          @media (App.$smallMedium <= width)
-               grid-column: 1/2
-               grid-row: 3/4
-               width: 5rem
 
      input
           width: 100%
@@ -80,5 +63,3 @@
                grid-column: 2/3
                grid-row: 3/4
                width: 100%
-.hidden
-     display: none

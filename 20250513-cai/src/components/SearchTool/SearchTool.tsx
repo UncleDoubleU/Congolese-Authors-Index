@@ -4,115 +4,201 @@ import styles from "./SearchTool.module.sass";
 interface SearchToolProps {
   filtersName: string;
   sortingName: string;
-  filters: { id: number; title: string; options: string[]; }[];
-  sorting: { id: number; title: string; }[];
-  date: { title: string; placeholderFrom: number; placeholderTo: number; };
+  filters: {
+    id: number;
+    title: string;
+    options: string[];
+  }[];
+  sorting: {
+    id: number;
+    title: string;
+  }[];
+  date: {
+    title: string;
+    placeholderFrom: number;
+    placeholderTo: number;
+  };
 }
 
-function SearchTool({ filtersName, sortingName, filters, sorting, date }: SearchToolProps) {
+function SearchTool({
+  filtersName,
+  sortingName,
+  filters,
+  sorting,
+  date,
+}:
+  SearchToolProps) {
   const [isClicked, setIsClicked] = useState(false)
+  const [titleStyle, setTitleStyle] = useState(`${styles.hidden}`);
+  const [filtersContStyle, setFiltersContStyle] = useState(`${styles.hidden}`);
+  const [sortingContStyle, setSortingContStyle] = useState(`${styles.hidden}`);
   const [btnText, setBtnText] = useState("search tools");
-  const [listStyle, setListStyles] = useState(`${styles.hidden}`);
-  const [listH3Syle, setListH3Style] = useState(`${styles.listH3}`);
-  const [contStyle, setContStyle] = useState(`${styles.searchToolCont}`);
-  const [width, setWidth] = useState(window.innerWidth)
+  const [applyBtnStyle, setApplyBtnStyle] = useState(`${styles.hidden}`);
+  const [labelStyle, setLabelStyles] = useState(`${styles.hidden}`);
+  const [h3Syle, setH3Style] = useState(`${styles.listH3}`);
+  const [contStyle, setContStyle] = useState(`${styles.contDefault}`);
+  const [width, setWidth] = useState(window.innerWidth);
 
-  const contRef = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    setListStyles(isClicked ? `${styles.list}` : `${styles.hidden}`)
-    setListH3Style(isClicked ? `${styles.listH3Active}` : `${styles.hidden}`)
-    setContStyle(isClicked ? `${styles.searchToolCont} ${styles.active}` : `${styles.searchToolCont}`)
-    setBtnText(isClicked ? "close" : "search tools")
-
-  }, [isClicked])
+  const contRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
-    document.addEventListener("click", handleOutsideClick)
+    setLabelStyles(
+      isClicked
+        ? `${styles.label}`
+        : `${styles.hidden}`);
+    setFiltersContStyle(
+      isClicked
+        ? `${styles.filtersCont}`
+        : `${styles.hidden}`
+    );
+    setSortingContStyle(
+      isClicked
+        ? `${styles.sortingCont}`
+        : `${styles.hidden}`
+    );
+    setH3Style(
+      isClicked
+        ? `${styles.h3}`
+        : `${styles.hidden}`);
+    setContStyle(
+      isClicked
+        ? `${styles.contClicked} ${styles.active}`
+        : `${styles.contDefault}`
+    );
+    setBtnText(
+      isClicked
+        ? "x"
+        : "search tools");
+    setTitleStyle(
+      isClicked
+        ? `${styles.title}`
+        : `${styles.hidden}`);
+    setApplyBtnStyle(
+      isClicked
+        ? `${styles.applyBtn}`
+        : `${styles.hidden}`);
+  }, [isClicked]);
+
+  useEffect(() => {
+    contRef.current?.addEventListener("submit", handleForm);
 
     return () => {
-      document.removeEventListener("click", handleOutsideClick)
-    }
+      contRef.current?.removeEventListener("submit", handleForm);
+    };
   }, []);
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize)
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [width]);
+
+  function handleForm(e: Event) {
+    if (contRef?.current) {
+      e.preventDefault();
     }
-  }, [])
-
-  const filtersDropDown = filters.map((item) => (
-    <label key={item.id} className={listStyle}>
-      {item.title}
-      <select className={styles.dropDown} name={item.title} multiple>
-        <option key={item.title} value="">{item.title}</option>
-        {item.options.map((filter, index) => (
-          <option key={index} value={filter}>{filter}</option>
-        ))}
-      </select>
-    </label>
-  ));
-
-  const sortingDropDown = sorting.map((item) => (
-    <option value={item.title} key={item.id}>{item.title}</option>
-  ));
-
-  function handleClick() {
-    setIsClicked((c) => !c);
   }
-
-  function handleOutsideClick(e: MouseEvent) {
-    if (contRef?.current && !contRef.current.contains(e.target as Node)) { setIsClicked(false) };
+  function handleClick() {
+    setIsClicked((c) => !c)
   }
 
   function handleResize() {
-    setWidth(window.innerWidth)
+    setWidth(window.innerWidth);
   }
 
+  const sortingDropDown = sorting.map((item) => (
+    <option className={styles.sortingOption} value={item.title} key={item.id}>
+      {item.title}
+    </option>
+  ));
+
   return (
+    <form
+      action=""
+      name="search tools"
+      ref={contRef}
+      className={contStyle}
+    >
+      <h2 className={titleStyle}>Search Tools</h2>
 
-    <section key={filtersName} ref={contRef} className={contStyle}>
-      <h2>Search Tools</h2>
-      <article>
-        <h3 className={listH3Syle}>{sortingName}</h3>
-        <label className={listStyle}>{sortingName}
-          <select name={sortingName}>
-            {sortingDropDown}
-          </select>
+      <fieldset className={sortingContStyle}>
+        <label className={styles.sortingLabel}>{sortingName}</label>
+        <select className={styles.sortingSelect} name={sortingName}>
+          {sortingDropDown}
+        </select>
+      </fieldset>
+
+      <fieldset className={filtersContStyle}>
+        <label key={filtersName} className={styles.filtersLabel}>
+          <span className={h3Syle}>{filtersName}</span>
+          {filters.map((item) => (
+            <details
+              key={item.title}
+              className={styles.filtersDetails}
+            >
+              <summary
+                className={styles.filtersSummary}
+                key={item.title}
+              >
+                {item.title}
+                <button>+</button>
+              </summary>
+              {item.options.map((filter, index) => (
+                <label key={index} className={styles.filterItem}>
+                  <input type="checkbox" name={filter} id={filter} />
+                  {filter}
+                </label>
+              ))}
+            </details>
+          ))}
         </label>
-      </article>
+      </fieldset>
 
-      <article>
-        <label className={listStyle}>between
+      <fieldset className={styles.dateCont}>
+        <label className={labelStyle}>
+          between
           <input
+            name="minimum date"
             aria-label="Publication date full year"
             type="number"
             min="1900"
             max={date.placeholderTo}
             step="1"
             // value={""}
-            placeholder="YYYY" />
+            placeholder="YYYY"
+          />
         </label>
-        <label className={listStyle}>and
+        <label className={labelStyle}>
+          and
           <input
+            name="maximum date"
             aria-label="Publication date full year"
             type="number"
             min="1900"
             max={date.placeholderTo}
             step="1"
             // value={""}
-            placeholder="YYYY" />
+            placeholder="YYYY"
+          />
         </label>
-      </article>
+      </fieldset>
 
-      <article>
-        <h3 className={listH3Syle}>{filtersName}</h3>
-        {filtersDropDown}
-      </article>
-      <button onClick={handleClick}>{btnText}</button>
-    </section >
+      <button
+        className={styles.btnStyle}
+        onClick={handleClick}
+      >{btnText}</button>
+      <button
+        type="submit"
+        name="apply btn"
+        onClick={() => console.log("clicked")}
+        className={applyBtnStyle}
+        value=""
+      >
+        apply
+      </button>
+    </form>
   );
 }
 
