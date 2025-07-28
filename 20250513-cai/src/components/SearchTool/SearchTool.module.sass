@@ -38,7 +38,7 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
      border-radius: 1rem
      padding: 1rem
      border: App.$stroke
-     height: 100%
+     height: 95vh
      min-height: 100%
      max-width: 100%
      overflow: scroll
@@ -59,7 +59,9 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
      font: App.$mobileH3
      color: App.$caiDarkBrown
 
-.sortingCont,.filtersCont,.dateCont
+.sortingCont,
+.filtersCont,
+.dateCont
      border: none
 
 .sortingCont
@@ -120,36 +122,36 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
           height: 25px
           width: 25px
 
-// .filtersCont
-//      display: block
-//      grid-column: 1 / 4
-//      grid-row: 3 / 4
-//      color: App.$caiDarkBrown
-//      font: App.$mobileH3
-//      color: App.$caiDarkBrown
-
-// .filtersLabel
-//      font: App.$mobileH3
-//      color: App.$caiDarkBrown
-//      display: flex
-//      flex-direction: column
-//      gap: 0.75rem
-
-// .filterSelect
-
-//      @include select-base
-//      display: block
-//      width: 100%
-
 .dateCont
+     display: flex
+     justify-content: space-between
+     gap: .25rem
      grid-column: 1 / 4
      grid-row: 4 / 5
+     width: 100%
      height: min-content
      color: App.$caiDarkBrown
-     display: flex
 
 .label
-     display: none
+     height: min-content
+     // min-width: 50%
+     width: 100%
+     display: flex
+     gap: 0.125rem
+
+     input::placeholder
+          font-size: 0.75rem
+
+     .dateInput
+          height: 40px
+          width: 3.125rem
+          padding: 0
+          background-color: App.$caiBeige
+          color: App.$caiDarkBrown
+          border: App.$stroke
+          border-radius: 0.3125rem
+          text-align: center
+          font-size: 0.75rem
 
 .btnStyle
      @include button-base

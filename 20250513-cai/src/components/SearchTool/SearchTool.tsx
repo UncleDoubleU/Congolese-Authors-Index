@@ -28,7 +28,7 @@ function SearchTool({
   date,
 }:
   SearchToolProps) {
-  const [isClicked, setIsClicked] = useState(false)
+  const [isClicked, setIsClicked] = useState(false);
   const [titleStyle, setTitleStyle] = useState(`${styles.hidden}`);
   const [filtersContStyle, setFiltersContStyle] = useState(`${styles.hidden}`);
   const [sortingContStyle, setSortingContStyle] = useState(`${styles.hidden}`);
@@ -40,6 +40,8 @@ function SearchTool({
   const [width, setWidth] = useState(window.innerWidth);
 
   const contRef = useRef<HTMLFormElement>(null);
+  const minDateRef = useRef<HTMLInputElement>(null);
+  const maxDateRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     setLabelStyles(
@@ -160,7 +162,8 @@ function SearchTool({
         <label className={labelStyle}>
           between
           <input
-            name="minimum date"
+            ref={minDateRef}
+            name="startingDate"
             aria-label="Publication date full year"
             type="number"
             min="1900"
@@ -168,12 +171,14 @@ function SearchTool({
             step="1"
             // value={""}
             placeholder="YYYY"
+            className={styles.dateInput}
           />
         </label>
         <label className={labelStyle}>
           and
           <input
-            name="maximum date"
+            ref={maxDateRef}
+            name="maximumDate"
             aria-label="Publication date full year"
             type="number"
             min="1900"
@@ -181,6 +186,7 @@ function SearchTool({
             step="1"
             // value={""}
             placeholder="YYYY"
+            className={styles.dateInput}
           />
         </label>
       </fieldset>

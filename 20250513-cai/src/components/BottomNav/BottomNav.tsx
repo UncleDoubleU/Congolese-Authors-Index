@@ -133,7 +133,9 @@ function BottomNav() {
       <input
         name="search bar"
         type="search"
-        placeholder="Enter name, place, or subject here..." />
+        placeholder="Enter name, place, or subject here..."
+        maxLength={255}
+      />
     </nav>
   );
 }
