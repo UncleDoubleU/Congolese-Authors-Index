@@ -24,7 +24,7 @@
      z-index: 11
      max-width: 100%
      height: max-content
-     max-height: 97vh
+     max-height: 81vh
 
      .searchInput
           align-self: end
@@ -33,17 +33,10 @@
           width: 80%
 
      @media (min-width: App.$smallMedium)
-          display: grid
-          grid-template-columns: auto 5fr
-          grid-template-rows: auto max-content
+          
           gap: 0.5rem
           width: 80%
-          height: 100%
           overflow: auto
-
-          .searchInput
-               grid-column: 2 / 3
-               grid-row: 2 / 3
 
      @media (App.$large <= width)
           width: 1200px
