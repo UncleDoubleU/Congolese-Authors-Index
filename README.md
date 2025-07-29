@@ -2,8 +2,6 @@
 
 **A free and accessible digital list of writers from Congo (DRC).**
 
-## About the Project
-
 The **Congolese Author Index** is a research and design project dedicated to documenting authors from the **Democratic Republic of Congo** along with their respective bibliographies.
 
 Created out of personal need and cultural passion, this index aims to make it easier to discover, reference, and celebrate Congolese literature.

@@ -31,8 +31,8 @@ function SearchTool({
   const [titleStyle, setTitleStyle] = useState(`${styles.hidden}`);
   const [filtersContStyle, setFiltersContStyle] = useState(`${styles.hidden}`);
   const [sortingContStyle, setSortingContStyle] = useState(`${styles.hidden}`);
-
   const [applyBtnStyle, setApplyBtnStyle] = useState(`${styles.hidden}`);
+  const [resetBtnStyle, setResetBtnStyle] = useState(`${styles.hidden}`);
   const [dateLabelStyle, setDateLabelStyle] = useState(`${styles.hidden}`);
   const [h3Syle, setH3Style] = useState(`${styles.listH3}`);
   const [contStyle, setContStyle] = useState(`${styles.contDefault}`);
@@ -61,6 +61,7 @@ function SearchTool({
     );
     setTitleStyle(isClicked ? `${styles.title}` : `${styles.hidden}`);
     setApplyBtnStyle(isClicked ? `${styles.applyBtn}` : `${styles.hidden}`);
+    setResetBtnStyle(isClicked ? `${styles.resetBtn}` : `${styles.hidden}`);
   }, [isClicked]);
 
   useEffect(() => {
@@ -103,8 +104,16 @@ function SearchTool({
       <h2 className={titleStyle}>Search Tools</h2>
 
       <fieldset className={sortingContStyle}>
-        <label className={styles.sortingLabel}>{sortingName}</label>
-        <select className={styles.sortingSelect} name={sortingName}>
+        <label
+          className={styles.sortingLabel}
+          htmlFor="sorting-dropdown"
+        >
+          {sortingName}
+        </label>
+        <select
+          className={styles.sortingSelect}
+          name="sortingDropdown" id="sorting-dropdown"
+        >
           {sortingDropDown}
         </select>
       </fieldset>
@@ -185,12 +194,21 @@ function SearchTool({
       </button>
       <button
         type="submit"
-        name="apply btn"
-        onClick={() => console.log("clicked")}
+        name="applyBtn"
+        onClick={() => console.log("clicked apply")}
         className={applyBtnStyle}
-        value=""
+        value="Submit"
       >
         apply
+      </button>
+      <button
+        type="reset"
+        name="resetBtn"
+        onClick={() => console.log("clicked reset")}
+        className={resetBtnStyle}
+        value="Reset"
+      >
+        reset
       </button>
     </form>
   );

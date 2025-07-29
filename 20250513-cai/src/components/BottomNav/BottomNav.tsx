@@ -135,6 +135,7 @@ function BottomNav() {
         type="search"
         placeholder="Enter name, place, or subject here..."
         maxLength={255}
+        className={styles.searchInput}
       />
     </nav>
   );

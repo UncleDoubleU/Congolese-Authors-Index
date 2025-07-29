@@ -24,23 +24,35 @@
      z-index: 11
      max-width: 100%
      height: max-content
-     max-height: 100vh
+     max-height: 97vh
+
+     .searchInput
+          align-self: end
+
      @media (App.$small <= width < App.$smallMedium)
           width: 80%
 
-     @media (App.$smallMedium <= width)
+     @media (min-width: App.$smallMedium)
           display: grid
-          grid-template-columns: max-content 5fr
-          grid-template-rows: repeat(3, auto)
+          grid-template-columns: auto 5fr
+          grid-template-rows: auto max-content
           gap: 0.5rem
           width: 80%
+          height: 100%
+          overflow: auto
+
+          .searchInput
+               grid-column: 2 / 3
+               grid-row: 2 / 3
+
      @media (App.$large <= width)
           width: 1200px
           padding: 0
           bottom: 1rem
 
-     input
+     .searchInput
           width: 100%
+          height: 2.5rem
           border-radius: 1.875rem
           border: App.$stroke
           background: App.$caiPink
@@ -48,7 +60,6 @@
           padding: 0.4rem 1.25rem
           justify-content: flex-end
           align-items: center
-          gap: 0.625rem
 
           &::placeholder
                @include search-placeholder
@@ -58,8 +69,3 @@
                @include search-placeholder
           &::-webkit-input-placeholder
                @include search-placeholder
-
-          @media (App.$smallMedium <= width)
-               grid-column: 2/3
-               grid-row: 3/4
-               width: 100%
