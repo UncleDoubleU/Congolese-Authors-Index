@@ -38,8 +38,8 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
      border-radius: 1rem
      padding: 1rem
      border: App.$stroke
-     height: 95vh
-     min-height: 100%
+     height: max-content
+     max-height: 90vh
      max-width: 100%
      overflow: scroll
      display: grid
@@ -47,7 +47,8 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
      grid-template-columns: repeat(3, auto)
      grid-template-rows: repeat(5, auto)
      justify-content: space-between
-     overflow-y: scroll
+     overflow-y: auto
+     overflow-x: hidden
 
 .title
      font: $mobileH2Font
@@ -95,32 +96,38 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
      color: App.$caiDarkBrown
      font: App.$mobileH3
 
-.filtersDetails
-     @include select-base
-     height: max-content
+     label
+          display: flex
+          flex-direction: column
+          gap: 0.45rem
 
-.filtersSummary
+     .filtersDetails
+          @include select-base
+          height: max-content
 
-     display: grid
-     justify-content: space-between
-     align-items: center
-     align-content: center
-     grid-template-columns: repeat(2, max-content)
-     grid-template-rows: 2.5rem
-     color: App.$caiDarkBrown
-     min-width: 100%
+     .filtersSummary
+          display: grid
+          justify-content: space-between
+          align-items: center
+          align-content: center
+          grid-template-columns: repeat(2, max-content)
+          grid-template-rows: 2.5rem
+          color: App.$caiDarkBrown
+          min-width: 100%
 
-.filterItem
-     font: App.$mobileP
-     display: flex
-     gap: 1.75rem
-     height: 35px
+     .filterItem
+          font: App.$mobileP
+          display: flex
+          flex-direction: row
+          gap: 1.75rem
+          width: 100%
+          height: min(2.175rem,max-content)
+          padding: 10px
+          text-align: left
 
-     text-align: left
-
-     input
-          height: 25px
-          width: 25px
+          input[type="checkbox"]
+               border: App.$stroke
+               width: max-content
 
 .dateCont
      display: flex
@@ -132,12 +139,13 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
      height: min-content
      color: App.$caiDarkBrown
 
-.label
+.dateLabel
      height: min-content
      // min-width: 50%
      width: 100%
      display: flex
      gap: 0.125rem
+     align-items: center
 
      input::placeholder
           font-size: 0.75rem
@@ -158,6 +166,12 @@ $mobileH2Font: italic 2.5rem/2.45rem "Diolce", serif
      grid-column: 3 / 4
      grid-row: 1 /2
      color: App.$caiDarkBrown
+
+.clickedBtnStyle
+     grid-column: 3 / 4
+     grid-row: 1 /2
+     color: App.$caiDarkBrown
+     padding: 15px 0 15px 15px
 
 .applyBtn
      @include button-base

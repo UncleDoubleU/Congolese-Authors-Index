@@ -26,59 +26,41 @@ function SearchTool({
   filters,
   sorting,
   date,
-}:
-  SearchToolProps) {
+}: SearchToolProps) {
   const [isClicked, setIsClicked] = useState(false);
   const [titleStyle, setTitleStyle] = useState(`${styles.hidden}`);
   const [filtersContStyle, setFiltersContStyle] = useState(`${styles.hidden}`);
   const [sortingContStyle, setSortingContStyle] = useState(`${styles.hidden}`);
-  const [btnText, setBtnText] = useState("search tools");
+
   const [applyBtnStyle, setApplyBtnStyle] = useState(`${styles.hidden}`);
-  const [labelStyle, setLabelStyles] = useState(`${styles.hidden}`);
+  const [dateLabelStyle, setDateLabelStyle] = useState(`${styles.hidden}`);
   const [h3Syle, setH3Style] = useState(`${styles.listH3}`);
   const [contStyle, setContStyle] = useState(`${styles.contDefault}`);
   const [width, setWidth] = useState(window.innerWidth);
-
+  const [stBtnStyle, setStBtnStyle] = useState(`${styles.btnStyle}`);
   const contRef = useRef<HTMLFormElement>(null);
   const minDateRef = useRef<HTMLInputElement>(null);
   const maxDateRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    setLabelStyles(
-      isClicked
-        ? `${styles.label}`
-        : `${styles.hidden}`);
+    setDateLabelStyle(isClicked ? `${styles.dateLabel}` : `${styles.hidden}`);
     setFiltersContStyle(
-      isClicked
-        ? `${styles.filtersCont}`
-        : `${styles.hidden}`
+      isClicked ? `${styles.filtersCont}` : `${styles.hidden}`
     );
     setSortingContStyle(
-      isClicked
-        ? `${styles.sortingCont}`
-        : `${styles.hidden}`
+      isClicked ? `${styles.sortingCont}` : `${styles.hidden}`
     );
-    setH3Style(
-      isClicked
-        ? `${styles.h3}`
-        : `${styles.hidden}`);
+    setH3Style(isClicked ? `${styles.h3}` : `${styles.hidden}`);
     setContStyle(
       isClicked
         ? `${styles.contClicked} ${styles.active}`
         : `${styles.contDefault}`
     );
-    setBtnText(
-      isClicked
-        ? "x"
-        : "search tools");
-    setTitleStyle(
-      isClicked
-        ? `${styles.title}`
-        : `${styles.hidden}`);
-    setApplyBtnStyle(
-      isClicked
-        ? `${styles.applyBtn}`
-        : `${styles.hidden}`);
+    setStBtnStyle(
+      isClicked ? `${styles.clickedBtnStyle}` : `${styles.btnStyle}`
+    );
+    setTitleStyle(isClicked ? `${styles.title}` : `${styles.hidden}`);
+    setApplyBtnStyle(isClicked ? `${styles.applyBtn}` : `${styles.hidden}`);
   }, [isClicked]);
 
   useEffect(() => {
@@ -103,7 +85,7 @@ function SearchTool({
     }
   }
   function handleClick() {
-    setIsClicked((c) => !c)
+    setIsClicked((c) => !c);
   }
 
   function handleResize() {
@@ -117,12 +99,7 @@ function SearchTool({
   ));
 
   return (
-    <form
-      action=""
-      name="search tools"
-      ref={contRef}
-      className={contStyle}
-    >
+    <form action="" name="search tools" ref={contRef} className={contStyle}>
       <h2 className={titleStyle}>Search Tools</h2>
 
       <fieldset className={sortingContStyle}>
@@ -136,20 +113,14 @@ function SearchTool({
         <label key={filtersName} className={styles.filtersLabel}>
           <span className={h3Syle}>{filtersName}</span>
           {filters.map((item) => (
-            <details
-              key={item.title}
-              className={styles.filtersDetails}
-            >
-              <summary
-                className={styles.filtersSummary}
-                key={item.title}
-              >
+            <details key={item.title} className={styles.filtersDetails}>
+              <summary className={styles.filtersSummary} key={item.title}>
                 {item.title}
                 <button>+</button>
               </summary>
               {item.options.map((filter, index) => (
                 <label key={index} className={styles.filterItem}>
-                  <input type="checkbox" name={filter} id={filter} />
+                  <input type="checkbox" name={filter} id={filter} style={{ transform: "scale(1.25)" }} />
                   {filter}
                 </label>
               ))}
@@ -159,7 +130,7 @@ function SearchTool({
       </fieldset>
 
       <fieldset className={styles.dateCont}>
-        <label className={labelStyle}>
+        <label className={dateLabelStyle}>
           between
           <input
             ref={minDateRef}
@@ -174,7 +145,7 @@ function SearchTool({
             className={styles.dateInput}
           />
         </label>
-        <label className={labelStyle}>
+        <label className={dateLabelStyle}>
           and
           <input
             ref={maxDateRef}
@@ -191,10 +162,27 @@ function SearchTool({
         </label>
       </fieldset>
 
-      <button
-        className={styles.btnStyle}
-        onClick={handleClick}
-      >{btnText}</button>
+      <button className={stBtnStyle} onClick={handleClick}>
+        {!isClicked ? (
+          "search tools"
+        ) : (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <rect width="10" height="10" fill="none" />
+              <path
+                d="M5 3.88906L8.88906 0L10 1.11094L6.11094 5L10 8.88906L8.88828 10L4.99921 6.11094L1.11094 10L0 8.88828L3.88906 4.99921L0 1.11015L1.11094 0.000785612L5 3.88906Z"
+                fill="#110404"
+              />
+            </g>
+          </svg>
+        )}
+      </button>
       <button
         type="submit"
         name="apply btn"
