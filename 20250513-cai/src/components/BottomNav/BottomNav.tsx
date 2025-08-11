@@ -5,7 +5,8 @@ import { useRef } from "react";
 function BottomNav() {
 
 
-  const searchBarRef = useRef<HTMLElement>(null)
+  const searchBarRef = useRef<HTMLFormElement>(null)
+  const inputSearchRef = useRef<HTMLInputElement>(null)
 
   const cY = new Date().getFullYear();
 
@@ -111,28 +112,66 @@ function BottomNav() {
     placeholderTo: cY,
   }
 
+  function printValue() {
+    if (inputSearchRef?.current) {
+      const inputSearch = inputSearchRef.current
+      return inputSearch.value.toLocaleLowerCase()
+
+    } else {
+      console.log("could not find input field")
+    }
+  }
+
+  function handleSubmit(e: SubmitEvent) {
+    if (searchBarRef?.current) {
+      e.preventDefault();
+
+      const form = searchBarRef.current;
+      const formData = new FormData(form);
+      const formJson = Object.fromEntries(formData.entries());
+
+      console.log(formJson)
+    } else {
+      console.error("form failed to load")
+    }
+  }
+
   return (
-    <nav
+    <form
+      method="get"
+      onSubmit={() => handleSubmit}
+      name="searchForm"
       ref={searchBarRef}
       role="search bar"
       className={styles.container}
     >
-      <SearchTool
+      {/* <SearchTool
         filtersName="filter by"
         sortingName="sort by"
         filters={filters}
         sorting={sorting}
         date={dateRange}
-      />
+      /> */}
 
       <input
+        ref={inputSearchRef}
+        key="search-bar"
         name="search bar"
         type="search"
         placeholder="Enter name, place, or subject here..."
+        aria-label="search for an author"
         maxLength={255}
         className={styles.searchInput}
+        onChange={printValue}
       />
-    </nav>
+      <button
+        className={styles.searchBtn}
+        type="submit"
+
+      >
+        search
+      </button>
+    </form>
   );
 }
 

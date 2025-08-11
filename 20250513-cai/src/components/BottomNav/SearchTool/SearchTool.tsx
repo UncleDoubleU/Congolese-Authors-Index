@@ -38,7 +38,8 @@ function SearchTool({
   const [contStyle, setContStyle] = useState(`${styles.contDefault}`);
   const [width, setWidth] = useState(window.innerWidth);
   const [stBtnStyle, setStBtnStyle] = useState(`${styles.btnStyle}`);
-  const contRef = useRef<HTMLFormElement>(null);
+
+  const contRef = useRef<HTMLDivElement>(null);
   const minDateRef = useRef<HTMLInputElement>(null);
   const maxDateRef = useRef<HTMLInputElement>(null);
 
@@ -100,7 +101,7 @@ function SearchTool({
   ));
 
   return (
-    <form action="" name="search tools" ref={contRef} className={contStyle}>
+    <div ref={contRef} className={contStyle}>
       <h2 className={titleStyle}>Search Tools</h2>
 
       <fieldset className={sortingContStyle}>
@@ -210,7 +211,7 @@ function SearchTool({
       >
         reset
       </button>
-    </form>
+    </div>
   );
 }
 
