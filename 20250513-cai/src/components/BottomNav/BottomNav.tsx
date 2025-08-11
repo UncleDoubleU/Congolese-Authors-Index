@@ -1,5 +1,5 @@
 import styles from "./BottomNav.module.sass";
-import SearchTool from "../SearchTool/SearchTool";
+import SearchTool from "./SearchTool/SearchTool";
 import { useRef } from "react";
 
 function BottomNav() {
@@ -8,9 +8,6 @@ function BottomNav() {
   const searchBarRef = useRef<HTMLElement>(null)
 
   const cY = new Date().getFullYear();
-
-
-
 
   const filters = [
     {
@@ -113,8 +110,6 @@ function BottomNav() {
     placeholderFrom: 1900,
     placeholderTo: cY,
   }
-
-
 
   return (
     <nav
