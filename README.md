@@ -45,4 +45,15 @@ This project is more than a digital tool it's an act of **design activism**. It 
 
 ## Status
 
-This is an ongoing project, suggestions, and collaboration are welcome.
+- Basic Responsive Design
+- Sample data
+- Page Routing
+
+## To do
+
+- Search Functionalilty
+- Responsiveness
+- Author Pages
+- code refactoring
+- Design finalisation
+- Improving Data
