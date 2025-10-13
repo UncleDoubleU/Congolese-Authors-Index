@@ -1,5 +1,5 @@
 import styles from "./BottomNav.module.sass";
-import SearchTool from "./SearchTool/SearchTool";
+// import SearchTool from "./SearchTool/SearchTool";
 import { useRef } from "react";
 
 function BottomNav() {
@@ -8,114 +8,114 @@ function BottomNav() {
   const searchBarRef = useRef<HTMLFormElement>(null)
   const inputSearchRef = useRef<HTMLInputElement>(null)
 
-  const cY = new Date().getFullYear();
+  // const cY = new Date().getFullYear();
 
-  const filters = [
-    {
-      id: 0,
-      title: "genre",
-      options: [
-        "fiction",
-        "non-fiction",
-        "academic research / studies",
-        "essay",
-        "poem",
-        "biography",
-        "tales",
-        "novel",
-        "theatre",
-      ],
-    },
-    {
-      id: 2,
-      title: "place of birth",
-      options: [
-        "Lower Uele",
-        "Equateur",
-        "East Kasai",
-        "Ituri",
-        "Kasai",
-        "Kasai-Central",
-        "Kinshasa",
-        "Kongo Central",
-        "Kwango",
-        "Kwilu",
-        "Lomami",
-        "Lualaba",
-        "Mai-Ndombe",
-        "Maniema",
-        "Mongala",
-        "North Kivu",
-        "North Ubangi",
-        "Sankuru",
-        "South Kivu",
-        "South Ubangi",
-        "Tanganyika",
-        "Tshopo",
-        "Tshuapa",
-        "Upper Katanga",
-        "Upper Lomami",
-        "Upper Uele",
-      ],
-    },
-    {
-      id: 3,
-      title: "audience",
-      options: [
-        "Adults",
-        "Teenagers (13 to 17)",
-        "Children (0 to 12)",
-      ],
-    },
-    {
-      id: 4,
-      title: "language",
-      options: [
-        "french",
-        "english",
-        "german",
-        "lingala",
-        "tshiluba",
-        "kikongo",
-        "swahili",
-      ],
-    },
-    {
-      id: 5,
-      title: "publisher",
-      options: [
-        "Baobab House Press",
-        "Maple & Clay Publishing",
-        "Éditions L'Éclipse",
-        "Saffron Ink Works",
-        "Obsidian Gate Theatre Co.",
-        "Iron Lantern Press",
-        "Kirin Scroll Editions",
-        "Cobalt Stage & Print",
-        "another fictious publisher's name",
-        "publisher",
-      ],
-    },
-  ];
+  // const filters = [
+  //   {
+  //     id: 0,
+  //     title: "genre",
+  //     options: [
+  //       "fiction",
+  //       "non-fiction",
+  //       "academic research / studies",
+  //       "essay",
+  //       "poem",
+  //       "biography",
+  //       "tales",
+  //       "novel",
+  //       "theatre",
+  //     ],
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "place of birth",
+  //     options: [
+  //       "Lower Uele",
+  //       "Equateur",
+  //       "East Kasai",
+  //       "Ituri",
+  //       "Kasai",
+  //       "Kasai-Central",
+  //       "Kinshasa",
+  //       "Kongo Central",
+  //       "Kwango",
+  //       "Kwilu",
+  //       "Lomami",
+  //       "Lualaba",
+  //       "Mai-Ndombe",
+  //       "Maniema",
+  //       "Mongala",
+  //       "North Kivu",
+  //       "North Ubangi",
+  //       "Sankuru",
+  //       "South Kivu",
+  //       "South Ubangi",
+  //       "Tanganyika",
+  //       "Tshopo",
+  //       "Tshuapa",
+  //       "Upper Katanga",
+  //       "Upper Lomami",
+  //       "Upper Uele",
+  //     ],
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "audience",
+  //     options: [
+  //       "Adults",
+  //       "Teenagers (13 to 17)",
+  //       "Children (0 to 12)",
+  //     ],
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "language",
+  //     options: [
+  //       "french",
+  //       "english",
+  //       "german",
+  //       "lingala",
+  //       "tshiluba",
+  //       "kikongo",
+  //       "swahili",
+  //     ],
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "publisher",
+  //     options: [
+  //       "Baobab House Press",
+  //       "Maple & Clay Publishing",
+  //       "Éditions L'Éclipse",
+  //       "Saffron Ink Works",
+  //       "Obsidian Gate Theatre Co.",
+  //       "Iron Lantern Press",
+  //       "Kirin Scroll Editions",
+  //       "Cobalt Stage & Print",
+  //       "another fictious publisher's name",
+  //       "publisher",
+  //     ],
+  //   },
+  // ];
 
-  const sorting = [
-    { id: 0, title: "A to Z" },
-    { id: 1, title: "Z to A" },
-    { id: 2, title: "relevance" },
-    { id: 3, title: "newest first" },
-    { id: 4, title: "oldest first" },
-  ];
+  // const sorting = [
+  //   { id: 0, title: "A to Z" },
+  //   { id: 1, title: "Z to A" },
+  //   { id: 2, title: "relevance" },
+  //   { id: 3, title: "newest first" },
+  //   { id: 4, title: "oldest first" },
+  // ];
 
-  const dateRange = {
-    title: "date",
-    placeholderFrom: 1900,
-    placeholderTo: cY,
-  }
+  // const dateRange = {
+  //   title: "date",
+  //   placeholderFrom: 1900,
+  //   placeholderTo: cY,
+  // }
 
   function printValue() {
     if (inputSearchRef?.current) {
       const inputSearch = inputSearchRef.current
-      return inputSearch.value.toLocaleLowerCase()
+      console.log(inputSearch.value.toLocaleLowerCase())
 
     } else {
       console.log("could not find input field")
@@ -162,7 +162,7 @@ function BottomNav() {
         aria-label="search for an author"
         maxLength={255}
         className={styles.searchInput}
-        onChange={printValue}
+        onKeyUp={printValue}
       />
       <button
         className={styles.searchBtn}
