@@ -6,9 +6,10 @@ interface AuthorProps {
      newItem: boolean;
      pob: string;
      dob: number;
+     genres: string[];
 }
 
-function Author({ fullName, newItem, pob, dob }: AuthorProps) {
+function Author({ fullName, newItem, pob, dob, genres }: AuthorProps) {
      const [width, setWidth] = useState(window.innerWidth)
 
      useEffect(() => {
@@ -23,8 +24,12 @@ function Author({ fullName, newItem, pob, dob }: AuthorProps) {
           setWidth(window.innerWidth)
      }
 
+     const authorGenres = genres.map(genre =>
+          <li>{genre}</li>
+     );
+
      const xtraInfo = width >= 768 ? <><p className={styles.pobText}> {pob}</p>
-          <p className={styles.dobText}>{dob}</p></> : null
+          <p className={styles.dobText}>{dob}</p></> : null;
 
 
      return (
@@ -32,10 +37,7 @@ function Author({ fullName, newItem, pob, dob }: AuthorProps) {
                <h2 className={styles.h2}>{fullName}</h2>
                {newItem && <div className={styles.newItem}><p>New</p></div>}
                <ul className={styles.list}>
-                    <li>Poems</li>
-                    <li>Biography</li>
-                    <li>essays</li>
-                    <li>non-fiction</li>
+                    {authorGenres}
                </ul>
                {xtraInfo}
 

@@ -10,7 +10,8 @@ function Index() {
                fullName={`${author.firstName} ${author.lastName} `}
                newItem={true}
                pob={author.placeOfBirth}
-               dob={author.dateOfBirth} />
+               dob={author.dateOfBirth}
+               genres={author.genres} />
      )
      return (
           <main>

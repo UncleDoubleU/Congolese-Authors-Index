@@ -52,8 +52,8 @@ This project is more than a digital tool it's an act of **design activism**. It 
 ## To do
 
 - Search Functionalilty
-- Responsiveness
+- Design finalisation accessibility &responsiveness
 - Author Pages
 - code refactoring
-- Design finalisation
 - Improving Data
+- Security
