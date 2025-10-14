@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import BottomNav from "./components/BottomNav/BottomNav";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
+import AuthorPage from "./pages/AuthorPage/AuthorPage";
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <BottomNav />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/authorname" element={<AuthorPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/notfound" element={<NotFound />} />
 

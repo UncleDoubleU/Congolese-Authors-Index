@@ -1,15 +1,17 @@
 import styles from "./Author.module.sass"
 import { useState, useEffect } from "react"
 
+// setting the prop types using the interface object allowing them to be undefined for now
 interface AuthorProps {
-     fullName: string;
-     newItem: boolean;
-     pob: string;
-     dob: number;
+     id: string;
+     fullName?: string;
+     newItem?: boolean;
+     pob?: string;
+     dob?: number;
      genres: string[];
 }
 
-function Author({ fullName, newItem, pob, dob, genres }: AuthorProps) {
+function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
      const [width, setWidth] = useState(window.innerWidth)
 
      useEffect(() => {
@@ -24,21 +26,29 @@ function Author({ fullName, newItem, pob, dob, genres }: AuthorProps) {
           setWidth(window.innerWidth)
      }
 
+     // if there is a genre add a list item otherwise do nothing
      const authorGenres = genres.map(genre =>
-          <li>{genre}</li>
+          <li key={id + "_" + genre}>{genre}</li>
      );
 
      const xtraInfo = width >= 768 ? <><p className={styles.pobText}> {pob}</p>
           <p className={styles.dobText}>{dob}</p></> : null;
 
+     // function handleClick() {
+     //      console.log("Click");
+     // }
+
 
      return (
-          <div className={styles.container}>
+          <div
+               className={styles.container}
+          // onClick={handleClick}
+          >
                <h2 className={styles.h2}>{fullName}</h2>
                {newItem && <div className={styles.newItem}><p>New</p></div>}
-               <ul className={styles.list}>
+               {genres?.length > 0 && <ul className={styles.list}>
                     {authorGenres}
-               </ul>
+               </ul>}
                {xtraInfo}
 
                <button aria-label="click for more info" className={styles.infoBtn}>+</button>

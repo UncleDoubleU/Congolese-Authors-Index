@@ -1,6 +1,16 @@
 import Books from "../../components/Books/Books"
 
 function AuthorPage() {
+
+     interface AuthorPageProp {
+          id: string;
+          fullName?: string;
+          newItem?: boolean;
+          pob?: string;
+          dob?: number;
+          genres: string[];
+          languages: string[];
+     }
      return (
           <main>
                <h1>Firstname LastName</h1>

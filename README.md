@@ -53,7 +53,7 @@ This project is more than a digital tool it's an act of **design activism**. It 
 
 - Search Functionalilty
 - Design finalisation accessibility &responsiveness
-- Author Pages
+- Author Pages: dynamic routing
 - code refactoring
 - Improving Data
 - Security

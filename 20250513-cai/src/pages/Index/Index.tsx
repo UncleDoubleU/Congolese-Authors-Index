@@ -7,11 +7,14 @@ function Index() {
 
      const authorsList = authors.map(author =>
           <Author
-               fullName={`${author.firstName} ${author.lastName} `}
+               id={`${author.firstName}_${author.id}_${author.lastName}`}
+               fullName={`${author.firstName} ${author.lastName}`}
                newItem={true}
                pob={author.placeOfBirth}
                dob={author.dateOfBirth}
-               genres={author.genres} />
+               genres={author.genres}
+          />
+
      )
      return (
           <main>
