@@ -47,7 +47,8 @@ This project is more than a digital tool it's an act of **design activism**. It 
 
 - Basic Responsive Design
 - Sample data
-- Page Routing
+- Simple Navigation Bar
+- Simple Search Bar
 
 ## To do
 

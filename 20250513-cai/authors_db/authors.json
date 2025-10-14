@@ -28,8 +28,15 @@
           "knownFor": "Une femme en exil. Paris: L'Harmattan, 2000. (139p.). ISBN 2-7384-9705-5. Roman.",
           "workPublishedIn": null,
           "biography": "Amba Bongo was born in Kinshasa, where she studied at the Institut Supérieur Pédagogique de la Gombe. She also studied psychology at the University of Warocqué in Mons, Belgium. Since 1994, she has worked with asylum seekers. She was living in London at the time of writing (2000).",
-          "bibliography": "Une femme en exil. Paris: L'Harmattan, 2000. (139p.). ISBN 2-7384-9705-5. Roman.",
-          "writingLanguage": "FRENCH",
+          "bibliography": {
+               "title": "Une femme en exil.",
+               "publising": "Paris: L'Harmattan",
+               "yearOfPublication": 2000,
+               "numberOfPages": 139,
+               "ISBN": "2-7384-9705-5",
+               "genre": "novel"
+          },
+          "writingLanguage": "french",
           "portrait": "https://www.exiledwriters.co.uk/wp-content/uploads/2015/05/Amba-Bongo.jpg",
           "sources": "https://journals.sagepub.com/doi/epdf/10.1080/03064220208537090, https://aflit.arts.uwa.edu.au/BongoAmbaEng.html, https://muse.jhu.edu/pub/222/article/780812/pdf, https://www.unhcr.org/news/congolese-woman-exile-seeks-write-wrongs",
           "genres": [
@@ -48,7 +55,14 @@
           "knownFor": "Les Marais brûlés. Kinshasa: Centre africain de littérature, 1973 (40p.) Poésie.",
           "workPublishedIn": null,
           "biography": "Bosek'ilolo-Baleka Lima is bown in Wafania in the province Equateur in DRC. he was a collaborator of the SPECIA (Société Parisienne d'Expansion Chimique). In 1973 he was living in Kinshasa, he was a member of l'Union des Ecrivains Zaïrois. In 'Les Marais Brulés / the burnt swamps', Lima offers 4 tales of/from his native region.",
-          "bibliography": "Les Marais brûlés. Kinshasa: Centre africain de littérature, 1973 (40p.) Poésie.",
+          "bibliography": {
+               "title": "Les Marais brûlés.",
+               "publising": "Kinshasa: Centre africain de littérature",
+               "yearOfPublication": 1973,
+               "numberOfPages": 40,
+               "ISBN": null,
+               "genre": "Poems"
+          },
           "writingLanguage": "French",
           "portrait": "https://www.abebooks.com/marais-br%C3%BBl%C3%A9s-Bosekilolo-Baleka-Lima-Centre-africain/30982106582/bd#&gid=1&pid=2",
           "sources": "according to the university of western australia mentionnée par Pius Ngandu Nkashama dans Le Livre littéraire, biographie de la littérature du Congo Kinshasa. https://www.abebooks.com/marais-br%C3%BBl%C3%A9s-Bosekilolo-Baleka-Lima-Centre-africain/30982106582/bd#&gid=1&pid=2",
@@ -63,16 +77,27 @@
           "firstName": "Marie-Jeanne",
           "lastName": "Tshilolo Kabika",
           "placeOfBirth": "Lubumbashi",
-          "dateOfBirth": 0,
+          "dateOfBirth": 1949,
           "dateOfDeath": null,
           "knownFor": "Matricide. Paris: L'Harmattan, 2008. (192p.). ISBN: 978-2-296-04330-5. Roman.",
           "workPublishedIn": null,
           "biography": "Marie-Jeanne Tshilolo Kabika was born in Lubumbashi, Katanga, on 24 May 1949. She completed her primary and secondary education with the Sisters of Charity of Ghent at the Institut Marie-José in Lubumbashi. She obtained her degree in French language and literature from UNAZA, and subsequently worked as a French teacher and was a member of the Union des Ecrivains du Congo (UECO/RDC). In 1969, she won a poetry prize in a competition organised by the French Cultural Centre in Lubumbashi, and in 1986, she self-published a collection of tales entitled 'Le Pilier du chef et autres contes' (The Chief's Pillar and Other Tales). She was working as a journalist-reporter at the time of writing (2008)",
-          "bibliography": "Le Pilier du chef et autres contes. Kinshasa: Pavillon des écrivains, 1986. Contes.\nMatricide. Paris: L'Harmattan, 2008. (192p.). ISBN: 978-2-296-04330-5. Roman.",
+          "bibliography": {
+               "title": "Matricide",
+               "publising": "Paris: L'Harmattan",
+               "yearOfPublication": 2008,
+               "numberOfPages": 192,
+               "ISBN": "978-2-296-04330-5",
+               "genre": "Novel"
+          },
           "writingLanguage": null,
           "portrait": "https://aflit.arts.uwa.edu.au/images100/tshilolo100.jpg",
           "sources": "https://aflit.arts.uwa.edu.au/TshiloloKabika.html",
-          "genres": [],
+          "genres": [
+               "Novel",
+               "Tales",
+               "Poetry"
+          ],
           "sex": "F"
      },
      {
@@ -85,11 +110,21 @@
           "knownFor": "Zaïna. Suivi de Qui hurle dans la nuit? Paris: Hatier, 1986. Théâtre.",
           "workPublishedIn": null,
           "biography": "Diur N'tumb est Congolaise. Elle est surtout connue pour son théâtre. Sa pièce Zaïna a obtenu le Grand Prix du Concours Théâtral Inter-Africain de RFI en 1983 et elle a été adaptée pour la télévision en 1984. Sa seconde pièce Qui hurle dans la nuit? a été mise en scène par le Théâtre International de Langue Française en 1986 puis publiée à New York en 1987 par l'Ubu Repertory Theater. Plusieurs chroniques de Diur N'tumb ont été publiées dans Amina sous la rubrique : 'Tribune de Diur N'tumb'.",
-          "bibliography": "Zaïna. Suivi de Qui hurle dans la nuit? Paris: Hatier, 1986. Théâtre.\nthe Zairian playwright Diur N'Tumb's drama 'Lost Voices,' about conflict between Western values and other traditions, will be given at the Hunter College Little Theater, 67th Street between Park and Lexington Avenues.",
+          "bibliography": {
+               "title": "Zaïna. Suivi de Qui hurle dans la nuit?",
+               "publising": "Paris: Hatier",
+               "yearOfPublication": 1986,
+               "numberOfPages": null,
+               "ISBN": null,
+               "genre": "Theatre"
+          },
           "writingLanguage": "French",
           "portrait": null,
           "sources": "https://aflit.arts.uwa.edu.au/DiurNtumb.html, https://www.nytimes.com/1987/02/18/theater/festival-of-new-plays-from-africa-to-open.html, https://www.artcena.fr/agendas/spectacles/qui-hurle-dans-la-nuit-1986",
-          "genres": [],
+          "genres": [
+               "Theatre",
+               "Chronicle"
+          ],
           "sex": "F"
      }
 ]
