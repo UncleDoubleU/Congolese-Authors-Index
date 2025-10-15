@@ -7,8 +7,8 @@ import authors from '../../../authors_db/authors.json';
 
 // setting the interfaces to silence the typescript error.
 // interfaces allow to define object properties and their types
-// doing this allows to certain "type" errors during compilations therefore minimizing runtime issues.
-// runtime errors are errors that occur while your program is running, these 
+// doing this allows to prevent type related errors during compilations therefore minimizing runtime issues.
+// runtime errors are errors that occur while your program is running, these are harder to fix
 
 interface Bibliography {
      title: string;
@@ -28,6 +28,7 @@ interface Author {
      dateOfDeath: number;
      knownFor: string;
      biography: string;
+     // I can pass the object type here if I want to use less code
      bibliography: Bibliography;
      writingLanguage: string;
      portrait: string;
@@ -35,8 +36,8 @@ interface Author {
      genres: string[];
      sex: string;
 }
-// generics are a one of the main ways to create reusable components.
-// passing the Author object as a generic allows to access the proporties of the context's value
+// generics are a one of the main ways to create reusable components that work with multiple types.
+// passing Author as a generic allows typescript to access the proporties of the context's value
 // this ensures that only objects with the Author properties types can be passed in as value
 const TestContext = createContext<Author[]>([]);
 function Index() {
