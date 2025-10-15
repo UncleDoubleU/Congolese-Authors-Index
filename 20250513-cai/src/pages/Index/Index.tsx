@@ -1,3 +1,4 @@
+// decided to use createContext instead of basic props to make it easier to use the data across multiple elements.
 import { createContext } from "react";
 
 import PageTitle from '../../components/PageTitle/PageTitle';
