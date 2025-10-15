@@ -1,26 +1,14 @@
 import Books from "../../components/Books/Books"
 
-interface AuthorPageProp {
-     id: string;
-     fullName?: string;
-     biography?: string;
-     works?: [{ title: string; isbn: string; numOfPages: number }];
-     genres?: string[];
-     availableLanguages?: string[];
-}
 function AuthorPage() {
 
 
-     } else {
-          console.log('no book')
-     }
-
      return (
           <main>
-               <h1>{fullName}</h1>
+               <h1></h1>
                <section>
                     <h2>Biography</h2><br />
-                    <p>{biography}</p>
+                    <p></p>
                </section>
                <section>
                     <h2>Bibliography</h2><br />

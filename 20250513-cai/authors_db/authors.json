@@ -1,15 +1,21 @@
 [
      {
-          "id": 1,
+          "id": 0,
           "firstName": "Léonie",
           "lastName": "Abo",
           "placeOfBirth": "Malungu - Kwilu",
           "dateOfBirth": 1945,
-          "dateOfDeath": null,
+          "dateOfDeath": 0,
           "knownFor": "Une Femme du Congo.",
-          "workPublishedIn": "Ce livre a été lancé à l'occasion de la 12 ème édition du Festival Panafricain du Cinéma de Ouagadougou (FESPACO) en 1991. according to: https://aflit.arts.uwa.edu.au/AboLeonie.html",
           "biography": "Léonie Abo was born in Zaire in 1945, in Malungu on the banks of the Kwilu River. Her mother died in childbirth (hence the name 'Abo' given to the author, as it means 'mourning' in Bambunda). She was raised by Mabiungu, a young woman who could not have children. After a few years at primary school and a marriage arranged by her family, Léonie Abo found herself in the maquis alongside Pierre Mulele without having really had a say in the matter. In 1968, after the assassination of her husband, Léonie Abo fled to Congo-Brazzaville, where she has lived ever since (1996). She has two daughters: Eulalie (born in 1971) and Ghislaine (born in 1974).",
-          "bibliography": "MARTENS, Ludo. Abo : une femme du Congo. Brussels; Paris: L'Harmattan, 1994.",
+          "bibliography": {
+               "title": "une femme du Congo.",
+               "publishing": "Brussels; Paris: L'Harmattan",
+               "yearOfPublication": 1994,
+               "numberOfPages": 0,
+               "ISBN": "",
+               "genre": "biography"
+          },
           "writingLanguage": "FRENCH",
           "portrait": "https://www.ufrgs.br/africanas/wp-content/uploads/2021/01/L%C3%A9onie-Abo.jpg",
           "sources": "wikipedia, the university of western australia - femmes ecrivains et litterature africaine, https://www.ufrgs.br/africanas/leonie-abo-1945/",
@@ -19,18 +25,17 @@
           "sex": "F"
      },
      {
-          "id": 2,
+          "id": 1,
           "firstName": "Amba",
           "lastName": "Bongo",
           "placeOfBirth": "Kinshasa",
           "dateOfBirth": 1962,
-          "dateOfDeath": null,
+          "dateOfDeath": 0,
           "knownFor": "Une femme en exil. Paris: L'Harmattan, 2000. (139p.). ISBN 2-7384-9705-5. Roman.",
-          "workPublishedIn": null,
           "biography": "Amba Bongo was born in Kinshasa, where she studied at the Institut Supérieur Pédagogique de la Gombe. She also studied psychology at the University of Warocqué in Mons, Belgium. Since 1994, she has worked with asylum seekers. She was living in London at the time of writing (2000).",
           "bibliography": {
                "title": "Une femme en exil.",
-               "publising": "Paris: L'Harmattan",
+               "publishing": "Paris: L'Harmattan",
                "yearOfPublication": 2000,
                "numberOfPages": 139,
                "ISBN": "2-7384-9705-5",
@@ -46,21 +51,20 @@
           "sex": "F"
      },
      {
-          "id": 3,
+          "id": 2,
           "firstName": "Lima-Baleka",
           "lastName": "Bosek'ilolo",
           "placeOfBirth": "Wafania - Equateur",
           "dateOfBirth": 1949,
-          "dateOfDeath": null,
+          "dateOfDeath": 0,
           "knownFor": "Les Marais brûlés. Kinshasa: Centre africain de littérature, 1973 (40p.) Poésie.",
-          "workPublishedIn": null,
           "biography": "Bosek'ilolo-Baleka Lima is bown in Wafania in the province Equateur in DRC. he was a collaborator of the SPECIA (Société Parisienne d'Expansion Chimique). In 1973 he was living in Kinshasa, he was a member of l'Union des Ecrivains Zaïrois. In 'Les Marais Brulés / the burnt swamps', Lima offers 4 tales of/from his native region.",
           "bibliography": {
                "title": "Les Marais brûlés.",
-               "publising": "Kinshasa: Centre africain de littérature",
+               "publishing": "Kinshasa: Centre africain de littérature",
                "yearOfPublication": 1973,
                "numberOfPages": 40,
-               "ISBN": null,
+               "ISBN": "",
                "genre": "Poems"
           },
           "writingLanguage": "French",
@@ -73,24 +77,23 @@
           "sex": "M"
      },
      {
-          "id": 4,
+          "id": 3,
           "firstName": "Marie-Jeanne",
           "lastName": "Tshilolo Kabika",
           "placeOfBirth": "Lubumbashi",
           "dateOfBirth": 1949,
-          "dateOfDeath": null,
+          "dateOfDeath": 0,
           "knownFor": "Matricide. Paris: L'Harmattan, 2008. (192p.). ISBN: 978-2-296-04330-5. Roman.",
-          "workPublishedIn": null,
           "biography": "Marie-Jeanne Tshilolo Kabika was born in Lubumbashi, Katanga, on 24 May 1949. She completed her primary and secondary education with the Sisters of Charity of Ghent at the Institut Marie-José in Lubumbashi. She obtained her degree in French language and literature from UNAZA, and subsequently worked as a French teacher and was a member of the Union des Ecrivains du Congo (UECO/RDC). In 1969, she won a poetry prize in a competition organised by the French Cultural Centre in Lubumbashi, and in 1986, she self-published a collection of tales entitled 'Le Pilier du chef et autres contes' (The Chief's Pillar and Other Tales). She was working as a journalist-reporter at the time of writing (2008)",
           "bibliography": {
                "title": "Matricide",
-               "publising": "Paris: L'Harmattan",
+               "publishing": "Paris: L'Harmattan",
                "yearOfPublication": 2008,
                "numberOfPages": 192,
                "ISBN": "978-2-296-04330-5",
                "genre": "Novel"
           },
-          "writingLanguage": null,
+          "writingLanguage": "FRENCH",
           "portrait": "https://aflit.arts.uwa.edu.au/images100/tshilolo100.jpg",
           "sources": "https://aflit.arts.uwa.edu.au/TshiloloKabika.html",
           "genres": [
@@ -101,30 +104,26 @@
           "sex": "F"
      },
      {
-          "id": 5,
+          "id": 4,
           "firstName": "Diur",
           "lastName": "N'tumb",
           "placeOfBirth": "",
           "dateOfBirth": 0,
-          "dateOfDeath": null,
+          "dateOfDeath": 0,
           "knownFor": "Zaïna. Suivi de Qui hurle dans la nuit? Paris: Hatier, 1986. Théâtre.",
-          "workPublishedIn": null,
           "biography": "Diur N'tumb est Congolaise. Elle est surtout connue pour son théâtre. Sa pièce Zaïna a obtenu le Grand Prix du Concours Théâtral Inter-Africain de RFI en 1983 et elle a été adaptée pour la télévision en 1984. Sa seconde pièce Qui hurle dans la nuit? a été mise en scène par le Théâtre International de Langue Française en 1986 puis publiée à New York en 1987 par l'Ubu Repertory Theater. Plusieurs chroniques de Diur N'tumb ont été publiées dans Amina sous la rubrique : 'Tribune de Diur N'tumb'.",
           "bibliography": {
                "title": "Zaïna. Suivi de Qui hurle dans la nuit?",
-               "publising": "Paris: Hatier",
+               "publishing": "Paris: Hatier",
                "yearOfPublication": 1986,
-               "numberOfPages": null,
-               "ISBN": null,
+               "numberOfPages": 0,
+               "ISBN": "",
                "genre": "Theatre"
           },
           "writingLanguage": "French",
-          "portrait": null,
+          "portrait": "",
           "sources": "https://aflit.arts.uwa.edu.au/DiurNtumb.html, https://www.nytimes.com/1987/02/18/theater/festival-of-new-plays-from-africa-to-open.html, https://www.artcena.fr/agendas/spectacles/qui-hurle-dans-la-nuit-1986",
-          "genres": [
-               "Theatre",
-               "Chronicle"
-          ],
+          "genres": [],
           "sex": "F"
      }
 ]

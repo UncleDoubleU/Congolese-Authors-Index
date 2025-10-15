@@ -12,40 +12,32 @@ import AuthorPage from "./pages/AuthorPage/AuthorPage";
 
 
 function App() {
+
+  // const authorsList = authors.map(author =>
+  //   <Author
+  //     id={`${author.firstName}_${author.id}_${author.lastName}`}
+  //     fullName={`${author.firstName} ${author.lastName}`}
+  //     newItem={true}
+  //     pob={author.placeOfBirth}
+  //     dob={author.dateOfBirth}
+  //     genres={author.genres}
+  //   />
+
   return (
     <>
       <BrowserRouter>
         <Header />
         <BottomNav />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/authorname"
-            element={<AuthorPage
-              id={"hello_1"}
-              fullName="John Doe"
-              biography="Amba Bongo was born in Kinshasa, where she studied at the Institut Supérieur Pédagogique de la Gombe. She also studied psychology at the University of Warocqué in Mons, Belgium. Since 1994, she has worked with asylum seekers. She was living in London at the time of writing (2000)."
-              works={
-                [
-                  {
-                    title: "hello",
-                    availableLanguages: ["big boy info"],
-                    ISBN: "ISBN-SHKLD-1SFK3-AB46",
-                    numOfPages: 139
-                  },
-                  {
-                    name: "world",
-                    availableLanguages: ["big", "girl", "data"],
-                    other: "ISBN-KAHDO-556LD-09DK",
-                    numOfPages: 40
-                  },
-                ]
-              }
-            />}
-          />
-          <Route path="/about" element={<About />} />
-          <Route path="/notfound" element={<NotFound />} />
+        
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/authorname"
+              element={<AuthorPage />}
+            />
+            <Route path="/about" element={<About />} />
+            <Route path="/notfound" element={<NotFound />} />
 
-        </Routes>
+          </Routes>
         <Footer />
       </BrowserRouter>
     </>
