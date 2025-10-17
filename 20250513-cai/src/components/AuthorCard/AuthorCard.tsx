@@ -1,9 +1,11 @@
-import styles from "./Author.module.sass"
-import { useState, useEffect } from "react"
-
+import styles from "./AuthorCard.module.sass"
+import { useState, useEffect, useContext } from "react"
+import { TestContext } from "../../Contexts/Contexts"
+import { NavLink } from "react-router";
 // setting the prop types using the interface object allowing them to be undefined for now
 interface AuthorProps {
      id: string;
+     link: string;
      fullName?: string;
      newItem?: boolean;
      pob?: string;
@@ -11,7 +13,8 @@ interface AuthorProps {
      genres: string[];
 }
 
-function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
+function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) {
+     const authorData = useContext(TestContext);
      const [width, setWidth] = useState(window.innerWidth)
 
      useEffect(() => {
@@ -24,6 +27,10 @@ function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
 
      function handleResize() {
           setWidth(window.innerWidth)
+     }
+
+     function handleClick() {
+
      }
 
      // if there is a genre add a list item otherwise do nothing
@@ -40,9 +47,9 @@ function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
 
 
      return (
-          <div
+          <NavLink to={link}
                className={styles.container}
-          // onClick={handleClick}
+               onClick={handleClick}
           >
                <h2 className={styles.h2}>{fullName}</h2>
                {newItem && <div className={styles.newItem}><p>New</p></div>}
@@ -53,7 +60,7 @@ function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
 
                <button aria-label="click for more info" className={styles.infoBtn}>+</button>
 
-          </div >
+          </NavLink >
      )
 }
 

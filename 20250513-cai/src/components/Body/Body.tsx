@@ -1,5 +1,5 @@
 
-import Author from "../Author/Author";
+import Author from "../AuthorCard/AuthorCard";
 import PageTitle from "../PageTitle/PageTitle";
 import IndexCat from "../IndexCat/IndexCat";
 function Body() {

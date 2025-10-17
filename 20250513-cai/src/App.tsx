@@ -1,6 +1,6 @@
 import "./App.sass";
 import { BrowserRouter, Routes, Route } from "react-router";
-import { createContext } from "react";
+import authors from '../authors_db/authors.json';
 
 import Header from "./components/Header/Header";
 import Index from "./pages/Index/Index";
@@ -10,6 +10,7 @@ import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import AuthorPage from "./pages/AuthorPage/AuthorPage";
 
+import { TestContext } from "./Contexts/Contexts";
 
 function App() {
 
@@ -28,16 +29,18 @@ function App() {
       <BrowserRouter>
         <Header />
         <BottomNav />
-        
+        <TestContext
+          value={authors}>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/authorname"
+            <Route path="/author/"
               element={<AuthorPage />}
             />
             <Route path="/about" element={<About />} />
             <Route path="/notfound" element={<NotFound />} />
 
           </Routes>
+        </TestContext>
         <Footer />
       </BrowserRouter>
     </>
