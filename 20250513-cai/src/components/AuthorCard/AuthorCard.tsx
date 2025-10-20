@@ -1,11 +1,14 @@
-import styles from "./AuthorCard.module.sass"
-import { useState, useEffect, useContext } from "react"
-import { TestContext } from "../../Contexts/Contexts"
-import { NavLink } from "react-router";
+import styles from "./AuthorCard.module.sass";
+import {
+     useState,
+     useEffect,
+     // useContext 
+} from "react";
+// import { TestContext } from "../../Contexts/Contexts";
+
 // setting the prop types using the interface object allowing them to be undefined for now
 interface AuthorProps {
      id: string;
-     link: string;
      fullName?: string;
      newItem?: boolean;
      pob?: string;
@@ -13,25 +16,23 @@ interface AuthorProps {
      genres: string[];
 }
 
-function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) {
-     const authorData = useContext(TestContext);
-     const [width, setWidth] = useState(window.innerWidth)
+function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
+     // const authorData = useContext(TestContext);
+     const [width, setWidth] = useState(window.innerWidth);
 
      useEffect(() => {
-          window.addEventListener("resize", handleResize)
+          window.addEventListener("resize", handleResize);
 
           return () => {
-               window.removeEventListener("resize", handleResize)
+               window.removeEventListener("resize", handleResize);
           }
-     }, [])
+     }, []);
 
      function handleResize() {
-          setWidth(window.innerWidth)
+          setWidth(window.innerWidth);
      }
 
-     function handleClick() {
 
-     }
 
      // if there is a genre add a list item otherwise do nothing
      const authorGenres = genres.map(genre =>
@@ -47,9 +48,8 @@ function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) 
 
 
      return (
-          <NavLink to={link}
+          <article
                className={styles.container}
-               onClick={handleClick}
           >
                <h2 className={styles.h2}>{fullName}</h2>
                {newItem && <div className={styles.newItem}><p>New</p></div>}
@@ -60,7 +60,7 @@ function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) 
 
                <button aria-label="click for more info" className={styles.infoBtn}>+</button>
 
-          </NavLink >
+          </article >
      )
 }
 

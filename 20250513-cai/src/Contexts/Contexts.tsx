@@ -25,8 +25,8 @@ interface Author {
   knownFor: string;
   biography: string;
   // I can pass the object type here if I want to use less code
-  bibliography: Bibliography;
-  writingLanguage: string;
+  bibliography: Bibliography[];
+  writingLanguages: string[];
   portrait: string;
   sources: string;
   genres: string[];

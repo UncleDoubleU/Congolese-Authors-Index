@@ -18,9 +18,10 @@ import AuthorCard from '../../components/AuthorCard/AuthorCard';
 //      />);
 function Index() {
      const authorsData = useContext(TestContext);
+     alphabeticalSorting(authorsData);
      const cards = authorsData.map(author =>
+
           <AuthorCard
-               link={`${author.firstName.toLocaleLowerCase()}${author.lastName.toLocaleLowerCase()}${author.id}`}
                id={`${author.firstName}_${author.id}_${author.lastName}`}
                fullName={`${author.firstName} ${author.lastName}`}
                newItem={true}
@@ -29,6 +30,11 @@ function Index() {
                genres={author.genres}
           />
      );
+     // sorting array alphabetically
+     function alphabeticalSorting(theArray: object[]) {
+          theArray.sort();
+          console.log(theArray)
+     }
 
      return (
           <main>

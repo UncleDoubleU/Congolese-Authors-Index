@@ -33,7 +33,7 @@ function App() {
           value={authors}>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/author/"
+            <Route path="/author/:authorId"
               element={<AuthorPage />}
             />
             <Route path="/about" element={<About />} />
