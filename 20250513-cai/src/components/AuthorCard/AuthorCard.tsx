@@ -2,12 +2,13 @@ import styles from "./AuthorCard.module.sass";
 import {
      useState,
      useEffect,
-     // useContext 
+     // useContext
 } from "react";
-// import { TestContext } from "../../Contexts/Contexts";
+import { NavLink } from "react-router";
 
 // setting the prop types using the interface object allowing them to be undefined for now
 interface AuthorProps {
+     link: string;
      id: string;
      fullName?: string;
      newItem?: boolean;
@@ -16,7 +17,7 @@ interface AuthorProps {
      genres: string[];
 }
 
-function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
+function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) {
      // const authorData = useContext(TestContext);
      const [width, setWidth] = useState(window.innerWidth);
 
@@ -31,8 +32,6 @@ function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
      function handleResize() {
           setWidth(window.innerWidth);
      }
-
-
 
      // if there is a genre add a list item otherwise do nothing
      const authorGenres = genres.map(genre =>
@@ -58,7 +57,9 @@ function Author({ id, fullName, newItem, pob, dob, genres }: AuthorProps) {
                </ul>}
                {xtraInfo}
 
-               <button aria-label="click for more info" className={styles.infoBtn}>+</button>
+               <button aria-label="click for more info" className={styles.infoBtn}>
+                    <NavLink to={link}>+</NavLink>
+               </button>
 
           </article >
      )

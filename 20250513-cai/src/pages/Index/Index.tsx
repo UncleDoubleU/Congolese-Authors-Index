@@ -1,6 +1,7 @@
 
 import { useContext } from "react"
 import { TestContext } from "../../Contexts/Contexts";
+import { useParams } from "react-router";
 
 import PageTitle from '../../components/PageTitle/PageTitle';
 import IndexCat from '../../components/IndexCat/IndexCat';
@@ -22,7 +23,8 @@ function Index() {
      const cards = authorsData.map(author =>
 
           <AuthorCard
-               id={`${author.firstName}_${author.id}_${author.lastName}`}
+               link={`/author/${author.id}/`}
+               id={`${author.id}_${author.firstName}_${author.lastName}`}
                fullName={`${author.firstName} ${author.lastName}`}
                newItem={true}
                pob={author.placeOfBirth}
