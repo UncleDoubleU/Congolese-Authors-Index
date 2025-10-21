@@ -1,7 +1,6 @@
 
 import { useContext } from "react"
 import { TestContext } from "../../Contexts/Contexts";
-import { useParams } from "react-router";
 
 import PageTitle from '../../components/PageTitle/PageTitle';
 import IndexCat from '../../components/IndexCat/IndexCat';

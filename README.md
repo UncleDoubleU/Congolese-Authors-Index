@@ -49,12 +49,12 @@ This project is more than a digital tool it's an act of **design activism**. It 
 - Sample data
 - Simple Navigation Bar
 - Simple Search Bar
+- Author Pages: dynamic routing
 
 ## To do
 
 - Search Functionalilty
 - Design finalisation accessibility &responsiveness
-- Author Pages: dynamic routing
 - code refactoring
 - Improving Data
 - Security
