@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import AuthorPage from "./pages/AuthorPage/AuthorPage";
 
 import { TestContext } from "./Contexts/Contexts";
+import SfTuto from "./components/SfTuto/SfTuto";
 
 function App() {
 
@@ -27,13 +28,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <BottomNav />
+        <SfTuto searchTextInput=""/>
+        {/* <Header />
+        <BottomNav /> */}
         <TestContext
           value={authors}>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/author/:authorId"
+            <Route path="/author/:authorId/"
               element={<AuthorPage />}
             />
             <Route path="/about" element={<About />} />

@@ -53,7 +53,7 @@ This project is more than a digital tool it's an act of **design activism**. It 
 
 ## To do
 
-- Search Functionalilty
+- Search Functionalilty: pass the input text as a prop to both the search and home components. -tracking the changes from the parent (app component: containing both comps)?
 - Design finalisation accessibility &responsiveness
 - code refactoring
 - Improving Data
