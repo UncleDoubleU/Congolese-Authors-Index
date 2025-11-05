@@ -16,32 +16,30 @@ export default function SfTuto({ searchTextInput }: searchTextProp) {
 
      const searchInputRef = useRef<HTMLInputElement>(null);
 
-     useEffect(() => {
-          if (inputValue != "") {
-               checkIfCard();
-               searchTextInput = inputValue;
-          } else {
-               return;
-          };
-     }, [inputValue])
+     //      useEffect(() => {
+     //           if (inputValue != "") {
+     //                checkIfCard();
+     //                searchTextInput = inputValue;
+     //           } else {
+     //                return;
+     //           };
+     //      }, [inputValue])
 
-     function checkIfCard() {
-          if (!cards) {
-               // setCardsRendered(false);
-               console.log('no card found');
-          } else {
-               console.log(inputValue)
-               cards.forEach(card => {
-                    // console.log(card);
-                    let cardAuthorName = card.querySelector("h2");
-                    // console.log(cardAuthorName?.innerText);
-               });
-               // console.log(cards.childNodes);
-               // setCardsRendered(true);
-          }
-     };
-
-
+     //      function checkIfCard() {
+     //           if (!cards) {
+     //                // setCardsRendered(false);
+     //                console.log('no card found');
+     //           } else {
+     //                console.log(inputValue)
+     //                cards.forEach(card => {
+     //                     // console.log(card);
+     //                     let cardAuthorName = card.querySelector("h2");
+     //                     // console.log(cardAuthorName?.innerText);
+     //                });
+     //                // console.log(cards.childNodes);
+     //                // setCardsRendered(true);
+     //           }
+     //      };
 
      return (
           <form className={styles.searchWrapper}>

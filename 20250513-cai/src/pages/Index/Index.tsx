@@ -1,13 +1,24 @@
 
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { TestContext } from "../../Contexts/Contexts";
 
 import PageTitle from '../../components/PageTitle/PageTitle';
 import IndexCat from '../../components/IndexCat/IndexCat';
 import AuthorCard from '../../components/AuthorCard/AuthorCard';
 
-function Index() {
+interface searchTextProp {
+     searchTextInput: string
+}
+
+function Index({ searchTextInput }: searchTextProp) {
      const authorsData = useContext(TestContext);
+     useEffect(() => {
+          printValue();
+     }, [searchTextInput])
+
+     function printValue() {
+          console.log(searchTextInput)
+     };
 
      const cards = authorsData.map(author =>
 

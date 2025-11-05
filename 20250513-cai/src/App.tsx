@@ -1,6 +1,11 @@
 import "./App.sass";
 import { BrowserRouter, Routes, Route } from "react-router";
 import authors from '../authors_db/authors.json';
+import {
+  useRef,
+  useEffect,
+  useState,
+} from 'react';
 
 import Header from "./components/Header/Header";
 import Index from "./pages/Index/Index";
@@ -11,9 +16,12 @@ import NotFound from "./pages/NotFound/NotFound";
 import AuthorPage from "./pages/AuthorPage/AuthorPage";
 
 import { TestContext } from "./Contexts/Contexts";
-import SfTuto from "./components/SfTuto/SfTuto";
 
-function App() {
+interface searchTextProp {
+  searchTextInput: string
+}
+
+function App({ searchTextInput }: searchTextProp) {
 
   // const authorsList = authors.map(author =>
   //   <Author
@@ -25,16 +33,62 @@ function App() {
   //     genres={author.genres}
   //   />
 
+
+
+  const [inputValue, setInputValue] = useState("");
+
+  const cards = document.querySelectorAll("article");
+
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (inputValue != "") {
+      checkIfCard();
+
+    } else {
+      return;
+    };
+  }, [inputValue])
+
+  function checkIfCard() {
+    if (!cards) {
+      // setCardsRendered(false);
+      console.log('no card found');
+    } else {
+      
+      cards.forEach(card => {
+        // console.log(card);
+        let cardAuthorName = card.querySelector("h2");
+        // console.log(cardAuthorName?.innerText);
+      });
+      // console.log(cards.childNodes);
+      // setCardsRendered(true);
+    }
+  };
+  
+
+
   return (
     <>
       <BrowserRouter>
-        <SfTuto searchTextInput=""/>
+        {/* <SfTuto searchTextInput="" /> */}
+        <form className="searchWrapper">
+          <label htmlFor="searchBar">Search for Authors</label>
+          <input
+            ref={searchInputRef}
+            onInput={(e) => setInputValue((e.target as HTMLTextAreaElement).value)}
+            type="text"
+            name='searchBar'
+            max={200}
+            placeholder='search for an author'
+          />
+        </form>
         {/* <Header />
         <BottomNav /> */}
         <TestContext
           value={authors}>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<Index searchTextInput={inputValue} />} />
             <Route path="/author/:authorId/"
               element={<AuthorPage />}
             />
