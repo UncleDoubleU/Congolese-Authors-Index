@@ -19,6 +19,7 @@ interface Author {
   id: number;
   firstName: string;
   lastName: string;
+  fullName: string;
   placeOfBirth: string;
   dateOfBirth: number;
   dateOfDeath: number;
