@@ -4,8 +4,7 @@ import authors from '../authors_db/authors.json';
 import {
   useRef,
   useEffect,
-  useState,
-  useContext,
+  useState
 } from 'react';
 
 import Header from "./components/Header/Header";
@@ -36,9 +35,9 @@ function App({ searchTextInput }: searchTextProp) {
   //     genres={author.genres}
   //   />
 
-
+  const [authorsArray, setAuthorsArray] = useState(authors);
   const [inputValue, setInputValue] = useState("");
-  const authorsData = useContext(TestContext);
+
   const cards = document.querySelectorAll("article");
 
 
@@ -46,32 +45,22 @@ function App({ searchTextInput }: searchTextProp) {
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    if (inputValue != "") {
-      filterByName();
-
-    } else {
-      return;
-    };
+    setAuthorsArray(inputValue !== "" ? filteredAuthorArray : authors);
   }, [inputValue])
 
-  function actualFilterByName(object, fName, lName) {
-    let fullName = `${object.fName} ${object.lName}`;
-    object.fullName.toLowerCase().includes(inputValue.toLowerCase())
-  }
+  // function actualFilterByName(object, fName, lName) {
+  //   let fullName = `${object.fName} ${object.lName}`;
+  //   object.fullName.toLowerCase().includes(inputValue.toLowerCase())
+  // }
 
-  function filterByName() {
-    if (!cards) {
-      // setCardsRendered(false);
-      console.log('no card found');
-    } else {
 
-      const filteredAuthorArray = authors.filter(author =>
-        author.firstName.toLowerCase().includes(inputValue.toLowerCase())
-      );
 
-      console.log(filteredAuthorArray);
-    };
-  };
+  const filteredAuthorArray = authors.filter(author =>
+    author.firstName.toLowerCase().includes(inputValue.toLowerCase())
+  );
+
+
+
 
 
 
@@ -93,7 +82,7 @@ function App({ searchTextInput }: searchTextProp) {
         {/* <Header />
         <BottomNav /> */}
         <TestContext
-          value={authors}>
+          value={authorsArray}>
           <Routes>
             <Route path="/" element={<Index searchTextInput={inputValue} />} />
             <Route path="/author/:authorId/"
