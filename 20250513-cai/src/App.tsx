@@ -54,6 +54,11 @@ function App({ searchTextInput }: searchTextProp) {
     };
   }, [inputValue])
 
+  function actualFilterByName(object, fName, lName) {
+    let fullName = `${object.fName} ${object.lName}`;
+    object.fullName.toLowerCase().includes(inputValue.toLowerCase())
+  }
+
   function filterByName() {
     if (!cards) {
       // setCardsRendered(false);
@@ -61,7 +66,7 @@ function App({ searchTextInput }: searchTextProp) {
     } else {
 
       const filteredAuthorArray = authors.filter(author =>
-        author.firstName.includes(inputValue)
+        author.firstName.toLowerCase().includes(inputValue.toLowerCase())
       );
 
       console.log(filteredAuthorArray);
