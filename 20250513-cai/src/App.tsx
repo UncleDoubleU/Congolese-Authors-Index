@@ -5,6 +5,7 @@ import {
   useRef,
   useEffect,
   useState,
+  useContext,
 } from 'react';
 
 import Header from "./components/Header/Header";
@@ -19,9 +20,11 @@ import { TestContext } from "./Contexts/Contexts";
 
 interface searchTextProp {
   searchTextInput: string
+
 }
 
 function App({ searchTextInput }: searchTextProp) {
+
 
   // const authorsList = authors.map(author =>
   //   <Author
@@ -34,38 +37,37 @@ function App({ searchTextInput }: searchTextProp) {
   //   />
 
 
-
   const [inputValue, setInputValue] = useState("");
-
+  const authorsData = useContext(TestContext);
   const cards = document.querySelectorAll("article");
+
+
 
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (inputValue != "") {
-      checkIfCard();
+      filterByName();
 
     } else {
       return;
     };
   }, [inputValue])
 
-  function checkIfCard() {
+  function filterByName() {
     if (!cards) {
       // setCardsRendered(false);
       console.log('no card found');
     } else {
-      
-      cards.forEach(card => {
-        // console.log(card);
-        let cardAuthorName = card.querySelector("h2");
-        // console.log(cardAuthorName?.innerText);
-      });
-      // console.log(cards.childNodes);
-      // setCardsRendered(true);
-    }
+
+      const filteredAuthorArray = authors.filter(author =>
+        author.firstName.includes(inputValue)
+      );
+
+      console.log(filteredAuthorArray);
+    };
   };
-  
+
 
 
   return (

@@ -20,9 +20,12 @@ function Index({ searchTextInput }: searchTextProp) {
           console.log(searchTextInput)
      };
 
+     
+
      const cards = authorsData.map(author =>
 
           <AuthorCard
+               key={`author_key_${author.id}_${author.lastName}`}
                link={`/author/${author.id}/`}
                id={`author_${author.id}_${author.lastName}`}
                fullName={`${author.firstName} ${author.lastName}`}
