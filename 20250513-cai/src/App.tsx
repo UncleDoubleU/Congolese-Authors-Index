@@ -5,7 +5,6 @@ import {
   useRef,
   useEffect,
   useState,
-  useContext,
 } from 'react';
 
 import Header from "./components/Header/Header";
@@ -38,7 +37,7 @@ function App({ searchTextInput }: searchTextProp) {
 
 
   const [inputValue, setInputValue] = useState("");
-  const authorsData = useContext(TestContext);
+  
   const cards = document.querySelectorAll("article");
 
 
@@ -54,11 +53,6 @@ function App({ searchTextInput }: searchTextProp) {
     };
   }, [inputValue])
 
-  function actualFilterByName(object, fName, lName) {
-    let fullName = `${object.fName} ${object.lName}`;
-    object.fullName.toLowerCase().includes(inputValue.toLowerCase())
-  }
-
   function filterByName() {
     if (!cards) {
       // setCardsRendered(false);
@@ -66,7 +60,7 @@ function App({ searchTextInput }: searchTextProp) {
     } else {
 
       const filteredAuthorArray = authors.filter(author =>
-        author.firstName.toLowerCase().includes(inputValue.toLowerCase())
+        author.fullName.toLowerCase().includes(inputValue.toLowerCase())
       );
 
       console.log(filteredAuthorArray);
