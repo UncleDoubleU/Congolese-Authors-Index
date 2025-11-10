@@ -55,12 +55,14 @@ function App({ searchTextInput }: searchTextProp) {
   // }
 
 
-  console.log(authors[0].genres)
+  // console.log(authors[3].genres.map(genre => genre.toLowerCase().includes(inputValue)))
 
 
   const filteredAuthorArray = authors.filter(author =>
 
-    author.fullName.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue) || author.fullName.toLowerCase().includes(inputValue)
+    author.fullName.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue) || author.fullName.toLowerCase().includes(inputValue) || author.genres.some(genre =>
+      genre.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue)
+    )
   );
 
 
