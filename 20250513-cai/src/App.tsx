@@ -46,6 +46,7 @@ function App({ searchTextInput }: searchTextProp) {
 
   useEffect(() => {
     setAuthorsArray(inputValue !== "" ? filteredAuthorArray : authors);
+    console.log(filteredAuthorArray);
   }, [inputValue])
 
   // function actualFilterByName(object, fName, lName) {
@@ -54,9 +55,12 @@ function App({ searchTextInput }: searchTextProp) {
   // }
 
 
+  console.log(authors[0].genres)
+
 
   const filteredAuthorArray = authors.filter(author =>
-    author.firstName.toLowerCase().includes(inputValue.toLowerCase())
+
+    author.fullName.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue) || author.fullName.toLowerCase().includes(inputValue)
   );
 
 
@@ -72,7 +76,7 @@ function App({ searchTextInput }: searchTextProp) {
           <label htmlFor="searchBar">Search for Authors</label>
           <input
             ref={searchInputRef}
-            onInput={(e) => setInputValue((e.target as HTMLTextAreaElement).value)}
+            onInput={(e) => setInputValue((e.target as HTMLTextAreaElement).value.toLowerCase())}
             type="text"
             name='searchBar'
             max={200}

@@ -148,7 +148,7 @@
           ],
           "portrait": "",
           "sources": "https://aflit.arts.uwa.edu.au/DiurNtumb.html, https://www.nytimes.com/1987/02/18/theater/festival-of-new-plays-from-africa-to-open.html, https://www.artcena.fr/agendas/spectacles/qui-hurle-dans-la-nuit-1986",
-          "genres": [],
+          "genres": ["Theatre"],
           "sex": "F"
      }
 ]
