@@ -32,6 +32,7 @@ interface Author {
   sources: string;
   genres: string[];
   sex: string;
+  keywords: string[];
 }
 
 // generics are a one of the main ways to create reusable components that work with multiple types.

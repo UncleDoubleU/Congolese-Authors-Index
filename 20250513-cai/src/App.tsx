@@ -25,16 +25,6 @@ interface searchTextProp {
 function App({ searchTextInput }: searchTextProp) {
 
 
-  // const authorsList = authors.map(author =>
-  //   <Author
-  //     id={`${author.firstName}_${author.id}_${author.lastName}`}
-  //     fullName={`${author.firstName} ${author.lastName}`}
-  //     newItem={true}
-  //     pob={author.placeOfBirth}
-  //     dob={author.dateOfBirth}
-  //     genres={author.genres}
-  //   />
-
   const [authorsArray, setAuthorsArray] = useState(authors);
   const [inputValue, setInputValue] = useState("");
 
@@ -49,19 +39,13 @@ function App({ searchTextInput }: searchTextProp) {
     console.log(filteredAuthorArray);
   }, [inputValue])
 
-  // function actualFilterByName(object, fName, lName) {
-  //   let fullName = `${object.fName} ${object.lName}`;
-  //   object.fullName.toLowerCase().includes(inputValue.toLowerCase())
-  // }
-
-
-  // console.log(authors[3].genres.map(genre => genre.toLowerCase().includes(inputValue)))
-
 
   const filteredAuthorArray = authors.filter(author =>
 
     author.fullName.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue) || author.fullName.toLowerCase().includes(inputValue) || author.genres.some(genre =>
       genre.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue)
+    ) || author.keywords.some(word =>
+      word.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue)
     )
   );
 

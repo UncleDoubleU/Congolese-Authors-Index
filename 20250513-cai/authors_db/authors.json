@@ -27,7 +27,15 @@
           "genres": [
                "biography"
           ],
-          "sex": "F"
+          "sex": "woman",
+          "keywords": [
+               "Socialism",
+               "Communism",
+               "Pierre Mulele",
+               "Brazzaville",
+               "Zaire",
+               "Woman"
+          ]
      },
      {
           "id": 1,
@@ -58,7 +66,16 @@
                "Novel",
                "Poem"
           ],
-          "sex": "F"
+          "sex": "woman",
+          "keywords": [
+               "feminism",
+               "gender",
+               "Mobutu",
+               "Kinshasa",
+               "Zaire",
+               "Woman",
+               "London"
+          ]
      },
      {
           "id": 2,
@@ -89,7 +106,20 @@
                "Poems",
                "Tales"
           ],
-          "sex": "M"
+          "sex": "man",
+          "keywords": [
+               "feminism",
+               "gender",
+               "Mobutu",
+               "Wafania",
+               "equateur",
+               "Zaire",
+               "man",
+               "paris",
+               "Union des ecrivains zairois",
+               "Congolian rainforests",
+               "congolese rainforests"
+          ]
      },
      {
           "id": 3,
@@ -121,7 +151,20 @@
                "Tales",
                "Poetry"
           ],
-          "sex": "F"
+          "sex": "woman",
+          "keywords": [
+               "Zaina",
+               "Concours Théâtral Inter-Africain de RFI 1983",
+               "Mobutu",
+               "Wafania",
+               "equateur",
+               "Zaire",
+               "man",
+               "paris",
+               "Union des ecrivains zairois",
+               "Congolian rainforests",
+               "congolese rainforests"
+          ]
      },
      {
           "id": 4,
@@ -148,7 +191,22 @@
           ],
           "portrait": "",
           "sources": "https://aflit.arts.uwa.edu.au/DiurNtumb.html, https://www.nytimes.com/1987/02/18/theater/festival-of-new-plays-from-africa-to-open.html, https://www.artcena.fr/agendas/spectacles/qui-hurle-dans-la-nuit-1986",
-          "genres": ["Theatre"],
-          "sex": "F"
+          "genres": [
+               "Theatre"
+          ],
+          "sex": "woman",
+          "keywords": [
+               "Zaina",
+               "Concours Théâtral Inter-Africain de RFI 1983",
+               "Mobutu",
+               "Wafania",
+               "equateur",
+               "Zaire",
+               "man",
+               "paris",
+               "Union des ecrivains zairois",
+               "Congolian rainforests",
+               "congolese rainforests"
+          ]
      }
 ]

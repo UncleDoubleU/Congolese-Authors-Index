@@ -49,12 +49,13 @@ This project is more than a digital tool it's an act of **design activism**. It 
 - Sample data
 - Simple Navigation Bar
 - Simple Search Bar
+- basic search functionality
 - Author Pages: dynamic routing
 
 ## To do
 
-- Search Functionalilty: filter based on character
+- Search Functionalilty: add keywords / tags
 - Design finalisation accessibility &responsiveness
 - code refactoring
-- Improving Data
+- Improving Data: add keywords / tags
 - Security
