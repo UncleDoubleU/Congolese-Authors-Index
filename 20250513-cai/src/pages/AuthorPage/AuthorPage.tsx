@@ -13,9 +13,10 @@ function AuthorPage() {
      let author = authorsData[routeParam];
 
      const bibliographyData = author.bibliography;
-     const bibliography = bibliographyData.map(book =>
-          <li>
+     const bibliographyEl = bibliographyData.map(book =>
+          <li key={`${book.title}_${book.genre}`} >
                <Books
+
                     title={book.title}
                     yop={book.yearOfPublication}
                     isbn={book.ISBN}
@@ -29,27 +30,27 @@ function AuthorPage() {
 
      const genresData = author.genres;
      const authorGenres = genresData.map(genre =>
-          <li>
+          <li key={`${author.fullName}_${author.id}_${genre}`}>
                {genre}
           </li>
      );
      const languagesData = author.writingLanguages;
      const authorLanguages = languagesData.map(language =>
-          <li>
+          <li key={`${author.fullName}_${author.id}_${language}`} >
                {language}
           </li>
      )
      return (
           <main>
-               <h1>{author.firstName} {author.lastName}</h1>
+               <h1>{author && `${author.firstName} ${author.lastName}`}</h1>
                <section>
                     <h2>Biography</h2><br />
-                    <p>{author.biography}</p>
+                    <p>{author && `${author.biography}`}</p>
                </section>
                <section>
                     <h2>Bibliography</h2><br />
                     <ul>
-                         {bibliography}
+                         {bibliographyEl}
                     </ul>
                </section >
                <section>

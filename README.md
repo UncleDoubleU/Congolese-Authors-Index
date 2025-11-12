@@ -54,8 +54,8 @@ This project is more than a digital tool it's an act of **design activism**. It 
 
 ## To do
 
-- Search Functionalilty: add keywords / tags
+- improve search user experience and interface
 - Design finalisation accessibility &responsiveness
 - code refactoring
-- Improving Data: add keywords / tags
+- Improving Data: use existing dataset for speed? or improve the quality of the existing data? time
 - Security
