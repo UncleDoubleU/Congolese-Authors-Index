@@ -11,7 +11,7 @@ interface Bibliography {
   publishing: string;
   yearOfPublication: number;
   numberOfPages: number;
-  ISBN: string;
+  isbn?: string;
   genre: string;
 }
 

@@ -38,8 +38,8 @@ function Index({ searchTextInput }: searchTextProp) {
 
      return (
           <main>
-               {/* <PageTitle title="Full Index" />
-               <IndexCat category="A" /> */}
+                <PageTitle title={"Full Index"} />
+               {/*<IndexCat category="A" /> */}
                {authorsData && cards}
           </main>
      )

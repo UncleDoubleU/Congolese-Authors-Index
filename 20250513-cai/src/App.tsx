@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     setAuthorsArray(inputValue !== "" ? filteredAuthorArray : authors);
-    setIsSearching(inputValue !== "" ? true : false);
+    console.log(isSearching);
   }, [inputValue])
 
   function handleSearchInput(event: React.FormEvent<HTMLFormElement>) {
@@ -39,6 +39,7 @@ function App() {
     if (searchInputRef?.current) {
       setInputValue(searchInputRef.current?.value.toLowerCase());
     }
+
     navigate('/');
   }
   const filteredAuthorArray = authors.filter(author =>
@@ -60,8 +61,10 @@ function App() {
         role="search"
         onSubmit={handleSearchInput}>
         <input
+          required
           ref={searchInputRef}
           defaultValue=""
+          onInput={() => setIsSearching(true)}
           // onInput={(e) => setInputValue((e.target as HTMLTextAreaElement).value.toLowerCase())}
           type="search"
           role="searchbox"

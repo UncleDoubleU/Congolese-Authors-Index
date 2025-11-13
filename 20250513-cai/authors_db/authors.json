@@ -15,7 +15,7 @@
                     "publishing": "Brussels; Paris: L'Harmattan",
                     "yearOfPublication": 1994,
                     "numberOfPages": 0,
-                    "ISBN": "",
+                    "isbn": "",
                     "genre": "biography"
                }
           ],
@@ -53,7 +53,7 @@
                     "publishing": "Paris: L'Harmattan",
                     "yearOfPublication": 2000,
                     "numberOfPages": 139,
-                    "ISBN": "2-7384-9705-5",
+                    "isbn": "2-7384-9705-5",
                     "genre": "novel"
                }
           ],
@@ -93,7 +93,7 @@
                     "publishing": "Kinshasa: Centre africain de littérature",
                     "yearOfPublication": 1973,
                     "numberOfPages": 40,
-                    "ISBN": "",
+                    "isbn": "",
                     "genre": "Poems"
                }
           ],
@@ -137,7 +137,7 @@
                     "publishing": "Paris: L'Harmattan",
                     "yearOfPublication": 2008,
                     "numberOfPages": 192,
-                    "ISBN": "978-2-296-04330-5",
+                    "isbn": "978-2-296-04330-5",
                     "genre": "Novel"
                }
           ],
@@ -182,7 +182,7 @@
                     "publishing": "Paris: Hatier",
                     "yearOfPublication": 1986,
                     "numberOfPages": 0,
-                    "ISBN": "",
+                    "isbn": "",
                     "genre": "Theatre"
                }
           ],

@@ -3,7 +3,7 @@ import styles from './Books.module.sass'
 interface BookProps {
      title: string;
      publisher: string;
-     isbn: string;
+     isbn?: string;
      languages: string;
      yop: number;
      pages: number;

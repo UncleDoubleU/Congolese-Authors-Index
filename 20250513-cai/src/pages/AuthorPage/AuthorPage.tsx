@@ -10,7 +10,11 @@ function AuthorPage() {
      const routeParam = Number(params.authorId);
 
      const authorsData = useContext(TestContext);
-     let author = authorsData[routeParam];
+     const author = authorsData.find((writer) => writer.id === routeParam);
+
+     if (!author) {
+          return <div>Loading...</div>
+     }
 
      const bibliographyData = author.bibliography;
      const bibliographyEl = bibliographyData.map(book =>
@@ -19,7 +23,7 @@ function AuthorPage() {
 
                     title={book.title}
                     yop={book.yearOfPublication}
-                    isbn={book.ISBN}
+                    isbn={book.isbn}
                     languages="N/A"
                     publisher={book.publishing}
                     pages={book.numberOfPages}
@@ -50,7 +54,7 @@ function AuthorPage() {
                <section>
                     <h2>Bibliography</h2><br />
                     <ul>
-                         {bibliographyEl}
+                         {author ? bibliographyEl : <li>no books</li>}
                     </ul>
                </section >
                <section>
