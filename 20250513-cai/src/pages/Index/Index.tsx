@@ -38,7 +38,7 @@ function Index({ searchTextInput }: searchTextProp) {
 
      return (
           <main>
-                <PageTitle title={"Full Index"} />
+               <PageTitle title={!searchTextInput ? "Full Index" : `results for ${searchTextInput}`} />
                {/*<IndexCat category="A" /> */}
                {authorsData && cards}
           </main>

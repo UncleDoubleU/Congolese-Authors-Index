@@ -20,7 +20,7 @@ import { TestContext } from "./Contexts/Contexts";
 
 function App() {
 
-  const [isSearching, setIsSearching] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [authorsArray, setAuthorsArray] = useState(authors);
   const [inputValue, setInputValue] = useState("");
 
@@ -30,7 +30,8 @@ function App() {
 
   useEffect(() => {
     setAuthorsArray(inputValue !== "" ? filteredAuthorArray : authors);
-    console.log(isSearching);
+    console.log(isSubmitted);
+    
   }, [inputValue])
 
   function handleSearchInput(event: React.FormEvent<HTMLFormElement>) {
@@ -41,15 +42,26 @@ function App() {
     }
 
     navigate('/');
+    setIsSubmitted(true);
   }
-  const filteredAuthorArray = authors.filter(author =>
+  const filteredAuthorArray = authors.filter(author => {
+    const normaliseText = (text: string) =>
+      text.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
 
-    author.fullName.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue) || author.fullName.toLowerCase().includes(inputValue) || author.genres.some(genre =>
-      genre.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue)
-    ) || author.keywords.some(word =>
-      word.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().includes(inputValue)
-    ) || author.placeOfBirth.toLowerCase().includes(inputValue) || author.dateOfBirth.toString().includes(inputValue)
-  );
+    const hasMatchingName = normaliseText(author.fullName).includes(inputValue) || author.fullName.toLowerCase().includes(inputValue);
+    const hasMatchingGenre = author.genres.some(genre =>
+      normaliseText(genre).includes(inputValue)
+    );
+    const hasMatchingKeyword = author.keywords.some(word =>
+      normaliseText(word).includes(inputValue)
+    );
+    const hasMatchingPlace = author.placeOfBirth.toLowerCase().includes(inputValue);
+    const hasMatchingDOB = author.dateOfBirth.toString().includes(inputValue);
+
+
+
+    return hasMatchingName || hasMatchingGenre || hasMatchingKeyword || hasMatchingPlace || hasMatchingDOB;
+  });
 
   return (
     <>
@@ -61,10 +73,9 @@ function App() {
         role="search"
         onSubmit={handleSearchInput}>
         <input
-          required
+          // required
           ref={searchInputRef}
           defaultValue=""
-          onInput={() => setIsSearching(true)}
           // onInput={(e) => setInputValue((e.target as HTMLTextAreaElement).value.toLowerCase())}
           type="search"
           role="searchbox"
@@ -72,7 +83,6 @@ function App() {
           max={200}
           placeholder='search for an author or a topic'
         />
-        <p>You've searched for "{inputValue}"</p>
       </form>
 
       {/* <BottomNav /> */}
