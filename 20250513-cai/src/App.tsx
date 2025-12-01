@@ -76,7 +76,7 @@ function App() {
           // required
           ref={searchInputRef}
           defaultValue=""
-          // onInput={(e) => setInputValue((e.target as HTMLTextAreaElement).value.toLowerCase())}
+          
           type="search"
           role="searchbox"
           name='searchBar'
