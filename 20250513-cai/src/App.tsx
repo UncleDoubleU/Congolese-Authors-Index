@@ -10,7 +10,6 @@ import {
 import Header from "./components/Header/Header";
 import Index from "./pages/Index/Index";
 import Footer from "./components/Footer/Footer";
-import BottomNav from "./components/BottomNav/BottomNav";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import AuthorPage from "./pages/AuthorPage/AuthorPage";
@@ -31,7 +30,7 @@ function App() {
   useEffect(() => {
     setAuthorsArray(inputValue !== "" ? filteredAuthorArray : authors);
     console.log(isSubmitted);
-    
+
   }, [inputValue])
 
   function handleSearchInput(event: React.FormEvent<HTMLFormElement>) {
@@ -76,7 +75,7 @@ function App() {
           // required
           ref={searchInputRef}
           defaultValue=""
-          
+
           type="search"
           role="searchbox"
           name='searchBar'

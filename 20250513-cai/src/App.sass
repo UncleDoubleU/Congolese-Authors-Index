@@ -137,13 +137,37 @@ footer
      position: fixed
      bottom: 0
      z-index: 9
+     transform: translateX(50%)
+     right: 50%
 
      input
-          height: 2rem
+          height: 3rem
+          border-radius: 1.5rem
+          padding: 0 1rem
+          background-color: $caiPink
+          border: $stroke
+          font: $mobileP
 
      input::placeholder
           font-size: 1.25rem
+          color: $caiDarkBrown
+          opacity: 0.6
 
      i
           font: $mobileP
           color: $caiLightBrown
+
+     @media ($small <= width < $smallMedium)
+          width: 80%
+          margin: auto
+
+     @media (min-width: $smallMedium)
+
+          gap: 0.5rem
+          width: 80%
+          overflow: auto
+
+     @media ($large <= width)
+          width: 1200px
+          padding: 0
+          bottom: 1rem
