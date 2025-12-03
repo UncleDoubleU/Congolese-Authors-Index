@@ -84,7 +84,6 @@ function App() {
         />
       </form>
 
-      {/* <BottomNav /> */}
       <TestContext
         value={authorsArray}>
         <Routes>

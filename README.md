@@ -54,8 +54,12 @@ This project is more than a digital tool it's an act of **design activism**. It 
 
 ## To do
 
+- style author cards, author pages and about pages.
+- accessibility.
+- make footer functional.
+- search functionality optimisation. (horizontal search instead of vertical).
 - improve search user experience and interface
-- Design finalisation accessibility &responsiveness
+- Design finalisation & responsiveness
 - code refactoring
 - Improving Data: use existing dataset for speed? or improve the quality of the existing data? time
 - Security
