@@ -24,7 +24,7 @@ function IndexCat({ category }: IndexCatProps) {
 
      function handleWidth() {
           setWidth(window.innerWidth)
-     }
+     } 
 
      return (
           <div aria-label="category" className={styles.container}>

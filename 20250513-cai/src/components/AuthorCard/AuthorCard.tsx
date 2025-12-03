@@ -27,7 +27,7 @@ function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) 
           return () => {
                window.removeEventListener("resize", handleResize);
           }
-     }, []);
+     }, []); 
 
      function handleResize() {
           setWidth(window.innerWidth);

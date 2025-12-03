@@ -93,6 +93,19 @@ main
      // min-height: max(min-content,100vh)
      min-height: 100vh
      padding: 1.875rem
+     margin: 0 auto 5rem
+     @media ($small <= width < $smallMedium)
+          width: 80%
+
+     @media (min-width: $smallMedium)
+
+          gap: 0.5rem
+          width: 80%
+
+     @media ($large <= width)
+          width: 70%
+          padding: 0
+          bottom: 1rem
 
 h1
      font: $mobileH1
