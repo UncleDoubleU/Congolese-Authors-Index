@@ -27,7 +27,7 @@ function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) 
           return () => {
                window.removeEventListener("resize", handleResize);
           }
-     }, []); 
+     }, []);
 
      function handleResize() {
           setWidth(window.innerWidth);
@@ -47,25 +47,24 @@ function Author({ id, link, fullName, newItem, pob, dob, genres }: AuthorProps) 
 
 
      return (
-          <article
-               className={styles.container}
-          >
-               <NavLink 
-               to={link}
-               className={styles.innerLink}
-               >
-                    <h2 className={styles.h2}>{fullName}</h2>
-                    {newItem && <div className={styles.newItem}><p>New</p></div>}
-                    {genres?.length > 0 && <ul className={styles.list}>
-                         {authorGenres}
-                    </ul>}
-                    {xtraInfo}
-               </NavLink>
-               <button aria-label="click for more info" className={styles.infoBtn}>
-                    <NavLink to={link}>+</NavLink>
-               </button>
-
-          </article >
+          <div className={styles.widthCont}>
+               <article className={styles.container}>
+                    <NavLink
+                         to={link}
+                         className={styles.innerLink}
+                    >
+                         <h2 className={styles.h2}>{fullName}</h2>
+                         {newItem && <div className={styles.newItem}><p>New</p></div>}
+                         {genres?.length > 0 && <ul className={styles.list}>
+                              {authorGenres}
+                         </ul>}
+                         {xtraInfo}
+                    </NavLink>
+                    <button aria-label="click for more info" className={styles.infoBtn}>
+                         <NavLink className={styles.btnLinkText} to={link}>+</NavLink>
+                    </button>
+               </article >
+          </div>
      )
 }
 
