@@ -26,7 +26,7 @@ function Index({ searchTextInput }: searchTextProp) {
                if (!groups[famNameLetter]) groups[famNameLetter] = [];
 
                groups[famNameLetter].push(author);
-               console.log(groups)
+
           });
 
           for (const famNameLetter in groups) {

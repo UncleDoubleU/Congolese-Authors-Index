@@ -63,3 +63,4 @@ This project is more than a digital tool it's an act of **design activism**. It 
 - code refactoring
 - Improving Data: use existing dataset for speed? or improve the quality of the existing data? time
 - Security
+- search has to be resubmitted with empty input in order to get full array again.

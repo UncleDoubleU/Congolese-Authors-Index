@@ -66,13 +66,12 @@ function App() {
     <>
 
       <Header />
-      {/* <SfTuto searchTextInput="" /> */}
+
       <form
         className="searchWrapper"
         role="search"
         onSubmit={handleSearchInput}>
         <input
-          // required
           ref={searchInputRef}
           defaultValue=""
 
@@ -80,7 +79,7 @@ function App() {
           role="searchbox"
           name='searchBar'
           max={200}
-          placeholder='search for an author or a topic'
+          placeholder=' press enter search for an author or a topic'
         />
       </form>
 
