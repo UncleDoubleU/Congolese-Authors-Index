@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { useContext } from "react";
 import Books from "../../components/Books/Books";
 import { TestContext } from "../../Contexts/Contexts";
+import IndexCat from "../../components/IndexCat/IndexCat";
 
 function AuthorPage() {
 
@@ -48,23 +49,27 @@ function AuthorPage() {
           <main>
                <h1>{author && `${author.firstName} ${author.lastName}`}</h1>
                <section>
-                    <h2>Biography</h2><br />
+                    {/* <h2>Biography</h2><br /> */}
+                    <IndexCat category="Biography" />
                     <p>{author && `${author.biography}`}</p>
                </section>
                <section>
-                    <h2>Bibliography</h2><br />
+                    {/* <h2>Bibliography</h2><br /> */}
+                    <IndexCat category="Bibliography" />
                     <ul>
                          {author ? bibliographyEl : <li>no books</li>}
                     </ul>
                </section >
                <section>
-                    <h2>Genres</h2><br />
+                    {/* <h2>Genres</h2><br /> */}
+                    <IndexCat category="Genres" />
                     <ul>
                          {authorGenres}
                     </ul>
                </section>
                <section>
-                    <h2>Languages</h2><br />
+                    {/* <h2>Languages</h2><br /> */}
+                    <IndexCat category="Languages" />
                     <ul>
                          {authorLanguages}
                     </ul>

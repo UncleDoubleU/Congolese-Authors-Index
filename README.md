@@ -51,10 +51,11 @@ This project is more than a digital tool it's an act of **design activism**. It 
 - Simple Search Bar
 - basic search functionality
 - Author Pages: dynamic routing
+- basic responsive card and alphabetical grouping styling
 
 ## To do
 
-- style author cards, author pages and about pages.
+- author pages and about pages.
 - accessibility.
 - make footer functional.
 - search functionality optimisation. (horizontal search instead of vertical).
