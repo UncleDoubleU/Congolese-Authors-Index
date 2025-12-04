@@ -1,11 +1,24 @@
-@use '../../App'
+@use '../../App.sass' as App 
+
+@mixin author-info-base
+     grid-column: 2/3
+     font: normal 1rem/1.65rem "BagossCondensed", sans-serif
 
 .h1
      font: italic 12.5vw/12.5vw "Diolce", serif
      margin-top: 3.5rem
 
-.bio
-     font: normal 1rem/1.65rem "BagossCondensed", sans-serif
+.section
+     min-height: 6.5rem
 
-     @media screen and (width >= App.$small)
+.article
+     @media screen and (width >= App.$smallMedium)
+          width: 100%
+          display: grid
+          grid-template-columns: 12.5rem 7fr
+          gap: 2rem
+
+.bio, .booksList, .genreList, .languageList
+     @include author-info-base
+     @media screen and (width >= App.$smallMedium)
           font: normal 1.25rem/1.95rem "BagossCondensed", sans-serif

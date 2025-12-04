@@ -20,7 +20,7 @@ function AuthorPage() {
 
      const bibliographyData = author.bibliography;
      const bibliographyEl = bibliographyData.map(book =>
-          <li key={`${book.title}_${book.genre}`} >
+          <li className={styles.bookItem} key={`${book.title}_${book.genre}`} >
                <Books
 
                     title={book.title}
@@ -36,44 +36,50 @@ function AuthorPage() {
 
      const genresData = author.genres;
      const authorGenres = genresData.map(genre =>
-          <li key={`${author.fullName}_${author.id}_${genre}`}>
+          <li className={styles.genreItem} key={`${author.fullName}_${author.id}_${genre}`}>
                {genre}
           </li>
      );
      const languagesData = author.writingLanguages;
      const authorLanguages = languagesData.map(language =>
-          <li key={`${author.fullName}_${author.id}_${language}`} >
+          <li className={styles.languageItem} key={`${author.fullName}_${author.id}_${language}`} >
                {language}
           </li>
      )
      return (
           <main>
                <h1 className={styles.h1}>{author && `${author.fullName}`}</h1>
-               <section>
-                    {/* <h2>Biography</h2><br /> */}
+               <section className={styles.section}>
+
                     <IndexCat category="Biography" />
-                    <p className={styles.bio}>{author && `${author.biography}`}</p>
+                    <article className={styles.article}>
+                         <p className={styles.bio}>{author && `${author.biography}`}</p>
+                    </article>
                </section>
-               <section>
-                    {/* <h2>Bibliography</h2><br /> */}
+               <section className={styles.section}>
                     <IndexCat category="Bibliography" />
-                    <ul>
-                         {author ? bibliographyEl : <li>no books</li>}
-                    </ul>
+                    <article className={styles.article}>
+                         <ul className={styles.booksList}>
+                              {author ? bibliographyEl : <li>no books</li>}
+                         </ul>
+                    </article>
                </section >
-               <section>
-                    {/* <h2>Genres</h2><br /> */}
+               <section className={styles.section}>
+
                     <IndexCat category="Genres" />
-                    <ul>
-                         {authorGenres}
-                    </ul>
+                    <article className={styles.article}>
+                         <ul className={styles.genreList}>
+                              {authorGenres}
+                         </ul>
+                    </article>
                </section>
-               <section>
-                    {/* <h2>Languages</h2><br /> */}
+               <section className={styles.section}>
                     <IndexCat category="Languages" />
-                    <ul>
-                         {authorLanguages}
-                    </ul>
+                    <article className={styles.article}>
+                         <ul className={styles.languageList}>
+                              {authorLanguages}
+                         </ul>
+                    </article>
                </section>
           </main >
      )
