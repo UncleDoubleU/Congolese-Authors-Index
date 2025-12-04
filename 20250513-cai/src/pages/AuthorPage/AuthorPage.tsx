@@ -3,6 +3,7 @@ import { useContext } from "react";
 import Books from "../../components/Books/Books";
 import { TestContext } from "../../Contexts/Contexts";
 import IndexCat from "../../components/IndexCat/IndexCat";
+import styles from "./AuthorPage.module.sass"
 
 function AuthorPage() {
 
@@ -47,11 +48,11 @@ function AuthorPage() {
      )
      return (
           <main>
-               <h1>{author && `${author.firstName} ${author.lastName}`}</h1>
+               <h1 className={styles.h1}>{author && `${author.fullName}`}</h1>
                <section>
                     {/* <h2>Biography</h2><br /> */}
                     <IndexCat category="Biography" />
-                    <p>{author && `${author.biography}`}</p>
+                    <p className={styles.bio}>{author && `${author.biography}`}</p>
                </section>
                <section>
                     {/* <h2>Bibliography</h2><br /> */}
