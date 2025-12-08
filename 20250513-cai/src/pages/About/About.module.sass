@@ -3,9 +3,26 @@
 .section
      margin-bottom: 6.25rem
 
+.article
+     display: grid
+     grid-template-columns: repeat(10,1fr)
+     grid-template-rows: auto auto
 .H2
+     grid-column: 1/10
+     grid-row: 1/2
      font: App.$mobileH2
      margin-bottom: 1.65rem
+
+     @media screen and (width >= App.$smallMedium)
+          font: App.$aboutH2
+
+.p
+     grid-column: 3/11
+     grid-row: 2/3
+     font: App.$mobileP
+
+     @media screen and (width >= App.$smallMedium)
+          font: App.$smallP
 
 .emailLink
      color: App.$caiLightBrown
