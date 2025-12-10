@@ -1,10 +1,10 @@
-import React from 'react'
+import styles from 'SortBy.module.sass';
+import { useState, useEffect } from 'react';
 
 function SortBy() {
-     onst[isClicked, setIsClicked] = useState(false)
+     const [isClicked, setIsClicked] = useState(false);
      const [listStyle, setListStyles] = useState(`${styles.hidden}`)
-     const [liStyle, setLiStyle] = useState(`${styles.hidden}`)
-     const [listH3Syle, setListH3Style] = useState(`${styles.listH3}`)
+
 
      useEffect(() => {
           setListStyles(isClicked ? `${styles.list}` : `${styles.hidden}`)
