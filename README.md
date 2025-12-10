@@ -1,4 +1,4 @@
-# Congolese Author Index (Work In Progress)
+# Congolese Author Index (Work In Progress: https://congolese-authors-index.netlify.app/)
 
 **A free and accessible digital list of writers from Congo (DRC).**
 
@@ -52,8 +52,10 @@ This project is more than a digital tool it's an act of **design activism**. It 
 - basic search functionality
 - Author Pages: dynamic routing
 - basic responsive card and alphabetical grouping styling
+- basic netlify deployement for testing
 
 ## To do
+
 
 - author pages and about pages.
 - accessibility.
