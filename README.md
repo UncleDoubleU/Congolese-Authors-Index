@@ -56,7 +56,6 @@ This project is more than a digital tool it's an act of **design activism**. It 
 
 ## To do
 
-
 - author pages and about pages.
 - accessibility.
 - make footer functional.
