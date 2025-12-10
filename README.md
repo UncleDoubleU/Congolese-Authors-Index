@@ -1,4 +1,4 @@
-# Congolese Author Index (Work In Progress: https://congolese-authors-index.netlify.app/)
+# Congolese Author Index (Work In Progress)
 
 **A free and accessible digital list of writers from Congo (DRC).**
 
