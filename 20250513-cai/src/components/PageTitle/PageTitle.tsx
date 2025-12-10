@@ -1,6 +1,10 @@
-import React from 'react'
 import styles from './PageTitle.module.sass'
-function PageTitle({ title }) {
+interface TitleProps {
+     title: string
+}
+
+
+function PageTitle({ title }: TitleProps) {
      return (
           <div>
                <h1 className={styles.h1}>{title}</h1>
