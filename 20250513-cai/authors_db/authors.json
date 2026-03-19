@@ -1,212 +1,1616 @@
 [
-     {
-          "id": 0,
-          "firstName": "Léonie",
-          "lastName": "Abo",
-          "fullName": "Léonie Abo",
-          "placeOfBirth": "Malungu - Kwilu",
-          "dateOfBirth": 1945,
-          "dateOfDeath": 0,
-          "knownFor": "Une Femme du Congo.",
-          "biography": "Léonie Abo was born in Zaire in 1945, in Malungu on the banks of the Kwilu River. Her mother died in childbirth (hence the name 'Abo' given to the author, as it means 'mourning' in Bambunda). She was raised by Mabiungu, a young woman who could not have children. After a few years at primary school and a marriage arranged by her family, Léonie Abo found herself in the maquis alongside Pierre Mulele without having really had a say in the matter. In 1968, after the assassination of her husband, Léonie Abo fled to Congo-Brazzaville, where she has lived ever since (1996). She has two daughters: Eulalie (born in 1971) and Ghislaine (born in 1974).",
-          "bibliography": [
-               {
-                    "title": "une femme du Congo.",
-                    "publishing": "Brussels; Paris: L'Harmattan",
-                    "yearOfPublication": 1994,
-                    "numberOfPages": 0,
-                    "isbn": "",
-                    "genre": "biography"
-               }
-          ],
-          "writingLanguages": [
-               "French"
-          ],
-          "portrait": "https://www.ufrgs.br/africanas/wp-content/uploads/2021/01/L%C3%A9onie-Abo.jpg",
-          "sources": "wikipedia, the university of western australia - femmes ecrivains et litterature africaine, https://www.ufrgs.br/africanas/leonie-abo-1945/",
-          "genres": [
-               "biography"
-          ],
-          "sex": "woman",
-          "keywords": [
-               "Socialism",
-               "Communism",
-               "Pierre Mulele",
-               "Brazzaville",
-               "Zaire",
-               "Woman"
-          ]
-     },
-     {
-          "id": 1,
-          "firstName": "Amba",
-          "lastName": "Bongo",
-          "fullName": "Amba Bongo",
-          "placeOfBirth": "Kinshasa",
-          "dateOfBirth": 1962,
-          "dateOfDeath": 0,
-          "knownFor": "Une femme en exil. Paris: L'Harmattan, 2000. (139p.). ISBN 2-7384-9705-5. Roman.",
-          "biography": "Amba Bongo was born in Kinshasa, where she studied at the Institut Supérieur Pédagogique de la Gombe. She also studied psychology at the University of Warocqué in Mons, Belgium. Since 1994, she has worked with asylum seekers. She was living in London at the time of writing (2000).",
-          "bibliography": [
-               {
-                    "title": "Une femme en exil.",
-                    "publishing": "Paris: L'Harmattan",
-                    "yearOfPublication": 2000,
-                    "numberOfPages": 139,
-                    "isbn": "2-7384-9705-5",
-                    "genre": "novel"
-               }
-          ],
-          "writingLanguages": [
-               "French"
-          ],
-          "portrait": "https://www.exiledwriters.co.uk/wp-content/uploads/2015/05/Amba-Bongo.jpg",
-          "sources": "https://journals.sagepub.com/doi/epdf/10.1080/03064220208537090, https://aflit.arts.uwa.edu.au/BongoAmbaEng.html, https://muse.jhu.edu/pub/222/article/780812/pdf, https://www.unhcr.org/news/congolese-woman-exile-seeks-write-wrongs",
-          "genres": [
-               "Novel",
-               "Poem"
-          ],
-          "sex": "woman",
-          "keywords": [
-               "feminism",
-               "gender",
-               "Mobutu",
-               "Kinshasa",
-               "Zaire",
-               "Woman",
-               "London"
-          ]
-     },
-     {
-          "id": 2,
-          "firstName": "Lima-Baleka",
-          "lastName": "Bosek'ilolo",
-          "fullName": "Lima-Baleka Bosek'ilolo",
-          "placeOfBirth": "Wafania - Equateur",
-          "dateOfBirth": 1949,
-          "dateOfDeath": 0,
-          "knownFor": "Les Marais brûlés. Kinshasa: Centre africain de littérature, 1973 (40p.) Poésie.",
-          "biography": "Bosek'ilolo-Baleka Lima is bown in Wafania in the province Equateur in DRC. he was a collaborator of the SPECIA (Société Parisienne d'Expansion Chimique). In 1973 he was living in Kinshasa, he was a member of l'Union des Ecrivains Zaïrois. In 'Les Marais Brulés / the burnt swamps', Lima offers 4 tales of/from his native region.",
-          "bibliography": [
-               {
-                    "title": "Les Marais brûlés.",
-                    "publishing": "Kinshasa: Centre africain de littérature",
-                    "yearOfPublication": 1973,
-                    "numberOfPages": 40,
-                    "isbn": "",
-                    "genre": "Poems"
-               }
-          ],
-          "writingLanguages": [
-               "French"
-          ],
-          "portrait": "https://www.abebooks.com/marais-br%C3%BBl%C3%A9s-Bosekilolo-Baleka-Lima-Centre-africain/30982106582/bd#&gid=1&pid=2",
-          "sources": "according to the university of western australia mentionnée par Pius Ngandu Nkashama dans Le Livre littéraire, biographie de la littérature du Congo Kinshasa. https://www.abebooks.com/marais-br%C3%BBl%C3%A9s-Bosekilolo-Baleka-Lima-Centre-africain/30982106582/bd#&gid=1&pid=2",
-          "genres": [
-               "Poems",
-               "Tales"
-          ],
-          "sex": "man",
-          "keywords": [
-               "feminism",
-               "gender",
-               "Mobutu",
-               "Wafania",
-               "equateur",
-               "Zaire",
-               "man",
-               "paris",
-               "Union des ecrivains zairois",
-               "Congolian rainforests",
-               "congolese rainforests"
-          ]
-     },
-     {
-          "id": 3,
-          "firstName": "Marie-Jeanne",
-          "lastName": "Tshilolo Kabika",
-          "fullName": "Marie-Jeanne Tshilolo Kabika",
-          "placeOfBirth": "Lubumbashi",
-          "dateOfBirth": 1949,
-          "dateOfDeath": 0,
-          "knownFor": "Matricide. Paris: L'Harmattan, 2008. (192p.). ISBN: 978-2-296-04330-5. Roman.",
-          "biography": "Marie-Jeanne Tshilolo Kabika was born in Lubumbashi, Katanga, on 24 May 1949. She completed her primary and secondary education with the Sisters of Charity of Ghent at the Institut Marie-José in Lubumbashi. She obtained her degree in French language and literature from UNAZA, and subsequently worked as a French teacher and was a member of the Union des Ecrivains du Congo (UECO/RDC). In 1969, she won a poetry prize in a competition organised by the French Cultural Centre in Lubumbashi, and in 1986, she self-published a collection of tales entitled 'Le Pilier du chef et autres contes' (The Chief's Pillar and Other Tales). She was working as a journalist-reporter at the time of writing (2008)",
-          "bibliography": [
-               {
-                    "title": "Matricide",
-                    "publishing": "Paris: L'Harmattan",
-                    "yearOfPublication": 2008,
-                    "numberOfPages": 192,
-                    "isbn": "978-2-296-04330-5",
-                    "genre": "Novel"
-               }
-          ],
-          "writingLanguages": [
-               "French"
-          ],
-          "portrait": "https://aflit.arts.uwa.edu.au/images100/tshilolo100.jpg",
-          "sources": "https://aflit.arts.uwa.edu.au/TshiloloKabika.html",
-          "genres": [
-               "Novel",
-               "Tales",
-               "Poetry"
-          ],
-          "sex": "woman",
-          "keywords": [
-               "Zaina",
-               "Concours Théâtral Inter-Africain de RFI 1983",
-               "Mobutu",
-               "Wafania",
-               "equateur",
-               "Zaire",
-               "man",
-               "paris",
-               "Union des ecrivains zairois",
-               "Congolian rainforests",
-               "congolese rainforests"
-          ]
-     },
-     {
-          "id": 4,
-          "firstName": "Diur",
-          "lastName": "N'tumb",
-          "fullName": "Diur N'tumb",
-          "placeOfBirth": "",
-          "dateOfBirth": 0,
-          "dateOfDeath": 0,
-          "knownFor": "Zaïna. Suivi de Qui hurle dans la nuit? Paris: Hatier, 1986. Théâtre.",
-          "biography": "Diur N'tumb est Congolaise. Elle est surtout connue pour son théâtre. Sa pièce Zaïna a obtenu le Grand Prix du Concours Théâtral Inter-Africain de RFI en 1983 et elle a été adaptée pour la télévision en 1984. Sa seconde pièce Qui hurle dans la nuit? a été mise en scène par le Théâtre International de Langue Française en 1986 puis publiée à New York en 1987 par l'Ubu Repertory Theater. Plusieurs chroniques de Diur N'tumb ont été publiées dans Amina sous la rubrique : 'Tribune de Diur N'tumb'.",
-          "bibliography": [
-               {
-                    "title": "Zaïna. Suivi de Qui hurle dans la nuit?",
-                    "publishing": "Paris: Hatier",
-                    "yearOfPublication": 1986,
-                    "numberOfPages": 0,
-                    "isbn": "",
-                    "genre": "Theatre"
-               }
-          ],
-          "writingLanguages": [
-               "French"
-          ],
-          "portrait": "",
-          "sources": "https://aflit.arts.uwa.edu.au/DiurNtumb.html, https://www.nytimes.com/1987/02/18/theater/festival-of-new-plays-from-africa-to-open.html, https://www.artcena.fr/agendas/spectacles/qui-hurle-dans-la-nuit-1986",
-          "genres": [
-               "Theatre"
-          ],
-          "sex": "woman",
-          "keywords": [
-               "Zaina",
-               "Concours Théâtral Inter-Africain de RFI 1983",
-               "Mobutu",
-               "Wafania",
-               "equateur",
-               "Zaire",
-               "man",
-               "paris",
-               "Union des ecrivains zairois",
-               "Congolian rainforests",
-               "congolese rainforests"
-          ]
-     }
+  {
+    "id": 0,
+    "firstName": "Léonie",
+    "lastName": "Abo",
+    "fullName": "Léonie Abo",
+    "placeOfBirth": "Malungu - Kwilu",
+    "dateOfBirth": 1945,
+    "dateOfDeath": 0,
+    "knownFor": "Une Femme du Congo.",
+    "biography": "Léonie Abo was born in Zaire in 1945, in Malungu on the banks of the Kwilu River. Her mother died in childbirth (hence the name 'Abo' given to the author, as it means 'mourning' in Bambunda). She was raised by Mabiungu, a young woman who could not have children. After a few years at primary school and a marriage arranged by her family, Léonie Abo found herself in the maquis alongside Pierre Mulele without having really had a say in the matter. In 1968, after the assassination of her husband, Léonie Abo fled to Congo-Brazzaville, where she has lived ever since (1996). She has two daughters: Eulalie (born in 1971) and Ghislaine (born in 1974).",
+    "bibliography": [
+      {
+        "title": "une femme du Congo.",
+        "publishing": "Brussels; Paris: L'Harmattan",
+        "yearOfPublication": 1994,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "biography"
+      }
+    ],
+    "writingLanguages": ["French"],
+    "portrait": "https://www.ufrgs.br/africanas/wp-content/uploads/2021/01/L%C3%A9onie-Abo.jpg",
+    "sources": "wikipedia, the university of western australia - femmes ecrivains et litterature africaine, https://www.ufrgs.br/africanas/leonie-abo-1945/",
+    "genres": ["biography"],
+    "sex": "woman",
+    "keywords": ["Socialism", "Communism", "Pierre Mulele", "Brazzaville", "Zaire", "Woman"]
+  },
+  {
+    "id": 1,
+    "firstName": "Amba",
+    "lastName": "Bongo",
+    "fullName": "Amba Bongo",
+    "placeOfBirth": "Kinshasa",
+    "dateOfBirth": 1962,
+    "dateOfDeath": 0,
+    "knownFor": "Une femme en exil. Paris: L'Harmattan, 2000. (139p.). ISBN 2-7384-9705-5. Roman.",
+    "biography": "Amba Bongo was born in Kinshasa, where she studied at the Institut Supérieur Pédagogique de la Gombe. She also studied psychology at the University of Warocqué in Mons, Belgium. Since 1994, she has worked with asylum seekers. She was living in London at the time of writing (2000).",
+    "bibliography": [
+      {
+        "title": "Une femme en exil.",
+        "publishing": "Paris: L'Harmattan",
+        "yearOfPublication": 2000,
+        "numberOfPages": 139,
+        "isbn": "2-7384-9705-5",
+        "genre": "novel"
+      }
+    ],
+    "writingLanguages": ["French"],
+    "portrait": "https://www.exiledwriters.co.uk/wp-content/uploads/2015/05/Amba-Bongo.jpg",
+    "sources": "https://journals.sagepub.com/doi/epdf/10.1080/03064220208537090, https://aflit.arts.uwa.edu.au/BongoAmbaEng.html, https://muse.jhu.edu/pub/222/article/780812/pdf, https://www.unhcr.org/news/congolese-woman-exile-seeks-write-wrongs",
+    "genres": ["Novel", "Poem"],
+    "sex": "woman",
+    "keywords": ["feminism", "gender", "Mobutu", "Kinshasa", "Zaire", "Woman", "London"]
+  },
+  {
+    "id": 2,
+    "firstName": "Lima-Baleka",
+    "lastName": "Bosek'ilolo",
+    "fullName": "Lima-Baleka Bosek'ilolo",
+    "placeOfBirth": "Wafania - Equateur",
+    "dateOfBirth": 1949,
+    "dateOfDeath": 0,
+    "knownFor": "Les Marais brûlés. Kinshasa: Centre africain de littérature, 1973 (40p.) Poésie.",
+    "biography": "Bosek'ilolo-Baleka Lima is bown in Wafania in the province Equateur in DRC. he was a collaborator of the SPECIA (Société Parisienne d'Expansion Chimique). In 1973 he was living in Kinshasa, he was a member of l'Union des Ecrivains Zaïrois. In 'Les Marais Brulés / the burnt swamps', Lima offers 4 tales of/from his native region.",
+    "bibliography": [
+      {
+        "title": "Les Marais brûlés.",
+        "publishing": "Kinshasa: Centre africain de littérature",
+        "yearOfPublication": 1973,
+        "numberOfPages": 40,
+        "isbn": "",
+        "genre": "Poems"
+      }
+    ],
+    "writingLanguages": ["French"],
+    "portrait": "https://www.abebooks.com/marais-br%C3%BBl%C3%A9s-Bosekilolo-Baleka-Lima-Centre-africain/30982106582/bd#&gid=1&pid=2",
+    "sources": "according to the university of western australia mentionnée par Pius Ngandu Nkashama dans Le Livre littéraire, biographie de la littérature du Congo Kinshasa. https://www.abebooks.com/marais-br%C3%BBl%C3%A9s-Bosekilolo-Baleka-Lima-Centre-africain/30982106582/bd#&gid=1&pid=2",
+    "genres": ["Poems", "Tales"],
+    "sex": "man",
+    "keywords": ["feminism", "gender", "Mobutu", "Wafania", "equateur", "Zaire", "man", "paris", "Union des ecrivains zairois", "Congolian rainforests", "congolese rainforests"]
+  },
+  {
+    "id": 3,
+    "firstName": "Marie-Jeanne",
+    "lastName": "Tshilolo Kabika",
+    "fullName": "Marie-Jeanne Tshilolo Kabika",
+    "placeOfBirth": "Lubumbashi",
+    "dateOfBirth": 1949,
+    "dateOfDeath": 0,
+    "knownFor": "Matricide. Paris: L'Harmattan, 2008. (192p.). ISBN: 978-2-296-04330-5. Roman.",
+    "biography": "Marie-Jeanne Tshilolo Kabika was born in Lubumbashi, Katanga, on 24 May 1949. She completed her primary and secondary education with the Sisters of Charity of Ghent at the Institut Marie-José in Lubumbashi. She obtained her degree in French language and literature from UNAZA, and subsequently worked as a French teacher and was a member of the Union des Ecrivains du Congo (UECO/RDC). In 1969, she won a poetry prize in a competition organised by the French Cultural Centre in Lubumbashi, and in 1986, she self-published a collection of tales entitled 'Le Pilier du chef et autres contes' (The Chief's Pillar and Other Tales). She was working as a journalist-reporter at the time of writing (2008).",
+    "bibliography": [
+      {
+        "title": "Matricide",
+        "publishing": "Paris: L'Harmattan",
+        "yearOfPublication": 2008,
+        "numberOfPages": 192,
+        "isbn": "978-2-296-04330-5",
+        "genre": "Novel"
+      }
+    ],
+    "writingLanguages": ["French"],
+    "portrait": "https://aflit.arts.uwa.edu.au/images100/tshilolo100.jpg",
+    "sources": "https://aflit.arts.uwa.edu.au/TshiloloKabika.html",
+    "genres": ["Novel", "Tales", "Poetry"],
+    "sex": "woman",
+    "keywords": ["Zaina", "Concours Théâtral Inter-Africain de RFI 1983", "Mobutu", "Wafania", "equateur", "Zaire", "man", "paris", "Union des ecrivains zairois", "Congolian rainforests", "congolese rainforests"]
+  },
+  {
+    "id": 4,
+    "firstName": "Diur",
+    "lastName": "N'tumb",
+    "fullName": "Diur N'tumb",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Zaïna. Suivi de Qui hurle dans la nuit? Paris: Hatier, 1986. Théâtre.",
+    "biography": "Diur N'tumb est Congolaise. Elle est surtout connue pour son théâtre. Sa pièce Zaïna a obtenu le Grand Prix du Concours Théâtral Inter-Africain de RFI en 1983 et elle a été adaptée pour la télévision en 1984. Sa seconde pièce Qui hurle dans la nuit? a été mise en scène par le Théâtre International de Langue Française en 1986 puis publiée à New York en 1987 par l'Ubu Repertory Theater. Plusieurs chroniques de Diur N'tumb ont été publiées dans Amina sous la rubrique : 'Tribune de Diur N'tumb'.",
+    "bibliography": [
+      {
+        "title": "Zaïna. Suivi de Qui hurle dans la nuit?",
+        "publishing": "Paris: Hatier",
+        "yearOfPublication": 1986,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Theatre"
+      }
+    ],
+    "writingLanguages": ["French"],
+    "portrait": "",
+    "sources": "https://aflit.arts.uwa.edu.au/DiurNtumb.html, https://www.nytimes.com/1987/02/18/theater/festival-of-new-plays-from-africa-to-open.html, https://www.artcena.fr/agendas/spectacles/qui-hurle-dans-la-nuit-1986",
+    "genres": ["Theatre"],
+    "sex": "woman",
+    "keywords": ["Zaina", "Concours Théâtral Inter-Africain de RFI 1983", "Mobutu", "Wafania", "equateur", "Zaire", "man", "paris", "Union des ecrivains zairois", "Congolian rainforests", "congolese rainforests"]
+  },
+  {
+    "id": 5,
+    "firstName": "Maguy",
+    "lastName": "Kabamba",
+    "fullName": "Maguy Kabamba",
+    "placeOfBirth": "Fizi",
+    "dateOfBirth": 1960,
+    "dateOfDeath": 0,
+    "knownFor": "La Dette coloniale",
+    "biography": "Maguy Rashidi-Kabamba est née le 3 août 1960 à Fizi (dans l'Est du Zaïre). Elle fréquente le Lycée Wima à Bukavu, puis le Lycée Motema Mpiko à Kinshasa où elle obtient son diplôme d'Etat en 1978. Elle suit ses études supérieures à l'Institut supérieur pédagogique de Lubumbashi qui seront couronnées en 1981 par un diplôme en pédagogie appliquée, option Français-Latin. Elle travaille pendant 4 ans à Kipushi et à Lubumbashi et décide de retourner aux études en 1985. Elle commence le programme de traduction (français-anglais-espagnol) à l'Ecole d'interprètes internationaux de Mons (Belgique) et le terminera à l'Université York de Toronto (Canada). Maguy Kabamba travaille actuellement (1995) à Toronto où elle vit avec son mari et ses deux enfants. Elle porte un intérêt particulier à la littérature africaine et a publié de nombreux articles dans ce domaine.",
+    "bibliography": [
+      {
+        "title": "La Dette coloniale",
+        "publishing": "Montreal: Humanitas",
+        "yearOfPublication": 1995,
+        "numberOfPages": 151,
+        "isbn": "2-89396-106-1",
+        "genre": "Roman"
+      }
+    ],
+    "writingLanguages": ["French"],
+    "portrait": "",
+    "sources": "https://aflit.arts.uwa.edu.au/KabambaMaguy.html",
+    "genres": ["Novel"],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 6,
+    "firstName": "Christine",
+    "lastName": "kalonji",
+    "fullName": "Christine kalonji",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Dernière genèse",
+    "biography": "",
+    "bibliography": [
+      {
+        "title": "Dernière genèse",
+        "publishing": "Paris: Saint-Germain-des-Prés",
+        "yearOfPublication": 1975,
+        "numberOfPages": 28,
+        "isbn": "2 243 00185 3",
+        "genre": "Nouvelle"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://aflit.arts.uwa.edu.au/KalonjiChristine.html",
+    "genres": [],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 7,
+    "firstName": "Justine M'POYO",
+    "lastName": "KASSA-VUBU",
+    "fullName": "Justine M'POYO KASSA-VUBU",
+    "placeOfBirth": "Kinshasa",
+    "dateOfBirth": 1951,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "« Justine M'Poyo Kasa-Vubu avait neuf ans lorsque le Congo devint indépendant (juin 1960). Née le 14 avril 1951 à Léopoldville, quatrième enfant de Joseph Kasa-Vubu, le premier président de la République, elle fait ses études en Suisse (au Rosey), puis en Belgique (licence en sciences sociales à l'université catholique de Louvain, 1975), avant une carrière de fonctionnaire au haut Commissariat pour les réfugiés aux Nations unies à Genève ; elle poursuivra ses travaux au Centre de recherche sur l'épidémiologie des désastres naturels (UCL) et au Centre d'étude africaines (ULB). Après le coup d'état de Mobutu en 1965, elle s'oppose au régime et doit s'exiler en Algérie et en Suisse, pour finalement s'installer en Belgique. En 1991, elle adhère à l'Union pour la démocratie et le progrès social (UDPS) d'Etienne Tsisekedi, dont elle est la représentante au Bénélux de 1992 à 1995 et la Secrétaire nationale aux Relations extérieures jusqu'à sa nomination, le 22 mai 1997, comme ministre de la Fonction publique de la nouvelle République démocratique du Congo de Laurent Kabila. Elle démissionne de ses fonctions en 1998 pour repartir en exil où elle fonde le Mouvement des démocrates. » (Quatrième de couverture des deux ouvrages mentionnés ci-dessous)",
+    "bibliography": [
+      {
+        "title": "Kassa-Vubu et le Congo Indépendant (1960-1969)",
+        "publishing": "Bruxelles: Le Cri",
+        "yearOfPublication": 1997,
+        "numberOfPages": 187,
+        "isbn": "2-87106-185-8",
+        "genre": "Biographie"
+      },
+      {
+        "title": "Sommes-nous décolonisés ?",
+        "publishing": "Bruxelles: Editions Labor",
+        "yearOfPublication": 2000,
+        "numberOfPages": 95,
+        "isbn": "2-8040-1473-8",
+        "genre": "Essais"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://aflit.arts.uwa.edu.au/KassaVubu.html",
+    "genres": ["Biography"],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 8,
+    "firstName": "Wivine",
+    "lastName": "Kavidi N'LANDU",
+    "fullName": "Wivine Kavidi N'LANDU",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "Licenciée en Philosophie et Lettres de l'Université Nationale du Zaïre, Wivine N'Landu Kavidi a exercé plusieurs postes importants dans son pays, le Congo RDC. Elle fut entre autres Directrice des recherches au Centre National des Recherches Scientifiques (C.N.R.S.) puis Conseillère Principale pour les affaires sociales et culturelles. En août 1980, elle fut nommée Secrétaire Générale à la Condition Féminine. Elle démissionna de ces fonctions en avril 1981, mais on la retrouve Ministre de la Coopération internationale en 1996, et en exil en Afrique du Sud, à la suite de la prise de pouvoir de Laurent Kabila en 1997. Wivine N'Landu fut l'épouse du politicien congolais Nguz-a-Karl-i-Bond.",
+    "bibliography": [
+      {
+        "title": "Leurres et Lueurs",
+        "publishing": "Bruxelles: André de Rache, éditeur",
+        "yearOfPublication": 1984,
+        "numberOfPages": 48,
+        "isbn": "",
+        "genre": "Poésie"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://aflit.arts.uwa.edu.au/NlanduKavidiWivine.html",
+    "genres": ["Poems"],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 9,
+    "firstName": "Clémentine",
+    "lastName": "FAIK-NZUJI",
+    "fullName": "Clémentine FAIK-NZUJI",
+    "placeOfBirth": "Tshofa",
+    "dateOfBirth": 1944,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "Clémentine Madiya Faïk-Nzuji est Congolaise. Elle est née à Tshofa le 21 janvier 1944. Docteur d'Etat ès Lettres et Sciences Humaines (Etudes Africaines à l'Université de Paris III), elle a enseigné les littératures orales et la stylistique africaines, d'abord à l'Université Nationale du Zaïre de 1972 à 1978, ensuite à l'Université de Niamey de 1978 à 1980. Depuis 1981, elle enseigne la linguistique, les littératures orales et les cultures africaines à l'Université Catholique de Louvain, en Belgique. Depuis 1986, elle dirige le Centre international des langues, littératures et traditions d'Afrique au service du developpement (CILTADE) qu'elle a fondé et au sein duquel elle poursuit ses recherches dans les domaines de la linguistique bantu générale (y compris l'anthroponymie et la sémantiques des littératures orales) et dans ceux de la symbologie, des tatouages et des scarifications. Ses nombreuses publications scientifiques se regroupent essentiellement dans les domaines des littératures orales, de la symbolique africaines et de l'interculturalité. Ces recherches l'ont l'amenée à participer, à d'innombrables rencontres scientifiques internationales, à donner de nombreuses conférences et à animer des séminaires sur ses thèmes de recherche. Son oeuvre d'écrivain lui a valu le ler prix de poésie au Concours Littéraire Président L.S. Senghor (Congo, 1969); elle a aussi été lauréate au Concours de nouvelles en langues africaines de l'Afrique centrale organisé par l'Académie Royale des Sciences d'Outre-Mer (Belgique, 1987) et lauréate au Concours de la Meilleure Nouvelle de langue française organisé par la Radio France-International (Paris, 1990). Clémentine Madiya Faïk-Nzuji est mariée à Sully Faïk et elle est mère de cinq enfants.",
+    "bibliography": [
+      {
+        "title": "Murmures",
+        "publishing": "Kinshasa: Lettres Congolaises",
+        "yearOfPublication": 1968,
+        "numberOfPages": 15,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Impressions",
+        "publishing": "Kinshasa",
+        "yearOfPublication": 1968,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Kasala et autres poèmes",
+        "publishing": "Kinshasa: Editions Mandore",
+        "yearOfPublication": 1969,
+        "numberOfPages": 54,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Le Temps des amants",
+        "publishing": "Kinshasa: Editions Mandore",
+        "yearOfPublication": 1969,
+        "numberOfPages": 43,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Lianes",
+        "publishing": "Kinshasa: Editions du Mont noir",
+        "yearOfPublication": 1971,
+        "numberOfPages": 31,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Lenga et autres contes d'inspiration traditionnelle",
+        "publishing": "Lubumbashi: Editions Saint-Paul Afrique",
+        "yearOfPublication": 1976,
+        "numberOfPages": 80,
+        "isbn": "",
+        "genre": "Contes"
+      },
+      {
+        "title": "Gestes interrompus – variations poétiques",
+        "publishing": "Lubumbashi: Editions Mandore",
+        "yearOfPublication": 1976,
+        "numberOfPages": 49,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Tu le leur diras. Le récit véridique d'une famille congolaise plongée au cœur de l'histoire de son pays. Congo 1890-2000",
+        "publishing": "Bruxelles : Alice Editions",
+        "yearOfPublication": 2005,
+        "numberOfPages": 366,
+        "isbn": "2-87426-027-4",
+        "genre": "(Auto)biographie"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://aflit.arts.uwa.edu.au/NzujiClementine.html",
+    "genres": ["Poems", "Biography", "Novels", "Tales"],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 10,
+    "firstName": "Fiston",
+    "lastName": "Mwanza Mujila",
+    "fullName": "Fiston Mwanza Mujila",
+    "placeOfBirth": "Lubumbashi",
+    "dateOfBirth": 1981,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "born in Lubumbashi (Democratic Republic of the Congo), studied literature and humanities there. In 2007, Mwanza Mujila left the Congo and subsequently lived in Belgium, Germany, France, and, after being invited to Graz as the “Stadtschreiber” (writer-in-residence) in 2009/2010, in Austria. Fiston Mwanza Mujila is pursuing a PhD in Romance Studies at the University of Graz, where he teaches African literature. He writes poetry and short stories as well as for the theater. His texts have been staged in France, Congo, Germany and Austria. The play “Zur Zeit der Königinmutter” (2018) was performed at the Akademietheater (Vienna) and the Deutsches Theater Berlin.",
+    "bibliography": [
+      {
+        "title": "Le Fleuve dans le Ventre / Der Fluß im Bauch",
+        "publishing": "Ottensheim an der Donau, Autriche, Édition Thanhäuser",
+        "yearOfPublication": 2013,
+        "numberOfPages": 114,
+        "isbn": "978-3-900986-79-7",
+        "genre": "poèmes"
+      },
+      {
+        "title": "Tram 83",
+        "publishing": "Paris, Éditions Métailié",
+        "yearOfPublication": 2014,
+        "numberOfPages": 208,
+        "isbn": "978-2-86424-959-7",
+        "genre": "roman"
+      },
+      {
+        "title": "Et les moustiques sont des fruits à pépins & Te voir dressé sur tes deux pattes ne fait que mettre de l’huile au feu",
+        "publishing": "Manage, Belgique, Éditions Lansman",
+        "yearOfPublication": 2015,
+        "numberOfPages": 86,
+        "isbn": "978-2-8071-0046-6",
+        "genre": "théâtre"
+      },
+      {
+        "title": "Soleil privé de mazout",
+        "publishing": "Éditions de l’arbre à paroles, collection IF, Amay, Belgique",
+        "yearOfPublication": 0,
+        "numberOfPages": 67,
+        "isbn": "978-2-874-06633-7",
+        "genre": "poésie"
+      },
+      {
+        "title": "La Danse du Vilain",
+        "publishing": "Paris, Éditions Métailié",
+        "yearOfPublication": 2020,
+        "numberOfPages": 272,
+        "isbn": "979-10-226-1061-2",
+        "genre": "roman"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "https://www.fistonmwanzamujila.com/wp-content/uploads/2021/06/fiston-mwanza-mujila-by-dirk-skiba.jpg",
+    "sources": "https://www.fistonmwanzamujila.com/en/about/, https://fr.wikipedia.org/wiki/Fiston_Mwanza_Mujila, https://actualite.cd/2023/01/10/rdc-les-livres-congolais-qui-ont-marque-lannee-2022",
+    "genres": ["Poems", "Novels", "Theatre"],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 11,
+    "firstName": "Lilia",
+    "lastName": "Bongi",
+    "fullName": "Lilia Bongi",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "amsoria",
+    "biography": "Lilia Bongi est née au Congo (actuelle République démocratique du Congo) et a vécu la majeure partie de sa vie en Belgique. Malgré la distance et le passage des années, son regard demeure tourné vers l’Afrique où elle se rend régulièrement. Sensible au sort d’artistes peintres de talent délaissés par les instances culturelles congolaises, elle créera en 2000, l’association « Parallel 4 ». Cette dernière aura pour objectif de promouvoir en Europe les œuvres d’une dizaine de créateurs d’art – dont Kapolongo Mbinalele, Shula, Katembwe, Ange Kumbi et Chéri Chérin – et de récolter des fonds visant à leur faire parvenir du matériel de qualité. En 2016, au terme d’une carrière au sein des institutions européennes, Lilia décide de prendre la plume. En tant que membre de la diaspora africaine, son coeur bat au rythme de l’Afrique et de l’Europe. Cette multi-culturalité lui permet de voir, (d)écrire et analyser avec singularité les thèmes-défis de notre société qui lui sont chers, tels que la protection de l’enfance, la condition de la femme, l’accès à l’éducation et la discrimination.",
+    "bibliography": [
+      {
+        "title": "amsoria",
+        "publishing": "",
+        "yearOfPublication": 2020,
+        "numberOfPages": 333,
+        "isbn": "978-2-9602441-0-6",
+        "genre": "roman autobiographique"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "https://amsoria.com/wp-content/uploads/2020/06/15_IMG_8744-web.jpg",
+    "sources": "https://amsoria.com/l-auteure/",
+    "genres": ["Novel", "Biography"],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 12,
+    "firstName": "Sosthène",
+    "lastName": "Mova Kawen",
+    "fullName": "Sosthène Mova Kawen",
+    "placeOfBirth": "Lubumbashi",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Rendez-vous à Matadi",
+    "biography": "Sosthène Mova Kawen, juriste, est née à Lubumbashi, dans l’est de la RDC. Bercée par les classiques francophones et passionnée par les romans, elle a publié un recueil de nouvelles en 2018, Parcelles de vie, ainsi qu’un recueil de poèmes en 2020, Aimer, c’est oublier, les deux aux éditions de l’Harmattan.",
+    "bibliography": [
+      {
+        "title": "Rendez-vous à Matadi",
+        "publishing": "",
+        "yearOfPublication": 2021,
+        "numberOfPages": 72,
+        "isbn": "978 -2 - 36949 -019 - 7",
+        "genre": ""
+      },
+      {
+        "title": "Parcelles de vie",
+        "publishing": "L'Harmattan",
+        "yearOfPublication": 2018,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "nouvelles"
+      },
+      {
+        "title": "Aimer c'est oublier",
+        "publishing": "L'Harmattan",
+        "yearOfPublication": 2020,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "poèmes"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://www.laboutiqueafricavivre.com/livres/249144-rendez-vous-a-matadi-9782369490197.html",
+    "genres": ["Poems", "Novel"],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 13,
+    "firstName": "Isidore",
+    "lastName": "Ndaywel",
+    "fullName": "Isidore Ndaywel",
+    "placeOfBirth": "Ipamu Bandundu",
+    "dateOfBirth": 1944,
+    "dateOfDeath": 0,
+    "knownFor": "L’histoire de la République Démocratique du Congo racontée à nos enfants",
+    "biography": "Isidore Ndaywel è Nziem, né le 7 février 1944 à Ipamu, est un professeur et historien congolais de renom. Il est une des sommités dans sa discipline en République démocratique du Congo. Il est l’auteur de plusieurs essais, études et ouvrages sur l’histoire du Congo parmi lesquels L'Histoire générale du Congo: de l'héritage ancien à la République démocratique.",
+    "bibliography": [
+      {
+        "title": "La société zaïroise dans le miroir de son discours religieux (1990-1993)",
+        "publishing": "Bruxelles, CEDAF",
+        "yearOfPublication": 1993,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Histoire du Zaïre : de l’héritage ancien à l’âge contemporain",
+        "publishing": "Louvain-la-Neuve, Duculot",
+        "yearOfPublication": 1997,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "« Du Congo des rébellions au Zaïre des pillages », in Cahiers d'études africaines, vol. 38, cahier 150/152, Disciplines et déchirures : les formes de la violence (1998), p. 417-439, publié par EHESS",
+        "publishing": "",
+        "yearOfPublication": 1998,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Images, mémoires et savoirs : une histoire en partage",
+        "publishing": "Karthala",
+        "yearOfPublication": 2009,
+        "numberOfPages": 812,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "L'université dans le devenir de l'Afrique: un demi-siècle de présence au Congo-Zaïre",
+        "publishing": "L'Harmattan",
+        "yearOfPublication": 2007,
+        "numberOfPages": 406,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Les Années Lovanium",
+        "publishing": "",
+        "yearOfPublication": 2010,
+        "numberOfPages": 0,
+        "isbn": "9782296255364",
+        "genre": ""
+      }
+    ],
+    "writingLanguages": ["français", "lingala", "swahili", "tshilubà", "kikongo"],
+    "portrait": "",
+    "sources": "https://fr.wikipedia.org/wiki/Isidore_Ndaywel_%C3%A8_Nziem, https://www.standaardboekhandel.be/c/contributor/isidore-ndaywel-e-nziem-1715c076?filter=OrderableSB.eq.true&page=1&page_size=24&sort=RelevanceSb&sort_type=desc",
+    "genres": ["essays", "studies"],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 14,
+    "firstName": "Blaise",
+    "lastName": "Ndala",
+    "fullName": "Blaise Ndala",
+    "placeOfBirth": "",
+    "dateOfBirth": 1972,
+    "dateOfDeath": 0,
+    "knownFor": "Dans le ventre du Congo",
+    "biography": "The author Blaise Ndala was born in the Congo and studied Law in Belgium until settling in Canada in 2007. There, he received the Ottawa Book award for J'irai danser sur la tombe de Senghor (2014) and later achieved success with Sans capote ni kalachnikov (2017).",
+    "bibliography": [
+      {
+        "title": "Dans le ventre du Congo",
+        "publishing": "",
+        "yearOfPublication": 0,
+        "numberOfPages": 384,
+        "isbn": "9782021460964",
+        "genre": ""
+      },
+      {
+        "title": "Sans capote ni kalachnikov",
+        "publishing": "",
+        "yearOfPublication": 0,
+        "numberOfPages": 276,
+        "isbn": "9782897124298",
+        "genre": ""
+      },
+      {
+        "title": "J'irai danser sur la tombe de Senghor",
+        "publishing": "",
+        "yearOfPublication": 0,
+        "numberOfPages": 0,
+        "isbn": "9782896994328",
+        "genre": ""
+      }
+    ],
+    "writingLanguages": ["French", "English"],
+    "portrait": "",
+    "sources": "https://www.bozar.be/en/calendar/meet-writer-blaise-ndala",
+    "genres": ["Novel"],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 15,
+    "firstName": "Jephté",
+    "lastName": "Mbangala",
+    "fullName": "Jephté Mbangala",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "La mentalité de crabe",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 16,
+    "firstName": "Elvis",
+    "lastName": "Ntambua",
+    "fullName": "Elvis Ntambua",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Makila",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 17,
+    "firstName": "Fidèle",
+    "lastName": "Kitsa",
+    "fullName": "Fidèle Kitsa",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Le reporter du feu",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 18,
+    "firstName": "Ngandu",
+    "lastName": "Biangula",
+    "fullName": "Ngandu Biangula",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Lubuila",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 19,
+    "firstName": "Lyricomane",
+    "lastName": "Ngobani",
+    "fullName": "Lyricomane Ngobani",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Village ravagé",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 20,
+    "firstName": "Julio",
+    "lastName": "Bandianzile",
+    "fullName": "Julio Bandianzile",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Korona Tyty",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 21,
+    "firstName": "Jean-Jacque",
+    "lastName": "Wondo",
+    "fullName": "Jean-Jacque Wondo",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 22,
+    "firstName": "Pius",
+    "lastName": "Ngandu Nkashama",
+    "fullName": "Pius Ngandu Nkashama",
+    "placeOfBirth": "Mbujimaye",
+    "dateOfBirth": 1946,
+    "dateOfDeath": 2023,
+    "knownFor": "",
+    "biography": "Pius Ngandu Nkashama was born in Mbujimayi on September 4, 1946.He completed elementary school in that city as well as middle school; he completed high school at Lubumbashi at Collège Saint-François de Sales (Imara). He completed his undergraduate and master’s degree at the Faculté des lettres de Lovanium-Kinshasa, and his PhD at the University of Strasbourg in 1975, (France). He completed a second PhD in Literature at the same University in 1981.\n\nPius Ngandu Nkashama, taught in Congolese universities (Kinshasa and Lubumbashi) , in Annaba (Algeria, 1982-1990), in Limoges, (France,  1991-1997), and at the Sorbonne Nouvelle, Paris III (France, 1997-2000). He was Distinguished Professor at Louisiana State University (LSU), Baton Rouge, LA (2000 – 2023).\n\nHe is a renowned novelist and author of numerous scholarly studies on African literature. As a tribute to his work, the “African Literature Association” honored him with its most prestigious award, the Fonlon-Nichols Prize (2004) and a Certificate of “Baobab” (2018). His most read novels include Le pacte de sang (translated in English, Blood Pact, 1984), Les Étoiles écrasées (translated in English, Incandescence, 1988), and two dozen of narratives and plays (2022). He has also published a survey of African literature, with the title Écritures littéraires: Dictionnaire critique des œuvres africaines en langue française, a critical anthology, and several critical works. Pius Ngandu Nkashama was the recipient of the LSU “Distinguished Research Master Award 2020” in April 2021.\n\nMany books are written in his maternal language such as: Bidi ntwilu, bidi mpelelu (novel, 1997), Mulongeshi wanyi (novel, 2004), Tuntuntu ntuntu (poetics, 2004), and this one, Mwana wa Mulongeshi wanyi (2014). The national community celebrated him for his works in cilubà at the University of Ghent (Belgium, “Research Centre for African Languages & Literatures”), and the Université Libre de Bruxelles (October 2007). The Province of Kasaï-Oriental opened a Cultural Center with the name of Pius Ngandu Nkashama (Mbujimayi-Cibombo, 2020).\n\nPius Ngandu died peacefully on December 19, 2023 surrounded by family.",
+    "bibliography": [
+      {
+        "title": "Mon Grand-Père et la conquête de la paix",
+        "publishing": "Paris, L’Harmattan",
+        "yearOfPublication": 2020,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Romans"
+      },
+      {
+        "title": "Luabantu : mon Grand-Père",
+        "publishing": "La Plaine-Saint-Denis, Edilivre",
+        "yearOfPublication": 2018,
+        "numberOfPages": 0,
+        "isbn": "978-2-434-30230-7 – 9-782414-30230-7",
+        "genre": ""
+      },
+      {
+        "title": "Bibliographie littéraire des femmes africaines",
+        "publishing": "Bâton Rouge, Editions “Kabungama”",
+        "yearOfPublication": 2018,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Kabundi ongoloka mwana alala",
+        "publishing": "Baton Rouge, Editions “Kabungama”",
+        "yearOfPublication": 2018,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Musekelelu wa dia dilabulula",
+        "publishing": "Baton Rouge, Editions “Kabungama”",
+        "yearOfPublication": 2018,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Les cendres du Père",
+        "publishing": "Paris, L’Harmattan, Coll. “Archipel”",
+        "yearOfPublication": 2014,
+        "numberOfPages": 108,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "La malédiction",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres noires”",
+        "yearOfPublication": 2014,
+        "numberOfPages": 188,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "En suivant le sentier sous les palmiers",
+        "publishing": "Paris, L’Harmattan",
+        "yearOfPublication": 2010,
+        "numberOfPages": 278,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Mariana, suivi de Yolena et de La chanson de Mariana",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 25, Écrire l’Afrique,”",
+        "yearOfPublication": 2006,
+        "numberOfPages": 208,
+        "isbn": "2-2960-0219-6",
+        "genre": ""
+      },
+      {
+        "title": "Mayilena und Bulakali, Eine Gestchichte aus Ostzaire",
+        "publishing": "“NZZ Folio,” Nr 6, Juni 1997",
+        "yearOfPublication": 1997,
+        "numberOfPages": "39-44",
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Yakouta",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 139,”",
+        "yearOfPublication": 1994,
+        "numberOfPages": 160,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Le Doyen marri",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 131,”",
+        "yearOfPublication": 1994,
+        "numberOfPages": 202,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Un jour de grand soleil sur les Montagnes de l’Éthiopie",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 88,”",
+        "yearOfPublication": 1991,
+        "numberOfPages": 454,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Les étoiles écrasées",
+        "publishing": "Paris, Publisud, Coll. “L’espace de la parole,”",
+        "yearOfPublication": 1988,
+        "numberOfPages": 220,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Vie et mœurs d’un primitif en Essonne Quatre-vingt-onze",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 44,”",
+        "yearOfPublication": 1987,
+        "numberOfPages": 196,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "La mort faite homme",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 38,”",
+        "yearOfPublication": 1986,
+        "numberOfPages": 258,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Le pacte de sang",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 25,”",
+        "yearOfPublication": 1984,
+        "numberOfPages": 340,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Les cendres du Père",
+        "publishing": "Paris, L’Harmattan",
+        "yearOfPublication": 2013,
+        "numberOfPages": 256,
+        "isbn": "",
+        "genre": "Littérature pour les jeunes"
+      },
+      {
+        "title": "Mayilena",
+        "publishing": "Châtenay-Malabry, Acoria",
+        "yearOfPublication": 1999,
+        "numberOfPages": 72,
+        "isbn": "2-9125-2518-7",
+        "genre": "Littérature pour les jeunes"
+      },
+      {
+        "title": "Yolène au large des collines, précédé de Le fils du Mercenaire",
+        "publishing": "Paris-Vanves, EDICEF",
+        "yearOfPublication": 1995,
+        "numberOfPages": 128,
+        "isbn": "2-9782-8506-9970-2",
+        "genre": "Littérature pour les jeunes"
+      },
+      {
+        "title": "Un matin pour Loubène",
+        "publishing": "LaSalle, Hurtubise HMH, Coll. “Plus,”",
+        "yearOfPublication": 1991,
+        "numberOfPages": 88,
+        "isbn": "2-8904-5886-5",
+        "genre": "Littérature pour les jeunes"
+      },
+      {
+        "title": "Les enfants du lac Tana",
+        "publishing": "LaSalle, Hurtubise HMH (et Gamma), Coll. “Plus,”",
+        "yearOfPublication": 1991,
+        "numberOfPages": "41-69",
+        "isbn": "2-7130-1764-5",
+        "genre": "Littérature pour les jeunes"
+      },
+      {
+        "title": "Les noces du Poète (peintures par Ali Silem) (Nuptiales, Heidi Melissa Denman, Summerville, South Carolina)",
+        "publishing": "",
+        "yearOfPublication": 2012,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Crépuscule équinoxial",
+        "publishing": "Paris, L’Harmattan, Coll. “Poètes des Cinq continents,”",
+        "yearOfPublication": 1997,
+        "numberOfPages": 53,
+        "isbn": "2-7384-5102-0",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Khédidja",
+        "publishing": "Paris-Ivry-sur-Seine, Silex",
+        "yearOfPublication": 1983,
+        "numberOfPages": 152,
+        "isbn": "2-8793-1122-5",
+        "genre": "Poésie"
+      },
+      {
+        "title": "Les yeux qui voient",
+        "publishing": "Lubumbashi, Éditions “Folange,”",
+        "yearOfPublication": 1973,
+        "numberOfPages": 28,
+        "isbn": "",
+        "genre": "Poésie"
+      },
+      {
+        "title": "La rédemption de Sha Ilunga",
+        "publishing": "Paris, L’Harmattan, Coll. “Théâtre des Cinq Continents,” n° 193",
+        "yearOfPublication": 2007,
+        "numberOfPages": 160,
+        "isbn": "2-2960-2880-7",
+        "genre": "Pièces de théâtres"
+      },
+      {
+        "title": "L’Empire des ombres vivantes",
+        "publishing": "Carnières (Mornanlewz), Lansman, Coll. “Théâtre en Tête,”",
+        "yearOfPublication": 1991,
+        "numberOfPages": 68,
+        "isbn": "2-2960-2879-9",
+        "genre": "Pièces de théâtres"
+      },
+      {
+        "title": "Bonjour Monsieur le Ministre",
+        "publishing": "Paris-Ivry-sur-Seine, Silex, Coll. “Théâtre,”",
+        "yearOfPublication": 1983,
+        "numberOfPages": 76,
+        "isbn": "2-2960-2878-4",
+        "genre": "Pièces de théâtres"
+      },
+      {
+        "title": "May Britt de Santa Cruz",
+        "publishing": "Paris, L’Harmattan, Coll. “Encres Noires, n° 113,”",
+        "yearOfPublication": 1993,
+        "numberOfPages": 160,
+        "isbn": "2-7384-1776-0",
+        "genre": "Pièces de théâtres"
+      },
+      {
+        "title": "Nous aurions fait un rêve",
+        "publishing": "Kinshasa, Institut National des Arts (INA)",
+        "yearOfPublication": 1980,
+        "numberOfPages": 10,
+        "isbn": "",
+        "genre": "Pièces de théâtres"
+      },
+      {
+        "title": "La délivrance d’Ilunga",
+        "publishing": "Paris-Honfleur, Pierre Jean Oswald, Coll. “Théâtre africain, n° : 33,”",
+        "yearOfPublication": 1977,
+        "numberOfPages": 151,
+        "isbn": "2-7172-0848-8",
+        "genre": "Pièces de théâtres"
+      },
+      {
+        "title": "Mwana wa Mulongeshi wanyi",
+        "publishing": "Baton Rouge, “Kabungama Editions”",
+        "yearOfPublication": 2014,
+        "numberOfPages": 206,
+        "isbn": "",
+        "genre": "Romans et poésie en cilubà"
+      },
+      {
+        "title": "Tuntuntu, ntuntu",
+        "publishing": "Paris, GIRAF (“Groupe de recherche sur l’Afrique”), Coll. “Poésie,”",
+        "yearOfPublication": 2003,
+        "numberOfPages": 80,
+        "isbn": "2-9098-1718-0",
+        "genre": "Romans et poésie en cilubà"
+      },
+      {
+        "title": "Mulongeshi wanyi",
+        "publishing": "Paris, GIRAF (“Groupe de recherche sur l’Afrique”),",
+        "yearOfPublication": 2003,
+        "numberOfPages": 256,
+        "isbn": "2-9098-1717-2",
+        "genre": "Romans et poésie en cilubà"
+      },
+      {
+        "title": "Bidi ntwilu, bidi mpelelu",
+        "publishing": "Bruxelles-Lubumbashi, Impala-Saint-Paul",
+        "yearOfPublication": 1998,
+        "numberOfPages": 160,
+        "isbn": "",
+        "genre": "Romans et poésie en cilubà"
+      }
+    ],
+    "writingLanguages": ["Lingala", "French", "English", "Tshiluba"],
+    "portrait": "",
+    "sources": "https://www.piusngandunkashama.com/",
+    "genres": ["research", "Novel", "Poems"],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 23,
+    "firstName": "Joëlle",
+    "lastName": "Sambi",
+    "fullName": "Joëlle Sambi",
+    "placeOfBirth": "Brussels",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "Joëlle Sambi est née à Bruxelles et y passe ses premières années. Elle grandit à Kinshasa et ne revient en Belgique qu'en 2001 pour y poursuivre des études de journalisme à L'Université Libre de Bruxelles. Elle est l’auteure de plusieurs nouvelles dont Je ne Sais pas Rêver en 2003 ; Religion Ya Kitendi publié chez Gallimard (Mercure de France) et Prix du Jeune Écrivain 2005. Elle reçoit le Prix du jury \"Gros Sel\" en 2008 pour son roman Le Monde est Gueule de Chèvre, publié chez Biliki (Belgique 2007). Bien qu'elle dissocie sa provenance et son travail d’écriture, le Congo, son histoire et la Belgique contemporaine sont néanmoins présents en filigrane dans ses récits ainsi que dans ses projets. Auteure et activiste féministe LGBT, Joëlle Sambi écrit et soulève des interrogations sur l'identité, la norme, l’appartenance, elle est prise entre plusieurs langues et ses écrits en portent les traces. Elle habite la frontière et les étrangetés de sa langue mènent son écriture jusqu'à la poésie, au slam, elle en publie régulièrement sur son blog : « Solola Bien »\n\nElle se produit en ce moment dans le spectacle \"Congo Eza\" dont elle a co-écrit les textes (Lezarts Urbains).",
+    "bibliography": [
+      {
+        "title": "Caillasses",
+        "publishing": "",
+        "yearOfPublication": 2021,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Nouvelles du Congo",
+        "publishing": "",
+        "yearOfPublication": 2016,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Le monde est gueule de chèvre",
+        "publishing": "",
+        "yearOfPublication": 2007,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "https://objectifplumes.be/wp-content/uploads/2019/10/Jo%C3%ABlle-Sambi-cPhilipe-Braquenier-e1635931867875.jpg",
+    "sources": "https://objectifplumes.be/author/joelle-sambi-nzeba/, https://www.modulable.be/artiste/joelle-sambi/?fbclid=PAZXh0bgNhZW0CMTEAAaeF4DpOBSoDvWSQoeRiNJ9yyQJr4eZlHclmWrJ4ekh7l4kOG_fPmrcFfUm6ww_aem_lPDlhOTWMvkL6sXO6cYqYg",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 24,
+    "firstName": "Valentin-Yves Vumbi Yoka",
+    "lastName": "Mudimbe",
+    "fullName": "Valentin-Yves Vumbi Yoka Mudimbe",
+    "placeOfBirth": "Likasi",
+    "dateOfBirth": 1941,
+    "dateOfDeath": 2025,
+    "knownFor": "",
+    "biography": "Le Professeur Valentin-Yves Mudimbe, Membre de la FAMILLE CHIWENGO, est un intellectuel congolais de renom, né le 8 décembre 1941 à Jadotville (Likasi) en RDC. Philosophe, écrivain, poète et critique littéraire, il est considéré comme l’un des penseurs africains les plus influents de sa génération. (Source : Wikipedia, Encyclopédie libre)\n\nPARCOURS ACADÉMIQUE ET PROFESSIONNEL\nAprès avoir quitté un monastère en 1962 pour se consacrer à l’étude des forces ayant façonné l’histoire africaine, Mudimbe poursuit ses études à l’Université catholique de Louvain. En 1970, il obtient un doctorat en philologie roman de la faculté de Philosophie et Lettres. Sa thèse a porté sur l’AIR. Il a ensuite enseigné dans plusieurs institutions prestigieuses, notamment les Universités de Louvain, Paris-Nanterre, Stanford, Haverford College et l’Université du Zaïre. [Jusqu’à sa mort, Mudimbe était professeur Émérite au sein du Programme de littérature de l’Université Duke aux États-Unis et Maître de conférence à l’École des Hautes études en Sciences sociales (EHESS) à Paris.] (Source : Wikipedia, scholar.duke.edu)",
+    "bibliography": [
+      {
+        "title": "L’odeur de père",
+        "publishing": "",
+        "yearOfPublication": 1982,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Parables and Fables",
+        "publishing": "",
+        "yearOfPublication": 1991,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "The Idea of Africa",
+        "publishing": "",
+        "yearOfPublication": 1994,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Tales of Faith",
+        "publishing": "",
+        "yearOfPublication": 1997,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Bel immonde",
+        "publishing": "",
+        "yearOfPublication": 0,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Entre les eaux",
+        "publishing": "",
+        "yearOfPublication": 0,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "L’ écart",
+        "publishing": "",
+        "yearOfPublication": 0,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Shaba Deux : le carnet de la mère…",
+        "publishing": "",
+        "yearOfPublication": 0,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://www.unilu.ac.cd/2025/04/22/valentin-yves-mudimbe-une-voix-majeure-seteint/, https://www.larousse.fr/encyclopedie/litterature/Valentin-Yves_dit_Vumbi_Yoka_Mudimbe/175489",
+    "genres": [],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 25,
+    "firstName": "Albert",
+    "lastName": "Kamayi",
+    "fullName": "Albert Kamayi",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Coup de balai à Ndakata",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 26,
+    "firstName": "Philippe Élébé",
+    "lastName": "Lisembé",
+    "fullName": "Philippe Élébé Lisembé",
+    "placeOfBirth": "équateur",
+    "dateOfBirth": 1937,
+    "dateOfDeath": 1996,
+    "knownFor": "",
+    "biography": "En 1958, alors qu’il n’a que 21 ans, il est enrôlé dans la Force publique. Quelques années après l’Indépendance, il part pour Leipzig, en Allemagne où il étudie le journalisme. De retour au Congo dans les années 1970, il publie ses premiers recueils poétiques et mène en parallèle une carrière diplomatique. Il sera à maintes reprises diplomate dans plusieurs capitales européennes[2]. Il sera également attaché de presse à l’ambassade du Congo à Alger puis fonctionnaire des Nations unies à Genève, en Suisse où il meurt en 1996[3].",
+    "bibliography": [
+      {
+        "title": "Mélodie africaine",
+        "publishing": "Laon, L’Etrave, Paris, Saint-Germain des Prés",
+        "yearOfPublication": 1970,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Uhuru",
+        "publishing": "Paris, Debresse",
+        "yearOfPublication": 1970,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Solitude",
+        "publishing": "Honfleur, P.J. Oswald",
+        "yearOfPublication": 1972,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Rythmes",
+        "publishing": "Kinshasa, Éd. du Mont Noir, coll. « Jeune Littérature », 5",
+        "yearOfPublication": 1972,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Orphée rebelle",
+        "publishing": "Paris, Saint-Germain-des-Prés, coll. « Miroir oblique »",
+        "yearOfPublication": 1972,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Poèmes choisis",
+        "publishing": "Corbigny, Éditions du Centre et de la revue « Art et Poésie »",
+        "yearOfPublication": 1974,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "La Joconde d’ébène",
+        "publishing": "Paris, Saint-Germain-des-Prés, coll. « À l’écoute des sources »",
+        "yearOfPublication": 1977,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "A l’ombre des flamboyants",
+        "publishing": "Paris, P.J. Oswald",
+        "yearOfPublication": 1977,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Stations du monde",
+        "publishing": "Paris, Les paragraphes littéraires",
+        "yearOfPublication": 1979,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Les cailloux de l’espoir suivi de Le chant du crépuscule",
+        "publishing": "Genève, Poésie vivante",
+        "yearOfPublication": 1987,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Simon Kimbangu ou le Messie noir",
+        "publishing": "Paris, Les Nouvelles Éditions Debresse",
+        "yearOfPublication": 1973,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Pièces de théâtre"
+      },
+      {
+        "title": "Les sang des Noirs pour un sou",
+        "publishing": "Paris, Les Nouvelles Éditions Debresse",
+        "yearOfPublication": 1973,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Pièces de théâtre"
+      },
+      {
+        "title": "Chant de la terre, chant de l’eau",
+        "publishing": "Paris, P.J. Oswald, coll. « Théâtre africain », 24",
+        "yearOfPublication": 1973,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Pièces de théâtre"
+      },
+      {
+        "title": "Souvenirs d’enfance",
+        "publishing": "Paris, La Pensée Universelle",
+        "yearOfPublication": 1975,
+        "numberOfPages": 0,
+        "isbn": "",
+        "genre": "Autobiographie"
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://fr.wikipedia.org/wiki/Philippe_Elebe_Lisembe#:~:text=Philippe%20%C3%89l%C3%A9b%C3%A9%20Lisemb%C3%A9%20est%20un,1996%20%C3%A0%20Gen%C3%A8ve%20(Suisse).",
+    "genres": ["Poems", "Theatre", "Non-fiction"],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 27,
+    "firstName": "Lauren",
+    "lastName": "KASINDI WATABANGA",
+    "fullName": "Lauren KASINDI WATABANGA",
+    "placeOfBirth": "Bukavu",
+    "dateOfBirth": 1979,
+    "dateOfDeath": 0,
+    "knownFor": "Ces vérités qui nous mentent, Mlimani Editions",
+    "biography": "Laurent KASINDI WATABANGA est un juriste, journaliste et acteur humanitaire congolais, né à Bukavu, dans l’Est de la RD Congo en 1979. Il a entamé sa carrière dans le domaine de la défense des droits de l’homme, avant de trouver sa voie dans le journalisme puis le monde humanitaire ; ceci lui a valu de visiter la totalité des provinces de son pays. Passionné de théâtre, de musique et de ballet, il vit à Bruxelles. Il est auteur du livre \"Ces vérités qui nous mentent\", célèbre livre qui a raflé le Prix Makomi de littérature congolaise en 2018",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 28,
+    "firstName": "Eric",
+    "lastName": "Ntumba",
+    "fullName": "Eric Ntumba",
+    "placeOfBirth": "",
+    "dateOfBirth": 1982,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "Né en 1982, il est marié et père de deux enfants. Après des études universitaires en Technologies de l’Information à North West University (Afrique du Sud), il intègre le Cycle International long de la promotion Willy Brandt de l’ENA (France) où il obtient un Master en Administration Publique (Summa Cum Laude). Il retourne en RDC en 2008 où il entame une carrière de banquier d’affaires. « Une vie après le Styx » est son premier Roman. Eric jouit déjà sur le plan international d’une réputation de jeune leader et a participé aux prestigieux Mandela Washington Fellowship for Young African Leaders aux USD en 2014, à l’Africa France Young Leaders programme en 2017, à l’Atlantic Dialogues Emerging Leaders programme en 2017 et a figuré au classement Choiseul Africa 100 (qui classe les leaders économiques de demain sur le continent Africain) en 2018 puis en 2019 (position 66). Eric est Citoyen d’honneur de la Ville de Fayetteville et Ambassadeur de bonne volonté de l’Etat d’Arkansas aux USA. Il a reçu de son université North West University les deux plus hautes distinctions réservées aux étudiants : La médaille du Conseil en 2005 et le NWU Alumni Award en 2013.",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 29,
+    "firstName": "Richard",
+    "lastName": "Ali A Mutu Kahambo",
+    "fullName": "Richard Ali A Mutu Kahambo",
+    "placeOfBirth": "Mbandaka",
+    "dateOfBirth": 1988,
+    "dateOfDeath": 0,
+    "knownFor": "Et les portes sont des bouches",
+    "biography": "(Mbandaka, Democratic Republic of the Congo 1988). He won the Mark Twain Award in 2009 and published his first short stories collection, Tabu's Nightmares, written in French, in 2011. His novel Mr. Fix It: Troublesome Kinshasa was published in Lingala in 2014 and has since been translated into French. Ali was selected as one of the only writers working in indigenous languages for the Africa 39 anthology, which showcased the continent's most talented writers under forty, including Chimamanda Adichie and Dinaw Mengetsu. Founder of the Association of Young Writers of Congo (AJECO), he has worked since 2016 at the Wallonia-Brussels General Delegation in Kinshasa as Head of Letters and Books (Library). He is also the author of a recent novel written in French, Et les portes sont des bouches// And the doors are mouths.",
+    "bibliography": [
+      {
+        "title": "Mr Fix-it : traduction anglaise de Ebamba, Kinshasa",
+        "publishing": "éditions Phoneme media",
+        "yearOfPublication": 2017,
+        "numberOfPages": 108,
+        "isbn": "978-1944700072",
+        "genre": ""
+      },
+      {
+        "title": "Le Cauchemardesque de Tabu : recueil des nouvelles",
+        "publishing": "Kinshasa – Wavre, éditions Mabiki (ln)",
+        "yearOfPublication": 2011,
+        "numberOfPages": 64,
+        "isbn": "978-2930369631",
+        "genre": ""
+      },
+      {
+        "title": "Le Cauchemardesque de Tabu avec bière fracassée : recueil des nouvelles",
+        "publishing": "Kinshasa, éditions Mediaspaul",
+        "yearOfPublication": 2014,
+        "numberOfPages": 110,
+        "isbn": "9782741408956",
+        "genre": ""
+      },
+      {
+        "title": "Ebamba, Kinshasa-Makambo : lisolo",
+        "publishing": "Kinshasa – Wavre, éditions Mabiki",
+        "yearOfPublication": 2014,
+        "numberOfPages": 180,
+        "isbn": "9782930369716",
+        "genre": ""
+      },
+      {
+        "title": "Okozonga Maboko Pamba",
+        "publishing": "Kinshasa – Wavre, éditions Mabiki",
+        "yearOfPublication": 2017,
+        "numberOfPages": 0,
+        "isbn": "978-2-930369-22-8",
+        "genre": ""
+      },
+      {
+        "title": "Ebamba, Kinshasa – Makambo : version bilingue",
+        "publishing": "Kinshasa – Wavre, éditions Mabiki",
+        "yearOfPublication": 2019,
+        "numberOfPages": 180,
+        "isbn": "978-2-930999-49-4",
+        "genre": ""
+      },
+      {
+        "title": "Génève – Kin 2020 la Correspondance : roman collectif",
+        "publishing": "Lagrasse, éditions BSN Press",
+        "yearOfPublication": 2020,
+        "numberOfPages": 132,
+        "isbn": "978-2-940648-20-7",
+        "genre": ""
+      },
+      {
+        "title": "Et les portes sont de bouches !",
+        "publishing": "Kinshasa, éditions Mabiki",
+        "yearOfPublication": 2021,
+        "numberOfPages": 261,
+        "isbn": "978-2-930999-48-7",
+        "genre": ""
+      }
+    ],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 30,
+    "firstName": "Bodia",
+    "lastName": "Macharia",
+    "fullName": "Bodia Macharia",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 31,
+    "firstName": "Sinzo",
+    "lastName": "Aanza",
+    "fullName": "Sinzo Aanza",
+    "placeOfBirth": "Goma",
+    "dateOfBirth": 1990,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "Sinzo Aanza is a Congolese artist whose work focuses on the radicality of fiction. In 2007, Luhindi K. Sinzomene created Sinzo Aanza, a radical fiction which he made bear the responsibility for the interactions between his creations, first literary and then visually, and the equally frictional social frameworks in which encounters, discussions, and the projections around all the other inventions developed by men to frame life, its understanding and its organization, become possible. \n\nHis pen, both poetic and irreverent, probes the political situation of the Democratic Republic of Congo, as well as the constructed image of this country which \"has always belonged to investors, preferably foreigners\". The exploitation of natural resources, the representation of national identities and their excesses, or the construction of the image of the Congo since the colonial era are themes that nourish both his visual and literary works.\n\nIn 2015, he published “Genealogy of a banality”, a novel in which two discourses were confronted, one official, the other popular and intimated around the way in which people are recruited into a certain idea of ​​​​the Congo and its scandalous riches. In 2017, he was in residence at WIELS in Brussels, where he designed the first part of “Projet d’assassination contre l’image?”, in which he tackled the question of Congolese religious syncretism. During his residency in 2019 at the Museum Rietberg, he produced the second act of this trilogy of installations for which he critically examines the legacy of ethnologist Hans Himmelheber and the collections he bequeathed to the museum. “It is as if a medieval European peasant had taken a Catholic monstrance from a church containing a Eucharist to sell it to an Arab or Chinese traveler.” \n\nSinzo Aanza (born in 1990 in Goma, DR Congo) lives and works in Kinshasa in DR Congo. He has exhibited at WIELS, Brussels, at the Rencontres de la Photographie, Arles – where he was nominated in 2018 for the New Discovery Prize – at the Rietberg Museum in Zurich, at the Lubumbashi Biennale and at the Cité de l'architecture & du patrimoine, Paris. In 2020-2021, he was the artistic director of the second edition of the Yango Biennale which was held in Kinshasa.",
+    "bibliography": [],
+    "writingLanguages": ["French"],
+    "portrait": "https://mukanda.univ-lorraine.fr/files/original/3a8720adf33655f6632dd592b1ba004cbab99035.jpg",
+    "sources": "https://biennaledelubumbashi.com/en/entities-people/sinzo-anza/, https://mukanda.univ-lorraine.fr/s/mukanda/item/24431, https://brill.com/view/journals/jwl/6/2/article-p123_1.xml?language=en&srsltid=AfmBOopk9fJj0vJdr9ttR68OyqVKjPOdhs7kkCsXS8rM9leXAYdTPOBy#FN000003",
+    "genres": ["novel", "non-fiction", "theater", "tale?", "Poems"],
+    "sex": "man",
+    "keywords": []
+  },
+  {
+    "id": 32,
+    "firstName": "ASIMBA ?",
+    "lastName": "Bathy ?",
+    "fullName": "ASIMBA ? Bathy ?",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://mukanda.univ-lorraine.fr/s/mukanda/item/19633",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 33,
+    "firstName": "In Koli Jean",
+    "lastName": "BOFANE",
+    "fullName": "In Koli Jean BOFANE",
+    "placeOfBirth": "Mbandaka",
+    "dateOfBirth": 1954,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "Né en République démocratique du Congo, à Mbandaka en 1954. Etudes de publicité et de communication. Crée à Kinshasa en 1991 les Publications de l'Exocet, qui éditent notamment des bandes dessinées satiriques. Depuis 1993, vit en Belgique où il travaille dans le secteur associatif. Premières publications en littérature destinée à l'enfance : Pourquoi le lion n'est plus le roi des animaux (Gallimard Jeunesse, 1996), lauréat du Prix de la Critique de la Communauté Française de Belgique ; en 2000 Bibi et les canards, sur le thème de la migration. Premier roman, Mathématiques congolaises, en 2008. - In Koli Jean Bofane est né le 24 octobre 1954 à Mbandaka (R.D. du Congo) et vit en Belgique. Avec le roman Mathématiques congolaises (Actes Sud) il est lauréat du Grand prix littéraire d’Afrique noire en 2008 et du Prix Jean Muno en 2009. En 2014 Congo Inc., le testament de Bismarck (Actes Sud) a reçu le Prix des cinq continents de la francophonie. Ses ouvrages ont été traduits aux USA, en Allemagne, au Brésil, en Corée, en Slovénie.",
+    "bibliography": [
+      {
+        "title": "Congo Inc. : le Testament de Bismarck",
+        "publishing": "Arles : Actes Sud, coll. Babel n°1364",
+        "yearOfPublication": 2014,
+        "numberOfPages": 304,
+        "isbn": "978-2-330-05887-6",
+        "genre": ""
+      },
+      {
+        "title": "Congo Inc. : Bismarck's testament",
+        "publishing": "Bloomington : Indiana University Press, coll. Global African Voices",
+        "yearOfPublication": 2018,
+        "numberOfPages": 189,
+        "isbn": "",
+        "genre": ""
+      },
+      {
+        "title": "Freddy Tsimba : Mabele eleki lola ! De aarde, stralender dan het paradijs",
+        "publishing": "Bruxelles ; Tervuren : Kate Art Editions ; Africalia ; RMCA",
+        "yearOfPublication": 2020,
+        "numberOfPages": 144,
+        "isbn": "",
+        "genre": ""
+      }
+    ],
+    "writingLanguages": ["FRENCH", "ENGLISH", "DUTCH", "GERMAN", "PORTUGUESE"],
+    "portrait": "https://mukanda.univ-lorraine.fr/files/square/574fc72e97d1c04f44c429ed33f9da7a6797fbee.jpg",
+    "sources": "https://mukanda.univ-lorraine.fr/s/mukanda/item/18890, https://journals.openedition.org/coma/5981",
+    "genres": ["novel", "Tale", "Non-fiction"],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 34,
+    "firstName": "Lisette",
+    "lastName": "Lombé",
+    "fullName": "Lisette Lombé",
+    "placeOfBirth": "BEL",
+    "dateOfBirth": 1978,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "Lisette Lombé est une artiste belgo-congolaise née en 1978. Elle a été enseignante et jobcoach. Créatrice d’objets poétiques (performance, collage, conférence gesticulée), elle anime des ateliers avec son association L-SLAM. Elle vit actuellement à Liège, dont elle est Citoyenne d’Honneur. (site de L'Arbre à paroles, 05.2019)",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 35,
+    "firstName": "Linda ILAYA",
+    "lastName": "Mukalay Ndaya",
+    "fullName": "Linda ILAYA Mukalay Ndaya",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "Voix des poètes mélangistes",
+    "biography": "This might be two authors named: Linda Iyala and Mulakay Ndaya",
+    "bibliography": [
+      {
+        "title": "Voix des poètes mélangistes",
+        "publishing": "Kinshasa : Asali",
+        "yearOfPublication": 1979,
+        "numberOfPages": 23,
+        "isbn": "",
+        "genre": ""
+      }
+    ],
+    "writingLanguages": ["French"],
+    "portrait": "",
+    "sources": "https://www.africamuseum.be/de/research/collections_libraries/human_sciences/libraries/contemporary_history/reference/8080/africa_museum, https://mukanda.univ-lorraine.fr/s/mukanda/item/15395",
+    "genres": ["Poems"],
+    "sex": "woman",
+    "keywords": []
+  },
+  {
+    "id": 36,
+    "firstName": "Léon",
+    "lastName": "Matangila Musadila",
+    "fullName": "Léon Matangila Musadila",
+    "placeOfBirth": "",
+    "dateOfBirth": 1959,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://www.editions-harmattan.fr/catalogue/auteur/leon-matangila-musadila/1469, https://katalog.mikanda.info/pmb/opac_css/index.php?lvl=more_results&autolevel1=1",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 37,
+    "firstName": "Paul",
+    "lastName": "Lomali-Tshibamba",
+    "fullName": "Paul Lomali-Tshibamba",
+    "placeOfBirth": "Brazzaville",
+    "dateOfBirth": 1914,
+    "dateOfDeath": 1985,
+    "knownFor": "",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://fr.wikipedia.org/wiki/Paul_Lomami_Tshibamba",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 38,
+    "firstName": "Sony Lab'ou Tansi",
+    "lastName": "Marcel Ntsoni",
+    "fullName": "Sony Lab'ou Tansi Marcel Ntsoni",
+    "placeOfBirth": "Kinshasa",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://fr.wikipedia.org/wiki/Sony_Labou_Tansi",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  },
+  {
+    "id": 39,
+    "firstName": "Téa",
+    "lastName": "Mutonji",
+    "fullName": "Téa Mutonji",
+    "placeOfBirth": "",
+    "dateOfBirth": 0,
+    "dateOfDeath": 0,
+    "knownFor": "",
+    "biography": "",
+    "bibliography": [],
+    "writingLanguages": [],
+    "portrait": "",
+    "sources": "https://en.wikipedia.org/wiki/T%C3%A9a_Mutonji",
+    "genres": [],
+    "sex": "",
+    "keywords": []
+  }
 ]
